@@ -3,9 +3,15 @@ body {
     margin: 0;
 }
 
+li a:hover {
+    background-color: #111;
+} 
+
 header {
     background-color: #FFD700;
+    padding: 30px 20px 30px 20px;
 }
+
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 48px;
@@ -14,20 +20,10 @@ h1 {
 	font-weight: 500;
 }
 
-main {
-    height: 300px;
-    width: 900px;
-    margin: 50px auto;
-    display: inline-block;
-    background-image: url('basquiat_warhol.jpg');
-    background-repeat: no-repeat;
-    background-size: 900px 900px;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 20px 0;
     overflow: hidden;
     background-color: #333;
 }
@@ -44,10 +40,15 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
-}    
+main {
+    margin: 50px auto;
+    display: inline-block;
+}
 
+img {
+    height: 200px;
+    width: 200px;
+}
 .content {
     background-color: rgb(45, 201, 45);
     text-align: center;
