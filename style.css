@@ -15,11 +15,13 @@ h1 {
 }
 
 main {
-    height: 350px;
-    width: 700px;
+    height: 300px;
+    width: 900px;
     margin: 50px auto;
     display: inline-block;
-    background-image: url("basquiat_warhol.jpg");
+    background-image: url('basquiat_warhol.jpg');
+    background-repeat: no-repeat;
+    background-size: 900px 900px;
 }
 
 .content {
