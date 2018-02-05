@@ -1,5 +1,4 @@
 body {
-    /* border: 1px solid goldenrod; */
     text-align: center;
     margin: 0;
 }
@@ -34,6 +33,16 @@ li a:hover {
 
 main {
     height: 40.75em;;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33.333333% 33.333333% 33.333333%;
+    grid-template-rows: 20.375em 20.375em;
+}
+
+.item {
+    border: 1px solid black;
 }
 
 .footer {
