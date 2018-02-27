@@ -1,47 +1,68 @@
 body {
-    text-align: center;
+    height: 200em;
     margin: 0;
-    background: url('maxim-melnikov-69938-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 90em 49em;
+    text-align: center;
     /* border: 1px solid black; */
 }
 
 ul {
     /* height: 4em; */
-    list-style-type: none;
-    /* display: flex;
-    justify-content: flex-end; */
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    /* opacity: 0.1; */
+    overflow: hidden;
+    padding: 0;
 }
 
 li {
+    float: right;
     font-family: "Raleway", Arial, sans-serif;
     font-size: 2em;
-    float: right;
 }
 
 li a {
-    /* border: 1px solid white; */
-    display: block;
     color: white;
-    text-align: center;
+    display: block;
     padding: 0.2em 0.5em;
     text-decoration: none;
 }
 
 li a:hover {
-    /* height: 2em; */
     background-color: #111;
 }
 
 main {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 46em;
     width: 100%;
+}
+
+.background {
+    height: 48em;
+    width: 90em;
+    display: block;
+	position: relative;
+}
+
+.bg_img {
+    content: "";
+	background-image: url('maxim-melnikov-69938-unsplash.jpg');
+	/* background-size: cover; */
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+    z-index: -1;
+    min-height: 46em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
