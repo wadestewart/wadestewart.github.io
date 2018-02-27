@@ -15,9 +15,13 @@ ul {
     /* opacity: 0.1; */
     overflow: hidden;
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 li {
+    display: block;
     float: right;
     font-family: "Raleway", Arial, sans-serif;
     font-size: 2em;
@@ -36,12 +40,12 @@ li a:hover {
 
 main {
     /* border: 1px solid black; */
-    height: 46em;
+    height: 48em;
     width: 100%;
 }
 
 .background {
-    height: 48em;
+    height: 49em;
     width: 90em;
     display: block;
 	position: relative;
@@ -58,7 +62,7 @@ main {
 	right: 0;
 	position: absolute;
     z-index: -1;
-    min-height: 46em;
+    min-height: 47em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
