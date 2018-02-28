@@ -1,8 +1,20 @@
 body {
-    height: 200em;
+    height: 100vh;
     margin: 0;
     text-align: center;
-    border: 10px solid black;
+    /* border: 10px solid black; */
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 ul {
@@ -23,8 +35,9 @@ li {
     color: white;
     display: block;
     font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5em;
-    padding: 0.5em 0.7em;
+    font-size: 1.5rem;
+    margin: 0 2rem 0 0;
+    padding: 0.5rem 1rem;
 }
 
 li a {
@@ -38,23 +51,13 @@ li a:hover {
     background-color: #111;
 }
 
-.name {
-    color: rgb(252, 78, 9);
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: lighter;
-    margin: 0;
-    padding: 0.5em 0.7em;
-    position: fixed;
-    top: 0;
-}
-
 .main-container {
     perspective: 1px;
     transform-style: preserve-3d;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
+    border: 5px solid black;
 }
 
 .parallax-container {
@@ -73,7 +76,7 @@ li a:hover {
 	right: 0;
 	position: relative;
     z-index: -1;
-    min-height: 47em;
+    min-height: 47rem;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,16 +84,30 @@ li a:hover {
 }
 
 .content-container {
-    /* position: relative; */
-    display: block;
     background: rgba(232,232,232,1);
-    /* z-index: 2; */
+    display: block;
+    position: relative;
+    /* border: 2px solid yellow; */
 }
 
-.content {
+h2 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0;
+    padding: 3rem;
+
+}
+
+.portfolio {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 46vh 46vh;
+}
+
+.item {
+    /* padding: 4rem; */
+    margin: 3rem 10rem;
 }
 
 .item1 {background: #1acb9c;}
