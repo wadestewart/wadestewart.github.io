@@ -103,7 +103,7 @@ h2 {
     display: flex;
     align-content: center;    
     height: 30rem;
-    margin: 10rem;
+    margin: 0 10rem;
     /* width: 100vw; */
     /* border: 2px solid black; */
 }
@@ -129,6 +129,12 @@ h2 {
 .port-item2 {background: #f1c40f;}
 .port-item3 {background: #9b59b6;}
 .port-item4 {background: #e74c3c;}
+
+.contact {
+    background: purple;
+    height: 30rem;
+    margin: 0 10rem;
+}
 
 .footer {
     position: fixed;
