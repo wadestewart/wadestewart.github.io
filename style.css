@@ -113,6 +113,7 @@ h2 {
 
 #about {
     background: rgba(192,192,192,1);
+    padding: 2rem;
     /* border: 5px solid goldenrod; */
 }
 
@@ -120,6 +121,7 @@ h2 {
     border-radius: 50%;
     max-height: 15rem;
     max-width: 15rem;
+    padding: 2rem;
     position: relative;
 }
 
@@ -132,6 +134,7 @@ h2 {
 
 #portfolio {
     background: rgba(192,192,192,1);
+    padding: 2rem;
 }
 
 .portfolio-items {
@@ -141,8 +144,8 @@ h2 {
 }
 
 .port-item {
-    padding: 4rem;
-    margin: 3rem 10rem;
+    padding: 2rem;
+    margin: 3rem 7rem;
 }
 
 .port-item1 {background: #1acb9c;}
@@ -156,6 +159,7 @@ h2 {
 
 #contact img {
     height: 5rem;
+    padding: 2rem;
     width: 5rem;
 }
 
