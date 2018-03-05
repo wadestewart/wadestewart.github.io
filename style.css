@@ -64,11 +64,11 @@ li a:hover {
 }
 
 .main-container {
-    perspective: 1px;
+    perspective: 2px;
     transform-style: preserve-3d;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     /* border: 5px solid black; */
 }
 
@@ -78,10 +78,14 @@ li a:hover {
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.6)
     ),
-    url('./imgs-vids/maxim-melnikov-69938-unsplash.jpg');
+    url('./imgs-vids/barn-images-12223-unsplash.jpg');
     height: 100vh;
     width: 100vw;
-    display: block;
+    /* padding: 4rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
     top: 0;
 	left: 0;
 	bottom: 0;
@@ -93,7 +97,7 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid goldenrod;
+    /* border: 5px solid goldenrod; */
 }
 
 .parallax-content {
@@ -155,10 +159,18 @@ h2 {
     margin: 3.5rem 7rem;
 }
 
-.port-item1 {background: #1acb9c;}
-.port-item2 {background: #f1c40f;}
-.port-item3 {background: #9b59b6;}
-.port-item4 {background: #e74c3c;}
+.port-item1 {
+    background: #1acb9c;
+}
+.port-item2 {
+    background: #f1c40f;
+}
+.port-item3 {
+    background: #9b59b6;
+}
+.port-item4 {
+    background: #e74c3c;
+}
 
 #contact {
     background: rgba(244,246,248,1);
