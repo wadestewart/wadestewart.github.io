@@ -73,6 +73,12 @@ li a:hover {
 }
 
 #parallax-container {
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url('./imgs-vids/maxim-melnikov-69938-unsplash.jpg');
     height: 100vh;
     width: 100vw;
     display: block;
@@ -87,7 +93,7 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* border: 5px solid black; */
+    border: 5px solid goldenrod;
 }
 
 .parallax-content {
