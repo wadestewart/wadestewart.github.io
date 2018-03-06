@@ -155,13 +155,23 @@ h2 {
 }
 
 .port-item {
-    padding: 2rem;
-    margin: 3.5rem 7rem;
+    margin: 1rem 2rem;
 }
 
 .port-item1 {
     background: #1acb9c;
 }
+
+.port-item1 img {
+    max-height: 18rem;
+    max-width: 36rem;
+    position: relative;
+}
+
+.port-item1:hover {
+    opacity: 0.5;
+}
+
 .port-item2 {
     background: #f1c40f;
 }
