@@ -143,15 +143,14 @@ h2 {
     padding: 0.5rem 1rem;
 }
 
-#portfolio {
+#projects {
     background: rgba(244,246,248,1);
     padding: 2rem;
 }
 
 .portfolio-items {
-    display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%;
-    grid-template-rows: 46vh;
+    display: flex;
+    max-height: 24rem;
 }
 
 .port-item {
