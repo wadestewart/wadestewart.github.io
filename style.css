@@ -245,6 +245,10 @@ h2 {
     width: 5rem;
 }
 
+#contact img:hover {
+    opacity: 0.5;
+}
+
 .footer {
     position: relative;
     right: 0;
