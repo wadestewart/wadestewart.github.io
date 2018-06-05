@@ -3,12 +3,17 @@ body {
 }
 
 .container {
-    height: 12rem;
-    width: 12rem;
+    align-items: center;
+    /* background: blueviolet; */
+    display: flex;
+    height: 13rem;
+    justify-content: center;
     margin: auto;
+    width: 13rem;
 }
 
-.container img {
-    height: 100%;
-    width: auto;
+.img {
+    background: gold;
+    height: 12rem;
+    width: 12rem;
 }
