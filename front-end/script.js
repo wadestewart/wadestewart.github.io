@@ -33,6 +33,7 @@ function showPics(peopleData) {
         imageNode.classList.add('img')
 
         anchorNode.setAttribute('href', personUrl)
+        anchorNode.setAttribute('target', '_blank')
         imageNode.setAttribute('src', personImg)
 
         anchorNode.appendChild(imageNode)
