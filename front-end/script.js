@@ -1,5 +1,5 @@
 const background = document.querySelector('.container')
-const img = document.querySelector('.img')
+const people = document.querySelector('.people')
 
 // setInterval(function changeBack() {
 //     let colors = ['#fe0000', '#fffb96', '#6cff5f', '#011efe', '#fe00f6']
@@ -9,24 +9,28 @@ const img = document.querySelector('.img')
 // }, 100)
 
 
-function showPics () {
+function showPics(peopleData) {
+    people.innerHTML = ''
+    peopleData.forEach(person => {
+        const imageNode = document.createElement('img')
+        imageNode.setAttribute('src', person.img)
+        imageNode.classList.add('person')
 
-    let people = img.innerHTML = ''
-    
-    setInterval(fetch('http://localhost:4001/home')
-    .then(function(response) {
+        people.appendChild(imageNode)
+    })
+}
+
+fetch('http://localhost:4001/home')
+    .then(response => {
         return response.json()
             .then(function(data) {
-                // console.log(data)
-                data.forEach(function(person) {
-                    
-                })
+                // console.log(data[0].img)
+                showPics(data)
             })
     })
     .catch(function(err) {
         console.log('Fetch error :-S', err)
-    }), 10000)
+    })
 
-}
+// setInterval(, 10000)
 
-// showPics()

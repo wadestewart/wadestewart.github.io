@@ -4,16 +4,22 @@ body {
 
 .container {
     align-items: center;
-    /* background: blueviolet; */
+    background: blueviolet;
     display: flex;
-    height: 13rem;
+    height: 20rem;
     justify-content: center;
-    margin: auto;
-    width: 13rem;
+    margin: 3rem auto;
+    width: 20rem;
 }
 
-.img {
+.people {
     background: gold;
-    height: 12rem;
-    width: 12rem;
+    height: 18rem;
+    width: auto;
+}
+
+.name {
+    background: palevioletred;
+    height: 10rem;
+    width: 30rem;
 }
