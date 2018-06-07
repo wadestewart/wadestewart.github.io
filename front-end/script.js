@@ -41,7 +41,7 @@ function showPics(peopleData) {
 
         anchorNode.appendChild(imageNode)
         people.appendChild(anchorNode)
-        name.innerHTML = personName
+        name.appendChild(personName)
 
         if (counter >= peopleData.length) {
             counter = 0
@@ -50,7 +50,6 @@ function showPics(peopleData) {
     
     anchorNode.removeChild(imageNode)
     people.removeChild(anchorNode)
-
 }
 
 fetch('http://localhost:4001/home')
