@@ -25,24 +25,19 @@ body {
     position: absolute;
 }
 
-/* .link {
-
-} */
-
 .img {
     height: 28rem;
     width: auto;
 }
 
-.name-container {
-    background: cornflowerblue;
-    height: 10rem;
-    width: 5rem;
-}
+/* .name-container {
+
+} */
 
 .name {
-    display: inline;
+    /* display: inline; */
     font-family: "maiden", san-serif;
     font-size: 8rem;
+    text-align: center;
 }
 
