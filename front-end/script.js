@@ -1,4 +1,4 @@
-const background = document.querySelector('.container')
+// const background = document.querySelector('.name-container')
 const people = document.querySelector('.people')
 const name = document.querySelector('.name')
 const imageNode = document.createElement('img')
@@ -8,12 +8,32 @@ let counter = 0
 
 people.innerHTML = ''
 
-setInterval(function changeBack() {
-    let colors = ['#fe0000', '#fffb96', '#6cff5f', '#011efe', '#fe00f6']
+setInterval(function() {
+    let colors = ['#fe0000', '#fffb96', '#6cff5f', '#011efe', '#fe00f6', '#000000']
     let ranColor = colors[Math.floor(Math.random()*colors.length)]
     
-    background.style.background = ranColor
-}, 100)
+    name.style.color = ranColor
+}, 150)
+
+function updatePerson(peopleData) {
+    
+    setInterval(function() {
+        // console.log(counter)
+        anchorNode.removeChild(imageNode)
+        people.removeChild(anchorNode)
+        
+        getPics(peopleData)
+        getLinks(peopleData)
+        getName(peopleData)
+
+        counter += 1
+        
+        if (counter >= peopleData.length) {
+            counter = 0
+        }
+        
+    }, 2000)
+}
 
 function getPics(peopleData) {
     const personImg = peopleData[counter].img
@@ -38,26 +58,6 @@ function getName(peopleData) {
     const personName = peopleData[counter].name
 
     name.innerHTML = personName
-}
-
-function updatePerson(peopleData) {
-    
-    setInterval(function() {
-        // console.log(counter)
-        anchorNode.removeChild(imageNode)
-        people.removeChild(anchorNode)
-        
-        getPics(peopleData)
-        getLinks(peopleData)
-        getName(peopleData)
-
-        counter += 1
-        
-        if (counter >= peopleData.length) {
-            counter = 0
-        }
-        
-    }, 1000)
 }
 
 fetch('http://localhost:4001/home')
