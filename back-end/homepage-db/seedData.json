@@ -1,32 +1,32 @@
 [
     {
         "name": "Cesar Chavez",
-        "img": "./imgs/chavez.jpg",
+        "img": "./resources/imgs/chavez.jpg",
         "url": "https://en.wikipedia.org/wiki/Cesar_Chavez"
     },
     {
         "name": "Eddie Lowery",
-        "img": "./imgs/golf.jpg",
+        "img": "./resources/imgs/golf.jpg",
         "url": "https://en.wikipedia.org/wiki/Eddie_Lowery"
     },
     {
         "name": "Lead Belly",
-        "img": "./imgs/leadbelly.jpg",
+        "img": "./resources/imgs/leadbelly.jpg",
         "url": "https://en.wikipedia.org/wiki/Lead_Belly"
     },
     {
         "name": "Qiu Jin",
-        "img": "./imgs/qiu_jin.jpg",
+        "img": "./resources/imgs/qiu_jin.jpg",
         "url": "https://en.wikipedia.org/wiki/Qiu_Jin"
     },
     {
         "name": "Harriet Tubman",
-        "img": "./imgs/tubman.jpg",
+        "img": "./resources/imgs/tubman.jpg",
         "url": "https://en.wikipedia.org/wiki/Harriet_Tubman"
     },
     {
         "name": "Germaine Greer",
-        "img": "./imgs/greer.jpg",
+        "img": "./resources/imgs/greer.jpg",
         "url": "https://en.wikipedia.org/wiki/Germaine_Greer"
     }
 ]

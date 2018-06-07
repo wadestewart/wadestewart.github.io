@@ -1,6 +1,6 @@
 const background = document.querySelector('.container')
 const people = document.querySelector('.people')
-const link = document.querySelector('.link')
+const name = document.querySelector('.name')
 
 let counter = 0
 
@@ -16,6 +16,7 @@ function showPics(peopleData) {
     // console.log(counter)
     const anchorNode = document.createElement('a')
     const imageNode = document.createElement('img')
+    const nameNode = document.createElement('h1')
 
     people.innerHTML = ''
 
@@ -24,6 +25,7 @@ function showPics(peopleData) {
         
         const personImg = peopleData[counter].img
         const personUrl = peopleData[counter].url
+        const personName = peopleData[counter].name
         counter += 1
         
         // console.log(personImg)
@@ -31,6 +33,7 @@ function showPics(peopleData) {
 
         anchorNode.classList.add('link')
         imageNode.classList.add('img')
+        nameNode.classList.add('name')
 
         anchorNode.setAttribute('href', personUrl)
         anchorNode.setAttribute('target', '_blank')
@@ -38,6 +41,7 @@ function showPics(peopleData) {
 
         anchorNode.appendChild(imageNode)
         people.appendChild(anchorNode)
+        name.innerHTML = personName
 
         if (counter >= peopleData.length) {
             counter = 0

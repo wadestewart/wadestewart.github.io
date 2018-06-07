@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "maiden";
+    src: url('./resources/fonts/maiden.ttf') format('truetype');
+}
+
 body {
     height: 100vh;
 }
@@ -29,7 +34,9 @@ body {
 }
 
 .name {
-    background: palevioletred;
+    font-family: "maiden", san-serif;
+    font-size: 10rem;
     height: 10rem;
     width: 30rem;
+    z-index: 1;
 }
