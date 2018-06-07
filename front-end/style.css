@@ -30,12 +30,7 @@ body {
     width: auto;
 }
 
-/* .name-container {
-
-} */
-
 .name {
-    /* display: inline; */
     font-family: "maiden", san-serif;
     font-size: 8rem;
     text-align: center;
