@@ -1,4 +1,3 @@
-// const background = document.querySelector('.name-container')
 const people = document.querySelector('.people')
 const name = document.querySelector('.name')
 const imageNode = document.createElement('img')
@@ -13,27 +12,8 @@ setInterval(function() {
     let ranColor = colors[Math.floor(Math.random()*colors.length)]
     
     name.style.color = ranColor
-}, 150)
 
-function updatePerson(peopleData) {
-    
-    setInterval(function() {
-        // console.log(counter)
-        anchorNode.removeChild(imageNode)
-        people.removeChild(anchorNode)
-        
-        getPics(peopleData)
-        getLinks(peopleData)
-        getName(peopleData)
-
-        counter += 1
-        
-        if (counter >= peopleData.length) {
-            counter = 0
-        }
-        
-    }, 2000)
-}
+}, 100)
 
 function getPics(peopleData) {
     const personImg = peopleData[counter].img
@@ -58,6 +38,26 @@ function getName(peopleData) {
     const personName = peopleData[counter].name
 
     name.innerHTML = personName
+}
+
+function updatePerson(peopleData) {
+    
+    setInterval(function() {
+        // console.log(counter)
+        anchorNode.removeChild(imageNode)
+        people.removeChild(anchorNode)
+        
+        getPics(peopleData)
+        getLinks(peopleData)
+        getName(peopleData)
+
+        counter += 1
+        
+        if (counter >= peopleData.length) {
+            counter = 0
+        }
+        
+    }, 2000)
 }
 
 fetch('http://localhost:4001/home')
