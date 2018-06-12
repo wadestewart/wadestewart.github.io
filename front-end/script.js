@@ -12,7 +12,6 @@ setInterval(function() {
     let ranColor = colors[Math.floor(Math.random()*colors.length)]
     
     name.style.color = ranColor
-
 }, 100)
 
 function getPics(peopleData) {
@@ -50,13 +49,12 @@ function updatePerson(peopleData) {
         getPics(peopleData)
         getLinks(peopleData)
         getName(peopleData)
-
+        
         counter += 1
         
         if (counter >= peopleData.length) {
             counter = 0
         }
-        
     }, 2000)
 }
 
