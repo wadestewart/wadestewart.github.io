@@ -1,259 +1,34 @@
 body {
-    height: 100vh;
-    margin: 0;
-    text-align: center;
-    /* border: 10px solid goldenrod; */
-}
-
-.name h1 {
-    color: rgb(255, 255, 255);
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin: 0;
-    padding: 0.5rem 1rem;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-}
-
-.name h3 {
-    color: rgb(255, 255, 255);
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin: 0;
-    padding: 0.5rem 1rem;
-    position: sticky;
-    top: 30rem;
-    right: 30rem;
-    /* z-index: 2; */
-}
-
-ul {
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 1;
-}
-
-li {
-    color: white;
-    display: block;
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5rem;
-    margin: 0 2rem 0 0;
-    padding: 0.5rem 1rem;
-}
-
-li a {
-    color: white;
-    text-decoration: none;
-    transition: background-color .5s;
-}
-
-li a:hover {
-    opacity: 0.7;
-}
-
-.main-container {
-    perspective: 2px;
-    transform-style: preserve-3d;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    /* border: 5px solid black; */
-}
-
-#parallax-container {
-    background:
-    linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.6)
-    ),
-    url('./imgs-vids/barn-images-12223-unsplash.jpg');
-    height: 100vh;
-    width: 100vw;
-    /* padding: 4rem; */
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
-    font-size: 3rem;
-    top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: relative;
-    z-index: -1;
-    min-height: 47rem;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* border: 5px solid goldenrod; */
-}
-
-.parallax-content {
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-family: "Raleway", Arial, sans-serif;
-    z-index: 0;
-}
-
-.content-container {
-    background: rgba(244,246,248,1);
-    display: block;
-    position: relative;
-    /* border: 2px solid yellow; */
-}
-
-h2 {
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 3rem;
-    font-weight: bolder;
     margin: 0;
-    padding: 1rem;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
 }
 
-#about {
-    background: rgba(244,246,248,1);
-    padding: 2rem;
-    /* border: 5px solid goldenrod; */
-}
-
-.wade img{
-    border-radius: 50%;
-    max-height: 15rem;
-    max-width: 15rem;
-    padding: 2rem;
+.image {
+    background-image: url('./resources/img/living_room.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid black; */
+    height: 100%;
     position: relative;
+    width: 100%;
 }
 
-.wade p {
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5rem;
-    margin: 0 2rem 0 0;
-    padding: 0.5rem 1rem;
+.button-container {
+    height: 2rem;
+    width: 25%;
+    
 }
 
-#projects {
-    background: rgba(244,246,248,1);
-    padding: 2rem;
-}
-
-.portfolio-items {
-    display: flex;
-    max-height: 24rem;
-}
-
-.port-item {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 1rem 2rem;
-}
-
-.button-site {
-    border: 0.01rem solid black;
-    color: black;
-    display: inline-block;
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    margin: 1.7rem;
-    text-decoration: none;
-}
-
-.button-code {
-    border: 0.01rem solid black;
-    color: black;
-    display: inline-block;
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    margin: 1.7rem;
-    text-decoration: none;
-}
-
-.button-site:hover {
-    background-color: white;
-    opacity: 0.5;
-}
-
-.button-code:hover {
-    background-color: white;
-    opacity: 0.5;
-}
-
-.port-item1 {
-    background: rgba(255, 105, 180, 1);
-    padding: 3rem 0;
-    border: 0.1rem solid black;
-}
-
-.port-item1 img {
-    max-height: 12rem;
-    max-width: 24rem;
-    border: 0.1rem solid black;
-    padding: 0.1rem;
-    background-color: white;
-}
-
-.port-item2 {
-    background: rgba(099, 184, 255, 1);
-    padding: 3rem 0;
-    border: 0.1rem solid black;
-}
-
-.port-item2 img {
-    max-height: 12rem;
-    max-width: 24rem;
-    border: 0.1rem solid black;
-    padding: 0.1rem;
-    background-color: white;
-}
-
-.port-item3 {
-    background: rgba(238, 044, 044, 1);
-    padding: 3rem 0;
-    border: 0.1rem solid black;}
-
-.port-item3 img {
-    max-height: 12rem;
-    max-width: 24rem;
-    border: 0.1rem solid black;
-    padding: 0.1rem;
-    background-color: white;
-}
-
-#contact {
-    background: rgba(244,246,248,1);
-}
-
-#contact img {
-    height: 5rem;
-    margin: 0 5rem;
-    padding: 2rem;
-    width: 5rem;
-}
-
-#contact img:hover {
-    opacity: 0.5;
-}
-
-.footer {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: right;
+.button {
+    border: 1px solid black;
+    bottom: 14.7rem;
+    height: 0.5rem;
+    position: absolute;
+    right: 25.5rem;
+    width: 1rem;
 }
