@@ -598,23 +598,24 @@ th {
 /* line 9, ../sass/styles.scss */
 html,
 body {
-  height: auto;
-  width: 100vw;
+  height: 100vh;
+  width: auto;
 }
 
 /* line 16, ../sass/styles.scss */
 #container {
   background-image: url("../images/living_room.png");
-  background-position: 0 0, center;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 1px solid black;
   bottom: 0;
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-/* line 27, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 #button {
   animation: flicker 3s linear infinite;
   background: red;

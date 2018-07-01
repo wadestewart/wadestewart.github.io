@@ -8,16 +8,17 @@
 $outline: rgba(#fff, .4);
 html,
 body {
-    height: auto;
+    height: 100vh;
 	// overflow: hidden;
-    width: 100vw;
+    width: auto;
 }
         
 #container {
     background-image: url('../images/living_room.png');
-    background-position: 0 0, center;
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid black;
     bottom: 0;
     height: 100%;
     position: absolute;
