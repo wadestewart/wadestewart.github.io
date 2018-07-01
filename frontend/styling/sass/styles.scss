@@ -39,12 +39,16 @@
 // 		}
 // }
 
-html,
-body {
-	 height: 100vh;
-	 overflow: hidden;
-     width: 100vw;
-}
+// html,
+// body {
+//     align-content: center;
+//     align-items: center;
+//     display: flex;
+//     height: 100vh;
+//     justify-content: center;
+// 	//  overflow: hidden;
+//      width: auto;
+// }
         
 #container {
     background-image: url('../images/living_room.png');
@@ -55,14 +59,14 @@ body {
     height: 100%;
     position: absolute;
     width: 100%;
-        #button {
-            border: 1px solid black;
-            height: 0.5rem;
-            position: absolute;
-            width: 1rem;
-        }
 }
 
+#button {
+    border: 1px solid black;
+    height: 0.5rem;
+    position: absolute;
+    width: 1rem;
+}
 
 // h1 {
 // 	font-family: 'CoreCircus', sans-serif;

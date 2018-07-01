@@ -595,15 +595,7 @@ th {
   padding: 0;
 }
 
-/* line 42, ../sass/styles.scss */
-html,
-body {
-  height: 100vh;
-  overflow: hidden;
-  width: 100vw;
-}
-
-/* line 49, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 #container {
   background-image: url("../images/living_room.png");
   background-position: 0 0;
@@ -614,8 +606,9 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 58, ../sass/styles.scss */
-#container #button {
+
+/* line 64, ../sass/styles.scss */
+#button {
   border: 1px solid black;
   height: 0.5rem;
   position: absolute;
