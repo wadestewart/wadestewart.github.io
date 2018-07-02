@@ -24,7 +24,7 @@ function updatePinPosition() {
     } else {
         container.css({
             'height': $(window).width()*(1450/2600)+'px',
-            'width': '100%',
+            'width': '100vw',
             'margin-left': '0',
             'left': '0',
             'top': '50%',
