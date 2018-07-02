@@ -12,7 +12,8 @@ body {
 	// overflow: hidden;
     width: 100vw;
 }
-        
+
+
 #container {
     background-image: url('../images/living_room_day.png');
     background-position: 0 0;
@@ -23,91 +24,122 @@ body {
     height: 100%;
     position: absolute;
     width: 100%;
-        // Animation for button flickering on surge protector
-        // https://codepen.io/mandymichael/pen/aJLYVz
-        #button {
-            animation: flicker 3s linear infinite;
-            background: red;
-            border: 1px solid rgba(45,45,45,1);
-            cursor: pointer;
-            height: 0.25rem;
-            margin: 0;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            width: 0.5rem;
+        .sidenav {
+            background-color: #111; 
+            height: 100%;
+            left: 0;
+            overflow-x: hidden;
+            padding-top: 4rem;
+            position: fixed;
+            transition: 0.5s;
+            top: 0;
+            width: 0;
+            z-index: 1;
+                a {
+                    color: #818181;
+                    display: block;
+                    padding: 0.5rem 0.5rem 0.5rem 2rem;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    &:hover {
+                        color: #f1f1f1;
+                    }
+                }
+        
+                .closebtn {
+                    font-size: 2.3rem;
+                    margin-left: 3.2rem;
+                    position: absolute;
+                    top: 0;
+                    right: 1.5rem;
+                }
         }
-
-        @keyframes flicker {
-            0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-                opacity: .99;
-                text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+            // Animation for button flickering on surge protector
+            // https://codepen.io/geoffgraham/pen/jrWwWM
+            // https://codepen.io/mandymichael/pen/aJLYVz
+            #button {
+                animation: flicker 3s linear infinite;
+                background: red;
+                border: 1px solid rgba(45,45,45,1);
+                cursor: pointer;
+                height: 0.25rem;
+                margin: 0;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                width: 0.5rem;
             }
-            20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-                opacity: 0.4;
-                text-shadow: none;
+
+            @keyframes flicker {
+                0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+                    opacity: .99;
+                    text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+                }
+                20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                    opacity: 0.4;
+                    text-shadow: none;
+                }
             }
-        }
-        // Animation for typing on laptop
-        // https://codepen.io/Bojoer/pen/EZYgeO
-        #typing {
-            background: #333;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 8rem;
-            position: absolute;
-            width: 11.5rem;
-                p {
-                    border-right: 0.15rem solid orange;
-                    color: #fff;
-                    font-family: monospace;
-                    font-size: 1.25rem;
-                    letter-spacing: 0.15rem;
-                    // line-height: 1rem !important;
-                    margin: 0 auto;
-                    opacity: 0;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    width: 8rem;
-                }
+            // Animation for typing on laptop
+            // https://codepen.io/Bojoer/pen/EZYgeO
+            #typing {
+                background: #333;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 8rem;
+                position: absolute;
+                width: 11.5rem;
+                    p {
+                        border-right: 0.15rem solid orange;
+                        color: #fff;
+                        font-family: monospace;
+                        font-size: 1.25rem;
+                        letter-spacing: 0.15rem;
+                        // line-height: 1rem !important;
+                        margin: 0 auto;
+                        opacity: 0;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        width: 8rem;
+                    }
 
-                p:nth-child(1) {
-                    animation: 
-                        type 5s steps(25, end),
-                        blink 0.5s step-end infinite;
-                    animation-fill-mode: forwards;
-                    opacity: 0;
-                    width: 8rem;
-                }
+                    p:nth-child(1) {
+                        animation: 
+                            type 5s steps(25, end),
+                            blink 0.5s step-end infinite;
+                        animation-fill-mode: forwards;
+                        opacity: 0;
+                        width: 8rem;
+                    }
 
-                p:nth-child(2) {
-                    animation:
-                        type-final 5s steps(25, end),
-                        blink 0.5s step-end infinite;
-                    animation-delay: 5s;
-                    animation-fill-mode: forwards;
-                    opacity: 0;
-                    padding: 0.1rem;
-                    width: 10rem;
-                }
+                    p:nth-child(2) {
+                        animation:
+                            type-final 5s steps(25, end),
+                            blink 0.5s step-end infinite;
+                        animation-delay: 5s;
+                        animation-fill-mode: forwards;
+                        opacity: 0;
+                        padding: 0.1rem;
+                        width: 10rem;
+                    }
+                    
+                    @keyframes type {
+                        0% { width: 0 }
+                        1% { opacity: 1; }
+                        99.9% { border-right: 0.15rem solid orange; }
+                        100% { opacity: 1; border: none; }
+                    }
+
+                    @keyframes type-final {
+                        0% { width: 0; }
+                        1% { opacity: 1; }
+                        100% { opacity: 1; }
+                    }
                 
-                @keyframes type {
-                    0% { width: 0 }
-                    1% { opacity: 1; }
-                    99.9% { border-right: 0.15rem solid orange; }
-                    100% { opacity: 1; border: none; }
-                }
-
-                @keyframes type-final {
-                    0% { width: 0; }
-                    1% { opacity: 1; }
-                    100% { opacity: 1; }
-                }
-            
-                @keyframes blink {
-                    50% { border-color: transparent; }
-                }
-        }
+                    @keyframes blink {
+                        50% { border-color: transparent; }
+                    }
+            }
 }
 
 

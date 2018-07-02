@@ -1,5 +1,8 @@
 let container = $('#container')
 let button = $('#button')
+let hamburger = $('.hamburger')
+let sidenav = $('#mySidenav')
+let close = $('.closebtn')
 
 $(document).ready(function(){
     updatePinPosition()
@@ -32,3 +35,11 @@ function updatePinPosition() {
         })
     }
 }
+
+hamburger.on('click', function() {
+    sidenav.css({ 'width': '100%' })
+})
+
+sidenav.on('click', function () {
+    sidenav.css({ 'width': '0'})
+})
