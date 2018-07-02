@@ -604,17 +604,16 @@ body {
 
 /* line 16, ../sass/styles.scss */
 #container {
-  background-image: url("../images/living_room.png");
+  background-image: url("../images/living_room_day.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid black;
   bottom: 0;
   height: 100%;
   position: absolute;
   width: 100%;
 }
-/* line 26, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 #container #button {
   animation: flicker 3s linear infinite;
   background: red;
@@ -636,7 +635,7 @@ body {
     text-shadow: none;
   }
 }
-/* line 49, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 #container #typing {
   background: #333;
   display: flex;
@@ -646,7 +645,7 @@ body {
   position: absolute;
   width: 11.5rem;
 }
-/* line 57, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 #container #typing p {
   border-right: 0.15rem solid orange;
   color: #fff;
@@ -659,14 +658,14 @@ body {
   white-space: nowrap;
   width: 8rem;
 }
-/* line 71, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 #container #typing p:nth-child(1) {
   animation: type 5s steps(25, end), blink 0.5s step-end infinite;
   animation-fill-mode: forwards;
   opacity: 0;
   width: 8rem;
 }
-/* line 80, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 #container #typing p:nth-child(2) {
   animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
   animation-delay: 5s;

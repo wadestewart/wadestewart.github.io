@@ -14,15 +14,17 @@ body {
 }
         
 #container {
-    background-image: url('../images/living_room.png');
+    background-image: url('../images/living_room_day.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid black;
+    // border: 1px solid black;
     bottom: 0;
     height: 100%;
     position: absolute;
     width: 100%;
+        // Animation for button flickering on surge protector
+        // https://codepen.io/mandymichael/pen/aJLYVz
         #button {
             animation: flicker 3s linear infinite;
             background: red;
@@ -45,7 +47,8 @@ body {
                 text-shadow: none;
             }
         }
-
+        // Animation for typing on laptop
+        // https://codepen.io/Bojoer/pen/EZYgeO
         #typing {
             background: #333;
             display: flex;
