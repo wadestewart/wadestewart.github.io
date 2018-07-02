@@ -615,18 +615,22 @@ body {
 }
 /* line 26, ../sass/styles.scss */
 #container .sidenav {
+  align-items: center;
   background-color: #111;
+  display: flex;
+  flex-direction: column;
+  font-size: 8rem;
   height: 100%;
-  left: 0;
+  justify-content: center;
+  line-height: 8rem;
   overflow-x: hidden;
   padding-top: 4rem;
   position: fixed;
   transition: 0.5s;
-  top: 0;
   width: 0;
   z-index: 1;
 }
-/* line 37, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #container .sidenav a {
   color: #818181;
   display: block;
@@ -634,11 +638,11 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
-/* line 43, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 #container .sidenav a:hover {
   color: #f1f1f1;
 }
-/* line 48, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 #container .sidenav .closebtn {
   cursor: pointer;
   font-size: 2.3rem;
@@ -647,24 +651,24 @@ body {
   top: 0;
   right: 1.5rem;
 }
-/* line 58, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 #container .flex-nav {
   display: flex;
   justify-content: space-between;
   padding: 0 3rem;
 }
-/* line 62, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 #container .flex-nav .logo {
   background-image: url("../../resources/img/Logo-16x16-01.png");
   height: 4.1rem;
   width: 3.9rem;
 }
-/* line 67, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 #container .flex-nav .hamburger {
   cursor: pointer;
   font-size: 2rem;
 }
-/* line 76, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 #container #button {
   animation: flicker 3s linear infinite;
   background: red;
@@ -686,7 +690,7 @@ body {
     text-shadow: none;
   }
 }
-/* line 101, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 #container #typing {
   background: #333;
   display: flex;
@@ -696,7 +700,7 @@ body {
   position: absolute;
   width: 11.5rem;
 }
-/* line 109, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 #container #typing p {
   border-right: 0.15rem solid orange;
   color: #fff;
@@ -709,14 +713,14 @@ body {
   white-space: nowrap;
   width: 8rem;
 }
-/* line 123, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 #container #typing p:nth-child(1) {
   animation: type 5s steps(25, end), blink 0.5s step-end infinite;
   animation-fill-mode: forwards;
   opacity: 0;
   width: 8rem;
 }
-/* line 132, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 #container #typing p:nth-child(2) {
   animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
   animation-delay: 5s;
