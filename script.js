@@ -43,3 +43,7 @@ hamburger.on('click', function() {
 sidenav.on('click', function () {
     sidenav.css({ 'width': '0'})
 })
+
+button.on('click', function() {
+    container.toggleClass('night day')
+})

@@ -603,7 +603,7 @@ body {
 }
 
 /* line 16, ../sass/styles.scss */
-#container {
+.day {
   background-image: url("../images/living_room_day.png");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -614,7 +614,7 @@ body {
   width: 100%;
 }
 /* line 26, ../sass/styles.scss */
-#container .sidenav {
+.day .sidenav {
   align-items: center;
   background-color: #111;
   display: flex;
@@ -631,54 +631,55 @@ body {
   z-index: 1;
 }
 /* line 41, ../sass/styles.scss */
-#container .sidenav a {
+.day .sidenav a {
   color: #818181;
   display: block;
-  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  padding: 0 2rem 0.5rem 2rem;
   text-decoration: none;
   transition: 0.3s;
 }
 /* line 47, ../sass/styles.scss */
-#container .sidenav a:hover {
+.day .sidenav a:hover {
   color: #f1f1f1;
 }
 /* line 52, ../sass/styles.scss */
-#container .sidenav .closebtn {
+.day .sidenav .closebtn {
   cursor: pointer;
   font-size: 2.3rem;
-  margin-left: 3.2rem;
   position: absolute;
   top: 0;
   right: 1.5rem;
 }
 /* line 62, ../sass/styles.scss */
-#container .flex-nav {
+.day .flex-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
 }
 /* line 66, ../sass/styles.scss */
-#container .flex-nav .logo {
+.day .flex-nav .logo {
   background-image: url("../../resources/img/Logo-16x16-01.png");
   height: 4.1rem;
   width: 3.9rem;
 }
 /* line 71, ../sass/styles.scss */
-#container .flex-nav .hamburger {
+.day .flex-nav .hamburger {
   cursor: pointer;
   font-size: 2rem;
 }
 /* line 80, ../sass/styles.scss */
-#container #button {
+.day #button {
   animation: flicker 3s linear infinite;
   background: red;
   border: 1px solid #2d2d2d;
   cursor: pointer;
-  height: 0.25rem;
+  height: 0.5rem;
   margin: 0;
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 0.5rem;
+  -webkit-animation: flicker 3s linear infinite;
+  -webkit-transform: skew(50deg);
+  width: 1rem;
 }
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
@@ -690,8 +691,18 @@ body {
     text-shadow: none;
   }
 }
-/* line 105, ../sass/styles.scss */
-#container #typing {
+@-webkit-keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+/* line 118, ../sass/styles.scss */
+.day #typing {
   background: #333;
   display: flex;
   flex-direction: column;
@@ -700,8 +711,8 @@ body {
   position: absolute;
   width: 11.5rem;
 }
-/* line 113, ../sass/styles.scss */
-#container #typing p {
+/* line 126, ../sass/styles.scss */
+.day #typing p {
   border-right: 0.15rem solid orange;
   color: #fff;
   font-family: monospace;
@@ -713,23 +724,43 @@ body {
   white-space: nowrap;
   width: 8rem;
 }
-/* line 127, ../sass/styles.scss */
-#container #typing p:nth-child(1) {
+/* line 140, ../sass/styles.scss */
+.day #typing p:nth-child(1) {
   animation: type 5s steps(25, end), blink 0.5s step-end infinite;
   animation-fill-mode: forwards;
   opacity: 0;
+  -webkit-animation: type 5s steps(25, end), blink 0.5s step-end infinite;
+  -webkit-animation-fill-mode: forwards;
   width: 8rem;
 }
-/* line 136, ../sass/styles.scss */
-#container #typing p:nth-child(2) {
+/* line 153, ../sass/styles.scss */
+.day #typing p:nth-child(2) {
   animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
   animation-delay: 5s;
   animation-fill-mode: forwards;
   opacity: 0;
   padding: 0.1rem;
+  -webkit-animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
   width: 10rem;
 }
 @keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15rem solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@-webkit-keyframes type {
   0% {
     width: 0;
   }
@@ -755,7 +786,228 @@ body {
     opacity: 1;
   }
 }
+@-webkit-keyframes type-final {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* line 211, ../sass/styles.scss */
+.night {
+  background-image: url("../images/living_room_night.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+/* line 221, ../sass/styles.scss */
+.night .sidenav {
+  align-items: center;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  font-size: 8rem;
+  height: 100%;
+  justify-content: center;
+  line-height: 8rem;
+  overflow-x: hidden;
+  padding-top: 4rem;
+  position: fixed;
+  transition: 0.5s;
+  width: 0;
+  z-index: 1;
+}
+/* line 236, ../sass/styles.scss */
+.night .sidenav a {
+  color: #818181;
+  display: block;
+  padding: 0 2rem 0.5rem 2rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+/* line 242, ../sass/styles.scss */
+.night .sidenav a:hover {
+  color: #f1f1f1;
+}
+/* line 247, ../sass/styles.scss */
+.night .sidenav .closebtn {
+  cursor: pointer;
+  font-size: 2.3rem;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+}
+/* line 257, ../sass/styles.scss */
+.night .flex-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+/* line 261, ../sass/styles.scss */
+.night .flex-nav .logo {
+  background-image: url("../../resources/img/Logo-16x16-01.png");
+  height: 4.1rem;
+  width: 3.9rem;
+}
+/* line 266, ../sass/styles.scss */
+.night .flex-nav .hamburger {
+  cursor: pointer;
+  font-size: 2rem;
+}
+/* line 275, ../sass/styles.scss */
+.night #button {
+  animation: flicker 3s linear infinite;
+  background: red;
+  border: 1px solid #2d2d2d;
+  cursor: pointer;
+  height: 0.5rem;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-animation: flicker 3s linear infinite;
+  -webkit-transform: skew(50deg);
+  width: 1rem;
+}
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+/* line 313, ../sass/styles.scss */
+.night #typing {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 8rem;
+  position: absolute;
+  width: 11.5rem;
+}
+/* line 321, ../sass/styles.scss */
+.night #typing p {
+  border-right: 0.15rem solid orange;
+  color: #fff;
+  font-family: monospace;
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 8rem;
+}
+/* line 335, ../sass/styles.scss */
+.night #typing p:nth-child(1) {
+  animation: type 5s steps(25, end), blink 0.5s step-end infinite;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  -webkit-animation: type 5s steps(25, end), blink 0.5s step-end infinite;
+  -webkit-animation-fill-mode: forwards;
+  width: 8rem;
+}
+/* line 348, ../sass/styles.scss */
+.night #typing p:nth-child(2) {
+  animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  padding: 0.1rem;
+  -webkit-animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  width: 10rem;
+}
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15rem solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15rem solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes type-final {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes type-final {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
   50% {
     border-color: transparent;
   }
