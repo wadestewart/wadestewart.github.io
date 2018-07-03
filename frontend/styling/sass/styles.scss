@@ -8,13 +8,16 @@
 $outline: rgba(#fff, .4);
 html,
 body {
+    align-items: center;
+    display: flex;
     height: 100vh;
+    justify-content: center;
 	// overflow: hidden;
     width: 100vw;
 }
 
 .day {
-    background-image: url('../images/living_room_day.png');
+    background-image: url('../images/living_room_am.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,7 +132,6 @@ body {
                     font-family: monospace;
                     font-size: 1.25rem;
                     letter-spacing: 0.15rem;
-                    // line-height: 1rem !important;
                     margin: 0 auto;
                     opacity: 0;
                     overflow: hidden;
@@ -209,7 +211,7 @@ body {
 }
 
 .night {
-    background-image: url('../images/living_room_night.png');
+    background-image: url('../images/living_room_pm.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;

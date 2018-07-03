@@ -27,11 +27,11 @@ function updatePinPosition() {
     } else {
         container.css({
             'height': $(window).width()*(1450/2600)+'px',
-            'width': '100vw',
+            'width': '100%',
             'margin-left': '0',
             'left': '0',
-            'top': '50%',
-            'margin-top': container.height()/2+'px'
+            // 'top': '50%',
+            // 'margin-top': container.height()/2+'px'
         })
     }
 }
