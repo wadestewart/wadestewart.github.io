@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wadestewart/wadestewart.github.io/issues"
   },
-  "homepage": "https://github.com/wadestewart/wadestewart.github.io#readme"
+  "homepage": "https://github.com/wadestewart/wadestewart.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
