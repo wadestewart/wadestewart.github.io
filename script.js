@@ -48,8 +48,6 @@ sidenav.on('click', function () {
     sidenav.css({ 'width': '0'})
 })
 
-let button = $('.button')
-
 button.on('click', function() {
     container.toggleClass('night day')
 })
