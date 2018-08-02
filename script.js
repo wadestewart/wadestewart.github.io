@@ -1,5 +1,5 @@
 let container = $('#container')
-let button = $('#button')
+let button = $('.button')
 let hamburger = $('.hamburger')
 let sidenav = $('#mySidenav')
 let close = $('.closebtn')
@@ -30,11 +30,15 @@ function updatePinPosition() {
             'width': '100%',
             'margin-left': '0',
             'left': '0',
-            // 'top': '50%',
-            // 'margin-top': container.height()/2+'px'
+            'top': '50%',
+            'margin-top': container.height()/2+'px'
         })
     }
 }
+
+// function resizeDiv() {
+
+// }
 
 hamburger.on('click', function() {
     sidenav.css({ 'width': '100%' })
@@ -43,6 +47,8 @@ hamburger.on('click', function() {
 sidenav.on('click', function () {
     sidenav.css({ 'width': '0'})
 })
+
+let button = $('.button')
 
 button.on('click', function() {
     container.toggleClass('night day')

@@ -613,7 +613,8 @@ body {
   background-size: cover;
   bottom: 0;
   height: 100%;
-  position: absolute;
+  margin: 0 auto;
+  position: fixed;
   width: 100%;
 }
 /* line 29, ../sass/styles.scss */
@@ -671,27 +672,26 @@ body {
   font-size: 2rem;
 }
 /* line 83, ../sass/styles.scss */
-.day #button {
-  animation: flicker 3s linear infinite;
+.day .button {
+  animation: flicker 1.5s linear infinite;
   background: red;
-  border: 1px solid #2d2d2d;
+  bottom: 23%;
   cursor: pointer;
-  height: 0.3rem;
+  height: 0.5rem;
   margin: 0;
   position: absolute;
+  right: 16.5%;
   transform: translate(-50%, -50%);
-  -webkit-animation: flicker 3s linear infinite;
+  -webkit-animation: flicker 1.5s linear infinite;
   -webkit-transform: skew(50deg);
-  width: 1rem;
+  width: 1.2rem;
 }
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
     opacity: .99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
   }
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
     opacity: 0.4;
-    text-shadow: none;
   }
 }
 @-webkit-keyframes flicker {
@@ -704,8 +704,8 @@ body {
     text-shadow: none;
   }
 }
-/* line 121, ../sass/styles.scss */
-.day #typing {
+/* line 122, ../sass/styles.scss */
+.day .typing {
   background: #333;
   display: flex;
   flex-direction: column;
@@ -714,8 +714,8 @@ body {
   position: absolute;
   width: 11.5rem;
 }
-/* line 129, ../sass/styles.scss */
-.day #typing p {
+/* line 130, ../sass/styles.scss */
+.day .typing p {
   border-right: 0.15rem solid orange;
   color: #fff;
   font-family: monospace;
@@ -727,8 +727,8 @@ body {
   white-space: nowrap;
   width: 8rem;
 }
-/* line 142, ../sass/styles.scss */
-.day #typing p:nth-child(1) {
+/* line 143, ../sass/styles.scss */
+.day .typing p:nth-child(1) {
   animation: type 5s steps(25, end), blink 0.5s step-end infinite;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -736,8 +736,8 @@ body {
   -webkit-animation-fill-mode: forwards;
   width: 8rem;
 }
-/* line 155, ../sass/styles.scss */
-.day #typing p:nth-child(2) {
+/* line 156, ../sass/styles.scss */
+.day .typing p:nth-child(2) {
   animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
   animation-delay: 5s;
   animation-fill-mode: forwards;
@@ -810,7 +810,7 @@ body {
     border-color: transparent;
   }
 }
-/* line 213, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 .night {
   background-image: url("../images/living_room_pm.svg");
   background-position: 0 0;
@@ -821,7 +821,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 223, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .night .sidenav {
   align-items: center;
   background-color: #111;
@@ -838,7 +838,7 @@ body {
   width: 0;
   z-index: 1;
 }
-/* line 238, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 .night .sidenav a {
   color: #818181;
   display: block;
@@ -846,11 +846,11 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
-/* line 244, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .night .sidenav a:hover {
   color: #f1f1f1;
 }
-/* line 249, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .night .sidenav .closebtn {
   cursor: pointer;
   font-size: 2.3rem;
@@ -858,45 +858,42 @@ body {
   top: 0;
   right: 1.5rem;
 }
-/* line 259, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 .night .flex-nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem 3rem;
 }
-/* line 263, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .night .flex-nav .logo {
   background-image: url("../../resources/img/Logo-16x16-01.png");
   height: 4.1rem;
   width: 3.9rem;
 }
-/* line 268, ../sass/styles.scss */
+/* line 269, ../sass/styles.scss */
 .night .flex-nav .hamburger {
   cursor: pointer;
   font-size: 2rem;
 }
-/* line 277, ../sass/styles.scss */
-.night #button {
-  animation: flicker 3s linear infinite;
+/* line 278, ../sass/styles.scss */
+.night .button {
+  animation: flicker 0.5s linear infinite;
   background: red;
-  border: 1px solid #2d2d2d;
   cursor: pointer;
   height: 0.5rem;
   margin: 0;
   position: absolute;
   transform: translate(-50%, -50%);
-  -webkit-animation: flicker 3s linear infinite;
+  -webkit-animation: flicker 0.5s linear infinite;
   -webkit-transform: skew(50deg);
-  width: 1rem;
+  width: 1.2rem;
 }
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
     opacity: .99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
   }
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
     opacity: 0.4;
-    text-shadow: none;
   }
 }
 @-webkit-keyframes flicker {
@@ -910,7 +907,7 @@ body {
   }
 }
 /* line 315, ../sass/styles.scss */
-.night #typing {
+.night .typing {
   background: #333;
   display: flex;
   flex-direction: column;
@@ -920,7 +917,7 @@ body {
   width: 11.5rem;
 }
 /* line 323, ../sass/styles.scss */
-.night #typing p {
+.night .typing p {
   border-right: 0.15rem solid orange;
   color: #fff;
   font-family: monospace;
@@ -933,7 +930,7 @@ body {
   width: 8rem;
 }
 /* line 337, ../sass/styles.scss */
-.night #typing p:nth-child(1) {
+.night .typing p:nth-child(1) {
   animation: type 5s steps(25, end), blink 0.5s step-end infinite;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -942,7 +939,7 @@ body {
   width: 8rem;
 }
 /* line 350, ../sass/styles.scss */
-.night #typing p:nth-child(2) {
+.night .typing p:nth-child(2) {
   animation: type-final 5s steps(25, end), blink 0.5s step-end infinite;
   animation-delay: 5s;
   animation-fill-mode: forwards;
