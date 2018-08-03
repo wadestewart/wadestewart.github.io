@@ -23,10 +23,9 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    justify-content: space-between;
     list-style-type: none;
+    justify-content: flex-end;
     margin: 0;
-    /* padding: 0.7rem 1rem; */
     width: 100%;
 }
 
@@ -34,14 +33,16 @@ header {
     background-image: url("./images/logo.png");
     background-repeat: no-repeat;
     height: 3rem;
+    margin-right: auto;
     width: 4rem;
 }
 
 .flex-nav a {
     color: #818181;
     display: block;
+    float: right;
     font-size: 1.5rem;
-    padding: 0.2rem 0 0 0;
+    padding: 0.2rem 1rem 0 0;
     text-decoration: none;
 }
 
