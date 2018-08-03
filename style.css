@@ -18,66 +18,35 @@ header {
     position: relative;
 }
 
-.sidenav {
-    align-items: center;
-    background-color: #111;
-    display: flex;
-    flex-direction: column;
-    font-size: 8rem;
-    height: 100%;
-    justify-content: center;
-    line-height: 8rem;
-    overflow-x: hidden;
-    padding-top: 4rem;
-    position: fixed;
-    transition: 0.5s;
-    width: 0;
-    z-index: 1;
-}
-
-.sidenav a {
-    color: #818181;
-    display: block;
-    padding: 0 2rem 0.5rem 2rem;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    cursor: pointer;
-    font-size: 2.3rem;
-    position: absolute;
-    top: 0;
-    right: 1.5rem;
-}
-
 .flex-nav {
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.3);
-    bottom: 0;
     display: flex;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     justify-content: space-between;
-    left: 0;
     list-style-type: none;
     margin: 0;
-    padding: 0.7rem 1rem;
-    position: absolute;
+    /* padding: 0.7rem 1rem; */
     width: 100%;
 }
 
 .flex-nav .logo {
     background-image: url("./images/logo.png");
     background-repeat: no-repeat;
-    height: auto;
-    width: 100%;
+    height: 3rem;
+    width: 4rem;
 }
 
-.flex-nav .hamburger {
-    cursor: pointer;
-    font-size: 2rem;
+.flex-nav a {
+    color: #818181;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.2rem 0 0 0;
+    text-decoration: none;
+}
+
+.flex-nav a:hover {
+    color: #f1f1f1;
 }
 
 .landing-page {
