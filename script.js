@@ -9,7 +9,8 @@ $(document).on('mousewheel DOMMouseScroll', function(e) {
     let delta = e.originalEvent.detail < 0 || e.originalEvent.wheelDelta > 0 ? 1 : -1
 
     if (delta < 0) {
-        next = active.next()
+        let next = active.next()
+        console.log(next)
 
         if (next.length) {
             let timer = setTimeout(function() {
