@@ -1,36 +1,93 @@
-// This scroll code (and amazing explanation) is from https://stackoverflow.com/questions/21450095/how-to-make-mouse-wheel-scroll-to-section-like-in-mediafire-com
+// This scroll code (and amazing explanation) is from https://codepen.io/Javarome/post/full-page-sliding
 
-$('section').height($(window).height)
-$('section').first().addClass('active')
+// Scroll handler attached to each div, for modularity - instead of handling the scroll in one process
+function scrollHandler(pageId) {
+    let page = document.getElementById(pageId)
+    let pageStart = page.offsetTop
+    let pageJump = false
+    let viewStart 
+    let duration = 1000
+    let scrolled = document.getElementById('scroll')
 
-$(document).on('mousewheel DOMMouseScroll', function(e) {
-    e.preventDefault()
-    let active = $('section.active')
-    let delta = e.originalEvent.detail < 0 || e.originalEvent.wheelDelta > 0 ? 1 : -1
+    function scrollToPage() {
+        pageJump = true
 
-    if (delta < 0) {
-        let next = active.next()
-        console.log(next)
+        let startLocation = viewStart
+        let endLocation = pageStart
+        let distance = endLocation - startLocation
 
-        if (next.length) {
-            let timer = setTimeout(function() {
-                $('html, body').animate({
-                    scrollTop: next.offset().top
-                }, 'slow')
+        let runAnimation
 
-            next.addClass('active')
-                .siblings().removeClass('active')
+        let timeLapsed = 0
+        let percentage 
+        let position
 
-            clearTimeout(timer)
-            }, 800)
+        // This is accelerating the scroll animation until halfway, then slowing down
+        let easing = function(progress) {
+            return progress < 0.5
+                ? 4 * progress * progress * progress
+                : (progress -1) * (2 * progress - 2) * (2 * progress - 2) + 1
         }
-    } 
-    // else {
-    //     prev = active.prev()
 
-    //     if (prev.length) {
+        function stopAnimationIfRequired(pos) {
+            if (pos == endLocation) {
+                cancelAnimationFrame(runAnimation)
+                setTimeout(function() {
+                    pageJump = false
+                }, 500)
+            }
+        }
 
-    //     }
-    // }
-})
+        let animate = function() {
+            timeLapsed += 16
+            percentage = timeLapsed / duration
+            if (percentage > 1) {
+                percentage = 1
+                position = endLocation
+            } else {
+                position = startLocation + distance * easing(percentage)
+            }
+            scrolled.scrollTop = position
+            runAnimation = requestAnimationFrame(animate)
+            stopAnimationIfRequired(position)
+            console.log('position=' + scrolled.scrollTop + '(' + percentage + ')')
+        }
+    
+        runAnimation = requestAnimationFrame(animate)
+    }
 
+    window.addEventListener('wheel', function(e) {
+        viewStart = scrolled.scrollTop
+        if (!pageJump) {
+            let pageHeight = page.scrollHeight
+            let pageStopPortion = pageHeight / 2
+            let viewHeight = window.innerHeight
+    
+            let viewEnd = viewStart + viewHeight
+            let pageStartPart = viewEnd - pageStart
+            let pageEndPart = pageStart + pageHeight - viewStart
+    
+            let canJumpDown = pageStartPart >= 0
+            let stopJumpDown = pageStartPart > pageStopPortion
+    
+            let canJumpUp = pageEndPart >= 0
+            let stopJumpUp = pageEndPart > pageStopPortion
+    
+            let scrollingForward = event.deltaY > 0
+            if (
+                (scrollingForward && canJumpDown && !stopJumpDown)
+                || (!scrollingForward && canJumpUp && !stopJumpUp)
+                ) {
+                    e.preventDefault()
+                    scrollToPage()
+                }
+                false
+            } else {
+                e.preventDefault()
+            }
+    })
+}
+
+new scrollHandler('landing-page')
+new scrollHandler('about')
+new scrollHandler('projects')
