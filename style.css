@@ -85,14 +85,22 @@ body {
 #projects {
     font-family: 'Open Sans Condensed', sans-serif;
     height: 100vh;
+    margin: 0;
     width: 100vw;
+}
+
+#projects > p {
+    font-size: 2rem;
+    padding: 4rem 0;
+    margin: 0;
+    text-align: center;
 }
 
 .project-cards {
     align-items: flex-start;
     display: flex;
     justify-content: space-around;
-    padding: 5rem 10.5rem;
+    padding: 0 10.5rem;
 }
 
 .flashcards {
@@ -100,7 +108,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 20rem;
+    border: 1px solid gold;
+    height: 15rem;
     width: 20rem;
 }
 
@@ -110,7 +119,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     border: 1px solid gold;
-    height: 32rem;
+    height: 25rem;
     width: 20rem;
 }
 
@@ -119,6 +128,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 20rem;
+    border: 1px solid gold;
+    height: 15rem;
     width: 20rem;
 }
