@@ -83,6 +83,7 @@ body {
 }
 
 #projects {
+    background: rgba(244,246,248,1);
     font-family: 'Open Sans Condensed', sans-serif;
     height: 100vh;
     margin: 0;
