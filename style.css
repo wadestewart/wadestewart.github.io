@@ -31,9 +31,10 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    list-style-type: none;
     justify-content: flex-end;
+    list-style-type: none;
     margin: 0;
+    padding: 0 10%;
     width: 100%;
 }
 
@@ -77,10 +78,38 @@ body {
 }
 
 #projects {
+    align-items: flex-start;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    padding: 10rem;
+    width: 100vw;
+}
+
+.flashcards {
     background: url(./images/LATE_ESPO.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
-    width: 100vw;
+    height: 20rem;
+    width: 20rem;
+}
+
+.bank {
+    background: url(./images/LATE_ESPO.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid gold;
+    height: 32rem;
+    width: 20rem;
+}
+
+.notflix {
+    background: url(./images/LATE_ESPO.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20rem;
+    width: 20rem;
 }

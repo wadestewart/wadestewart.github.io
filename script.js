@@ -50,7 +50,7 @@ function scrollHandler(pageId) {
             scrolled.scrollTop = position
             runAnimation = requestAnimationFrame(animate)
             stopAnimationIfRequired(position)
-            console.log('position=' + scrolled.scrollTop + '(' + percentage + ')')
+            // console.log('position=' + scrolled.scrollTop + '(' + percentage + ')')
         }
     
         runAnimation = requestAnimationFrame(animate)
