@@ -6,7 +6,7 @@ function scrollHandler(pageId) {
     let pageStart = page.offsetTop
     let pageJump = false
     let viewStart 
-    let duration = 1000
+    let duration = 1500
     let scrolled = document.getElementById('scroll')
 
     function scrollToPage() {
@@ -91,3 +91,5 @@ function scrollHandler(pageId) {
 new scrollHandler('landing-page')
 new scrollHandler('about')
 new scrollHandler('projects')
+
+// let pageDiv = 
