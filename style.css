@@ -38,17 +38,9 @@ body {
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
-    padding: 0 10%;
+    padding: 1rem 10%;
     text-transform: uppercase;
     width: 100%;
-}
-
-.flex-nav .logo {
-    background-image: url("./images/logo.png");
-    background-repeat: no-repeat;
-    height: 3rem;
-    margin-right: auto;
-    width: 4rem;
 }
 
 .flex-nav a {
@@ -105,31 +97,69 @@ body {
 }
 
 .flashcards {
-    background: url(./images/LATE_ESPO.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid gold;
-    height: 15rem;
+    border: 1px solid black;
+    height: 19rem;
+    overflow: hidden;
     width: 20rem;
+}
+
+.flashcards:hover, .notflix:hover {
+    opacity: 0.4;
+}
+
+.flashcards figure, .notflix figure {
+    background: rgba(60, 238, 251, 0.5);
+    height: auto;
+    margin: 0;
+    width: 20rem;
+}
+
+.flashcards figure img, .notflix figure img {
+    height: auto;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    width: 20rem;
+}
+
+.flashcards figure:hover img, .notflix figure:hover img {
+    width: 21rem;
 }
 
 .bank {
-    background: url(./images/LATE_ESPO.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid gold;
-    height: 25rem;
+    border: 1px solid black;
+    height: 30rem;
+    overflow: hidden;
     width: 20rem;
 }
 
+.bank:hover {
+    opacity: 0.4;
+}
+
+.bank figure {
+    background: rgba(60, 238, 251, 0.5);
+    height: auto;
+    margin: 0;
+    width: 20rem;
+}
+
+.bank figure img {
+    height: auto;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    vertical-align: middle;
+    -webkit-transition: 0.3s ease-in-out;
+    width: 20rem;
+}
+
+.bank figure:hover img {
+    width: 21rem;
+}
+
 .notflix {
-    background: url(./images/LATE_ESPO.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid gold;
-    height: 15rem;
+    border: 1px solid black;
+    height: 19rem;
+    overflow: hidden;
     width: 20rem;
 }

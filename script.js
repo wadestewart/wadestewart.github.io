@@ -92,21 +92,21 @@ new scrollHandler('landing-page')
 new scrollHandler('about')
 new scrollHandler('projects')
 
-const flashcards = document.querySelector('.flashcards')
-const bank = document.querySelector('.bank')
-const notflix = document.querySelector('.notflix')
+// const flashcards = document.querySelector('.flashcards')
+// const bank = document.querySelector('.bank')
+// const notflix = document.querySelector('.notflix')
 
-flashcards.addEventListener('mouseover', hoverState)
-bank.addEventListener('mouseover', hoverState)
-notflix.addEventListener('mouseover', hoverState)
-flashcards.addEventListener('mouseout', hoverExit)
-bank.addEventListener('mouseout', hoverExit)
-notflix.addEventListener('mouseout', hoverExit)
+// flashcards.addEventListener('mouseover', hoverState)
+// bank.addEventListener('mouseover', hoverState)
+// notflix.addEventListener('mouseover', hoverState)
+// flashcards.addEventListener('mouseout', hoverExit)
+// bank.addEventListener('mouseout', hoverExit)
+// notflix.addEventListener('mouseout', hoverExit)
 
-function hoverState() {
-    // console.log('Entered')
-}
+// function hoverState() {
+//     flashcards.classList.add('flashcards-hovered')
+// }
 
-function hoverExit() {
-    // console.log('Left')
-}
+// function hoverExit() {
+//     flashcards.classList.remove('flashcards-hovered')
+// }
