@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Economica');
 
 *,
 *::before,
@@ -21,7 +21,7 @@ body {
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Economica', sans-serif;
     font-size: 0.2rem;
     /* font-weight: 700; */
     justify-content: flex-end;
@@ -65,7 +65,7 @@ body {
 
 #projects {
     background: rgba(244,246,248,1);
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Economica', sans-serif;
     height: 100vh;
     margin: 0;
     width: 100vw;
@@ -87,60 +87,64 @@ body {
 
 .flashcards {
     border: 1px solid black;
+    display: flex;
     height: 19rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* position: relative; */
     width: 20rem;
 }
 
-.flashcards:hover, .notflix:hover {
+/* .flashcards:hover, .notflix:hover {
     opacity: 0.4;
-}
+} */
 
-.flashcards figure, .notflix figure {
+/* .flashcards figure, .notflix figure {
     background: rgba(60, 238, 251, 0.5);
     height: auto;
     margin: 0;
     width: 20rem;
-}
+} */
 
-.flashcards figure img, .notflix figure img {
-    /* backface-visibility: hidden; */
+/* .flashcards figure img, .notflix figure img {
+    backface-visibility: hidden;
     height: auto;
     opacity: 1;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
     width: 20rem;
-}
-
-.flashcards figure:hover img, .notflix figure:hover img {
-    width: 21rem;
-}
-
-/* .flashcards-backface {
-    display: flex;
-    height: 19rem;
-    opacity: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    transition: 0.5s ease;
-    -webkit-transform: translate(-50%, -50%);
-    -webkit-transition: 0.5s ease;
-    width: 20rem;
 } */
 
-/* .flashcards-backface > h3 {
-    color: #fff;
-    height: 3rem;
+/* .flashcards figure:hover img, .notflix figure:hover img {
+    width: 21rem;
+} */
+
+.flashcards-backface {
+    align-items: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 19rem;
+    justify-content: center;
+    /* opacity: 0; */
+    position: absolute;
+    width: 20rem;
+}
+
+.flashcards-backface > p {
+    color: #000;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5rem;
+    height: auto;
+    /* margin: 1rem 0 0 0; */
     text-align: center;
     width: 20rem;
-} */
+}
 
 /* .flashcards-backface:hover {
     opacity: 1;
 } */
 
-.stack {
+.stack, .links {
     align-items: center;
     display: flex;
     height: 8rem;
@@ -148,23 +152,20 @@ body {
     width: 20rem;
 }
 
-/* .stack > figure > img {
-    height: 2rem;
-    width: 2rem;
-} */
-
-.links {
-    align-items: center;
-    display: flex;
-    height: 8rem;
-    justify-content: center;
-    width: 20rem;
+.stack > figure, .links > figure {
+    margin: 0 0.5rem;
 }
 
-/* .links > figure > img {
-    height: 2rem;
-    width: 2rem; 
-} */
+.stack > figure > img {
+    height: auto;
+    margin: 0;
+    width: 3rem;
+}
+
+.links > figure > img {
+    height: auto;
+    width: 3rem; 
+}
 
 .bank {
     border: 1px solid black;
