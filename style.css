@@ -120,7 +120,7 @@ body {
 
 .flashcards-backface {
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     height: 19rem;
@@ -174,18 +174,18 @@ body {
     width: 20rem;
 }
 
-.bank:hover {
+.bank:hover, .notflix:hover {
     opacity: 0.4;
 }
 
-.bank figure {
+.bank figure, .notflix figure {
     background: rgba(60, 238, 251, 0.5);
     height: auto;
     margin: 0;
     width: 20rem;
 }
 
-.bank figure img {
+.bank figure img, .notflix figure img {
     height: auto;
     opacity: 1;
     transition: 0.3s ease-in-out;
@@ -194,7 +194,7 @@ body {
     width: 20rem;
 }
 
-.bank figure:hover img {
+.bank figure:hover img, .notflix figure:hover img {
     width: 21rem;
 }
 
@@ -204,3 +204,4 @@ body {
     overflow: hidden;
     width: 20rem;
 }
+
