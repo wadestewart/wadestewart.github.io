@@ -17,6 +17,12 @@ body {
     height: 100vh;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .flex-nav {
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
@@ -50,9 +56,8 @@ body {
     background-color: rgb(10, 10, 53);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100vh;
-    padding: 0;
     width: 100vw;
 }
 

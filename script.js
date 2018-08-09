@@ -61,6 +61,8 @@ new ScrollHandler('landing-page')
 new ScrollHandler('about')
 new ScrollHandler('projects')
 
+// This scroll found here: https://stackoverflow.com/questions/15158937/jquery-jump-or-scroll-to-certain-position-div-or-target-on-the-page-from-button
+
 $('.nav-scroll').on('click', function(e) {
     e.preventDefault()
     $('body, html').animate({
@@ -69,7 +71,6 @@ $('.nav-scroll').on('click', function(e) {
 })
 
 const projects = $('.nav-projects')
-
 const flashcards = $('.flashcards')
 
 flashcards.hover(function() {
