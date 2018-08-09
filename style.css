@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Economica');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 *,
 *::before,
@@ -18,6 +18,7 @@ body {
 }
 
 .navbar {
+    /* border-bottom: 1px solid black; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,15 +28,23 @@ body {
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
-    font-family: 'Economica', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 0.2rem;
-    /* font-weight: 700; */
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 1rem 10%;
     text-transform: uppercase;
     width: 100%;
+}
+
+.flex-nav .logo {
+    background-image: url("./images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.5rem;
+    margin-right: auto;
+    width: 1.5rem;
 }
 
 .flex-nav a {
@@ -72,7 +81,7 @@ body {
 
 #projects {
     background: rgba(244,246,248,1);
-    font-family: 'Economica', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     height: 100vh;
     margin: 0;
     width: 100vw;
@@ -87,7 +96,7 @@ body {
 
 #projects .project-cards .flashcards .flashcards-backface .flashcard-title {
     color: #000;
-    font-family: 'Economica', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
     height: auto;
     padding: 1rem 0;
@@ -96,6 +105,7 @@ body {
 }
 
 #projects .project-cards .flashcards .flashcards-backface .stack-text {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     padding: 0.5rem 0;
     position: absolute;
