@@ -8,22 +8,9 @@
 
 html,
 body {
-    /* align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    width: 100vw; */
     margin: 0;
     padding: 0;
 }
-
-/* #scroll {
-    height: 100%;
-    overflow: auto;
-    position: absolute;
-    width: 100%;
-} */
 
 .page {
     width: 100%;
@@ -118,7 +105,7 @@ body {
 }
 
 .flashcards figure img, .notflix figure img {
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     height: auto;
     opacity: 1;
     transition: 0.3s ease-in-out;
@@ -130,7 +117,7 @@ body {
     width: 21rem;
 }
 
-.flashcards-backface {
+/* .flashcards-backface {
     display: flex;
     height: 19rem;
     opacity: 0;
@@ -140,18 +127,18 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -webkit-transition: 0.5s ease;
     width: 20rem;
-}
+} */
 
-.flashcards-backface > h3 {
+/* .flashcards-backface > h3 {
     color: #fff;
     height: 3rem;
     text-align: center;
     width: 20rem;
-}
+} */
 
-.flashcards-backface:hover {
+/* .flashcards-backface:hover {
     opacity: 1;
-}
+} */
 
 .stack {
     align-items: center;
@@ -161,10 +148,10 @@ body {
     width: 20rem;
 }
 
-.stack > figure > img {
+/* .stack > figure > img {
     height: 2rem;
     width: 2rem;
-}
+} */
 
 .links {
     align-items: center;
@@ -174,10 +161,10 @@ body {
     width: 20rem;
 }
 
-.links > figure > img {
+/* .links > figure > img {
     height: 2rem;
     width: 2rem; 
-}
+} */
 
 .bank {
     border: 1px solid black;
