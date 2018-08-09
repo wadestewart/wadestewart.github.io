@@ -54,3 +54,4 @@ new ScrollHandler('landing-page')
 new ScrollHandler('about')
 new ScrollHandler('projects')
 
+

@@ -71,11 +71,29 @@ body {
     width: 100vw;
 }
 
-#projects > p {
+#projects p {
     font-size: 2rem;
     padding: 4rem 0;
     margin: 0;
     text-align: center;
+}
+
+#projects .project-cards .flashcards .flashcards-backface .flashcard-title {
+    color: #000;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5rem;
+    height: auto;
+    padding: 1rem 0;
+    text-align: center;
+    width: 20rem;
+}
+
+#projects .project-cards .flashcards .flashcards-backface .stack-text {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    /* text-transform: uppercase; */
+    top: 1rem;
 }
 
 .project-cards {
@@ -89,60 +107,27 @@ body {
     border: 1px solid black;
     display: flex;
     height: 19rem;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* position: relative; */
     width: 20rem;
 }
 
-/* .flashcards:hover, .notflix:hover {
-    opacity: 0.4;
-} */
-
-/* .flashcards figure, .notflix figure {
-    background: rgba(60, 238, 251, 0.5);
-    height: auto;
-    margin: 0;
-    width: 20rem;
-} */
-
-/* .flashcards figure img, .notflix figure img {
-    backface-visibility: hidden;
-    height: auto;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    width: 20rem;
-} */
-
-/* .flashcards figure:hover img, .notflix figure:hover img {
-    width: 21rem;
-} */
-
 .flashcards-backface {
     align-items: center;
-    /* border: 2px solid black; */
+    background: rgba(60, 238, 251, 0.5);
     display: flex;
     flex-direction: column;
     height: 19rem;
     justify-content: center;
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
     width: 20rem;
 }
 
-.flashcards-backface > p {
-    color: #000;
-    font-family: 'Economica', sans-serif;
-    font-size: 1.5rem;
-    height: auto;
-    /* margin: 1rem 0 0 0; */
-    text-align: center;
-    width: 20rem;
+.stack {
+    padding: 3rem 0 0 0;
+    position: relative;
 }
-
-/* .flashcards-backface:hover {
-    opacity: 1;
-} */
 
 .stack, .links {
     align-items: center;
@@ -152,19 +137,28 @@ body {
     width: 20rem;
 }
 
-.stack > figure, .links > figure {
-    margin: 0 0.5rem;
+.stack figure {
+    margin: 0 0.7rem;
 }
 
-.stack > figure > img {
+.links figure {
+    margin: 0 1rem;
+}
+
+.stack figure img {
     height: auto;
     margin: 0;
     width: 3rem;
 }
 
-.links > figure > img {
+.links figure img {
     height: auto;
-    width: 3rem; 
+    width: 2rem; 
+}
+
+.links figure .github {
+    height: auto;
+    width: 3rem;
 }
 
 .bank {
