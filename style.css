@@ -47,10 +47,12 @@ body {
 
 #landing-page {
     background: url(./images/landing-holder.png);
+    background-color: rgb(10, 10, 53);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100vh;
+    padding: 0;
     width: 100vw;
 }
 
@@ -92,7 +94,6 @@ body {
     font-size: 1rem;
     padding: 0.5rem 0;
     position: absolute;
-    /* text-transform: uppercase; */
     top: 1rem;
 }
 
@@ -108,8 +109,31 @@ body {
     display: flex;
     height: 19rem;
     overflow: hidden;
-    /* position: relative; */
+    position: relative;
     width: 20rem;
+}
+
+.flashcards:hover {
+    opacity: 0.4;
+}
+
+.flashcards figure {
+    height: auto;
+    margin: 0;
+    width: 20rem;
+}
+
+.flashcards figure img {
+    height: auto;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    vertical-align: middle;
+    -webkit-transition: 1s ease-in-out;
+    width: 20rem;
+}
+
+.flashcards .card-image:hover {
+    width: 21rem;;
 }
 
 .flashcards-backface {
@@ -138,11 +162,15 @@ body {
 }
 
 .stack figure {
+    height: auto;
     margin: 0 0.7rem;
+    width: 3rem;
 }
 
 .links figure {
+    height: auto;
     margin: 0 1rem;
+    width: 3rem;
 }
 
 .stack figure img {

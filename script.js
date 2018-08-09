@@ -1,3 +1,9 @@
+const flashBack = $('.flashcards-backface')
+
+$(function() {
+    flashBack.hide()
+})
+
 // This scroll code (and amazing explanation) is from https://codepen.io/Javarome/post/full-page-sliding
 
 function ScrollHandler(pageId) {
@@ -50,8 +56,24 @@ function ScrollHandler(pageId) {
         }
     })
 }
+
 new ScrollHandler('landing-page')
 new ScrollHandler('about')
 new ScrollHandler('projects')
 
+$('.nav-scroll').on('click', function(e) {
+    e.preventDefault()
+    $('body, html').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000)
+})
 
+const projects = $('.nav-projects')
+
+const flashcards = $('.flashcards')
+
+flashcards.hover(function() {
+    flashBack.show().css('opacity', '1')
+}, function() {
+    flashBack.hide().css('opacity', '0')
+})
