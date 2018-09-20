@@ -133,19 +133,24 @@ body {
 }
 
 .flashcards figure img {
-    height: auto;
-    opacity: 1;
-    transition: 1s ease-in-out;
+    border: 1px solid black;
+    height: 20rem;
+    /* opacity: 0.5; */
+    transition: 0.5s ease-in-out;
     vertical-align: middle;
-    -webkit-transition: 1s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
     width: 20rem;
 }
 
-.flashcards .card-image:hover {
-    width: 21rem;;
+.flashcards figure:hover img {
+    height: 22rem;
+    transform: scale(1.1);
+    width: 22rem;
 }
 
-.flashcards-backface {
+
+
+/* .flashcards-backface {
     align-items: center;
     background: rgba(251, 186, 8, 0.8);
     display: flex;
@@ -154,8 +159,8 @@ body {
     justify-content: center;
     opacity: 0;
     position: absolute;
-    width: 20rem;
-}
+    width: 21rem;
+} */
 
 .stack {
     padding: 3rem 0 0 0;
