@@ -117,38 +117,43 @@ body {
     padding: 0 10.5rem;
 }
 
-.flashcards {
+.flashcards, .notflix {
     border: 1px solid black;
-    display: flex;
-    height: 19rem;
+    height: 20.1rem;
     overflow: hidden;
     position: relative;
-    width: 20rem;
+    width: 20.1rem;
+    z-index: 0;
 }
 
-.flashcards figure {
+.flashcards figure, .notflix figure {
     height: auto;
     margin: 0;
     width: 20rem;
 }
 
-.flashcards figure img {
-    border: 1px solid black;
+.flashcards figure img, .notflix figure img {
     height: 20rem;
-    /* opacity: 0.5; */
+    position: relative;
     transition: 0.5s ease-in-out;
     vertical-align: middle;
-    -webkit-transition: 0.5s ease-in-out;
+    -webkit-transition: 0.8s ease-in-out;
     width: 20rem;
+    z-index: -1;
 }
 
-.flashcards figure:hover img {
-    height: 22rem;
+.flashcards figure:hover, .notflix figure:hover {
+    background:
+        radial-gradient(
+            circle,
+            rgba(229,230,235, 0.1),
+            rgba(175,175,175)
+        );
+}
+
+.flashcards figure:hover img, .notflix figure:hover img {
     transform: scale(1.1);
-    width: 22rem;
 }
-
-
 
 /* .flashcards-backface {
     align-items: center;
@@ -162,82 +167,39 @@ body {
     width: 21rem;
 } */
 
-.stack {
-    padding: 3rem 0 0 0;
-    position: relative;
-}
-
-.stack, .links {
-    align-items: center;
-    display: flex;
-    height: 8rem;
-    justify-content: center;
-    width: 20rem;
-}
-
-.stack figure {
-    height: auto;
-    margin: 0 0.7rem;
-    width: 3rem;
-}
-
-.links figure {
-    height: auto;
-    margin: 0 1rem;
-    width: 3rem;
-}
-
-.stack figure img {
-    height: auto;
-    margin: 0;
-    width: 3rem;
-}
-
-.links figure img {
-    height: auto;
-    width: 2rem; 
-}
-
-.links figure .github {
-    height: auto;
-    width: 3rem;
-}
-
 .bank {
-    border: 1px solid black;
-    height: 30rem;
+    border: 10px solid black;
+    height: 26rem;
     overflow: hidden;
+    position: relative;
     width: 20rem;
+    z-index: 0;
 }
 
-.bank:hover, .notflix:hover {
-    opacity: 0.4;
-}
-
-.bank figure, .notflix figure {
-    background: rgba(60, 238, 251, 0.5);
+.bank figure {
     height: auto;
     margin: 0;
     width: 20rem;
 }
 
-.bank figure img, .notflix figure img {
+.bank figure img {
     height: auto;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
+    position: relative;
+    transition: 0.5s ease-in-out;
     vertical-align: middle;
-    -webkit-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
     width: 20rem;
+    z-index: -1;
 }
 
-.bank figure:hover img, .notflix figure:hover img {
-    width: 21rem;
-}
+.bank figure:hover {
+    background:
+        radial-gradient(
+            circle,
+            rgba(229,230,235, 0.1),
+            rgba(175,175,175)
+        );}
 
-.notflix {
-    border: 1px solid black;
-    height: 19rem;
-    overflow: hidden;
-    width: 20rem;
+.bank figure:hover img {
+    transform: scale(1.1);
 }
-
