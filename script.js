@@ -1,4 +1,4 @@
-const flashBack = $('.flashcards-backface')
+const flashBack = $('.flashback')
 
 $(function() {
     flashBack.hide()
@@ -70,11 +70,13 @@ $('.nav-scroll').on('click', function(e) {
     }, 1000)
 })
 
-const projects = $('.nav-projects')
 const flashcards = $('.flashcards')
+const flashFront = $('.flashfront')
 
 flashcards.hover(function() {
-    flashBack.show().css('opacity', '1')
+    flashBack.show()
+    flashFront.hide()
 }, function() {
-    flashBack.hide().css('opacity', '0')
+    flashBack.hide()
+    flashFront.show()
 })
