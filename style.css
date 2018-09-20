@@ -144,7 +144,7 @@ body {
 
 .flashcards figure:hover, .notflix figure:hover {
     background:
-        radial-gradient(
+        -webkit-radial-gradient(
             circle,
             rgba(229,230,235, 0.1),
             rgba(175,175,175)
@@ -152,7 +152,7 @@ body {
 }
 
 .flashcards figure:hover img, .notflix figure:hover img {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 /* .flashcards-backface {
@@ -194,12 +194,12 @@ body {
 
 .bank figure:hover {
     background:
-        radial-gradient(
+        -webkit-radial-gradient(
             circle,
             rgba(229,230,235, 0.1),
             rgba(175,175,175)
         );}
 
 .bank figure:hover img {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
