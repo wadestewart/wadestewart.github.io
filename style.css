@@ -152,7 +152,7 @@ body {
 }
 
 .flashcards figure:hover img, .notflix figure:hover img {
-    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* .flashcards-backface {
@@ -201,5 +201,5 @@ body {
         );}
 
 .bank figure:hover img {
-    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
