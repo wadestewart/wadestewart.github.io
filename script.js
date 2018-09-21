@@ -1,7 +1,16 @@
-const flashBack = $('.flashback')
+const hoverState = $('.hover-state')
+const flashcards = $('.flashcards')
 
 $(function() {
-    flashBack.hide()
+    hoverState.hide()
+})
+
+flashcards.hover(function() {
+    console.log('inside')
+    hoverState.show()
+}, function() {
+    console.log('outside')
+    hoverState.hide()
 })
 
 // This scroll code (and amazing explanation) is from https://codepen.io/Javarome/post/full-page-sliding
@@ -68,15 +77,4 @@ $('.nav-scroll').on('click', function(e) {
     $('body, html').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 1000)
-})
-
-const flashcards = $('.flashcards')
-const flashFront = $('.flashfront')
-
-flashcards.hover(function() {
-    flashBack.show()
-    flashFront.hide()
-}, function() {
-    flashBack.hide()
-    flashFront.show()
 })

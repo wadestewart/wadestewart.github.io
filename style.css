@@ -57,7 +57,7 @@ body {
 }
 
 #landing-page {
-    background: url(./images/landing-holder.png);
+    background: url('./images/landing-holder.png');
     background-color: rgb(10, 10, 53);
     background-position: center;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ body {
 }
 
 #about {
-    background: url(./images/Book_Espo.jpg);
+    background: url('./images/stay.png');
     background-origin: content-box;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,16 +120,16 @@ body {
 .flashcards, .notflix {
     border: 1px solid black;
     height: 20.1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     width: 20.1rem;
     z-index: 0;
 }
 
 .flashcards figure, .notflix figure {
-    height: auto;
+    height: 20.1rem;
     margin: 0;
-    width: 20rem;
+    width: 20.1rem;
 }
 
 .flashcards figure img, .notflix figure img {
@@ -149,6 +149,7 @@ body {
             rgba(229,230,235, 0.1),
             rgba(175,175,175)
         );
+    z-index: 0;
 }
 
 .flashcards figure:hover img, .notflix figure:hover img {
@@ -156,8 +157,24 @@ body {
 }
 
 .flashback {
-    /* align-items: center; */
+    height: 20.1;
+    margin: 0;
+    width: 20.1rem;
+}
+
+.links {
     display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+}
+
+.links a img {
+    background: goldenrod;
+    bottom: 0;
+    height: 2rem;
+    position: absolute;
+    width: auto;
 }
 
 .bank {
@@ -176,7 +193,7 @@ body {
 }
 
 .bank figure img {
-    height: auto;
+    height: 26rem;
     position: relative;
     transition: 0.5s ease-in-out;
     vertical-align: middle;
