@@ -132,13 +132,23 @@ body {
     width: 20.1rem;
 }
 
-.flashcards figure img, .notflix figure img {
+.flashcards figure img {
     height: 20rem;
     position: relative;
     transition: 0.5s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
-    width: 20rem;
+    width: auto;
+    z-index: -1;
+}
+
+.notflix figure img {
+    height: 20rem;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    vertical-align: middle;
+    -webkit-transition: 0.8s ease-in-out;
+    width: auto;
     z-index: -1;
 }
 
@@ -146,8 +156,8 @@ body {
     background:
         -webkit-radial-gradient(
             circle,
-            rgba(229,230,235, 0.1),
-            rgba(100,100,100)
+            rgba(229,230,235, 0.4),
+            rgba(175,175,175)
         );
     z-index: 0;
 }
@@ -171,14 +181,13 @@ body {
 
 .hover-state a img {
     bottom: 5rem;
-    height: 2rem;
-    margin: 0 auto;
+    height: 1rem;
     position: absolute;
     width: auto;
 }
 
 .bank {
-    border: 10px solid black;
+    border: 1px solid black;
     height: 26rem;
     overflow: hidden;
     position: relative;
@@ -198,7 +207,7 @@ body {
     transition: 0.5s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.5s ease-in-out;
-    width: 20rem;
+    width: auto;
     z-index: -1;
 }
 
