@@ -1,15 +1,15 @@
 const hoverState = $('.hover-state')
 const flashcards = $('.flashcards')
+const flashFront = $('.flash-front')
+const cardImage = $('.card-image')
 
 $(function() {
     hoverState.hide()
 })
 
 flashcards.hover(function() {
-    console.log('inside')
     hoverState.show()
 }, function() {
-    console.log('outside')
     hoverState.hide()
 })
 

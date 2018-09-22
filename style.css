@@ -120,7 +120,7 @@ body {
 .flashcards, .notflix {
     border: 1px solid black;
     height: 20.1rem;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     width: 20.1rem;
     z-index: 0;
@@ -142,12 +142,12 @@ body {
     z-index: -1;
 }
 
-.flashcards figure:hover, .notflix figure:hover {
+.flash-front:hover, .notflix figure:hover {
     background:
         -webkit-radial-gradient(
             circle,
             rgba(229,230,235, 0.1),
-            rgba(175,175,175)
+            rgba(100,100,100)
         );
     z-index: 0;
 }
@@ -162,19 +162,34 @@ body {
     width: 20.1rem;
 }
 
-.links {
+.hover-state {
+    background:
+        -webkit-radial-gradient(
+            circle,
+            rgba(229,230,235, 0.1),
+            rgba(175,175,175)
+        );
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
-.links a img {
-    background: goldenrod;
-    bottom: 0;
+.hover-state a img {
+    bottom: 5rem;
     height: 2rem;
+    margin: 0 auto;
     position: absolute;
     width: auto;
+}
+
+.hover-state a:hover img {
+    background:
+        -webkit-radial-gradient(
+            circle,
+            rgba(229,230,235, 0.1),
+            rgba(175,175,175)
+        );
 }
 
 .bank {
