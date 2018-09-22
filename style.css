@@ -163,12 +163,6 @@ body {
 }
 
 .hover-state {
-    background:
-        -webkit-radial-gradient(
-            circle,
-            rgba(229,230,235, 0.1),
-            rgba(175,175,175)
-        );
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -181,15 +175,6 @@ body {
     margin: 0 auto;
     position: absolute;
     width: auto;
-}
-
-.hover-state a:hover img {
-    background:
-        -webkit-radial-gradient(
-            circle,
-            rgba(229,230,235, 0.1),
-            rgba(175,175,175)
-        );
 }
 
 .bank {
