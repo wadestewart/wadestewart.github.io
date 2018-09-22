@@ -135,7 +135,7 @@ body {
 .flashcards figure img {
     height: 20rem;
     position: relative;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
     width: auto;
@@ -145,7 +145,7 @@ body {
 .notflix figure img {
     height: 20rem;
     position: relative;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
     width: auto;
@@ -156,7 +156,7 @@ body {
     background:
         -webkit-radial-gradient(
             circle,
-            rgba(229,230,235, 0.4),
+            rgba(229,230,235, 0.8),
             rgba(175,175,175)
         );
     z-index: 0;
@@ -173,16 +173,18 @@ body {
 }
 
 .hover-state {
+    align-items: center;
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
+    flex-direction: column;
+    left: 1rem;
+    position: absolute;
+    top: 3rem;
     z-index: 0;
 }
 
 .hover-state a img {
-    bottom: 5rem;
     height: 1rem;
-    position: absolute;
+    margin: 1rem 0;
     width: auto;
 }
 
@@ -204,9 +206,9 @@ body {
 .bank figure img {
     height: 26rem;
     position: relative;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     vertical-align: middle;
-    -webkit-transition: 0.5s ease-in-out;
+    -webkit-transition: 0.8s ease-in-out;
     width: auto;
     z-index: -1;
 }
@@ -215,7 +217,7 @@ body {
     background:
         -webkit-radial-gradient(
             circle,
-            rgba(229,230,235, 0.1),
+            rgba(229,230,235, 0.8),
             rgba(175,175,175)
         );}
 
