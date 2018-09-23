@@ -73,7 +73,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
-    /* padding: 4rem 0 0 0; */
     width: 100vw;
 }
 
@@ -153,22 +152,16 @@ body {
 
 .flash-front:hover, .notflix figure:hover {
     background:
-        -webkit-radial-gradient(
-            circle,
-            rgba(229,230,235, 0.8),
-            rgba(0,190,190)
-        );
+    -webkit-radial-gradient(
+        circle,
+        rgba(229,230,235, 0.8),
+        rgba(135,135,135)
+    );
     z-index: 0;
 }
 
 .flashcards figure:hover img, .notflix figure:hover img {
     transform: scale(1.1);
-}
-
-.flashback {
-    height: 20.1;
-    margin: 0;
-    width: 20.1rem;
 }
 
 .hover-state {
@@ -178,16 +171,33 @@ body {
     left: 1rem;
     position: absolute;
     top: 3rem;
+    transition: all 0.5s ease-in-out ;
+    -webkit-transition: all 0.5s ease-in-out ;
     z-index: 0;
 }
 
 .hover-state h2, .hover-state h3 {
-    margin: 1.5rem 0;
+    /* background-color: transparent; */
+    filter: alpha(opacity=0);
+    margin: 1.7rem 0;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    top: 3rem;
+}
+
+.hover-state:hover h2, .hover-state:hover h3 {
+    filter: alpha(opacity=1);
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .hover-state a img {
     height: auto;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     width: 3rem;
 }
 
@@ -220,7 +230,7 @@ body {
         -webkit-radial-gradient(
             circle,
             rgba(229,230,235, 0.8),
-            rgba(0,190,190)
+            rgba(135,135,135)
         );
 }
 
