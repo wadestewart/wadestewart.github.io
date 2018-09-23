@@ -1,16 +1,18 @@
-const hoverState = $('.hover-state')
 const flashcards = $('.flashcards')
-const flashFront = $('.flash-front')
-const cardImage = $('.card-image')
+const flashHover = $('.flash-hover')
+const bankHover = $('.card-hover')
 
 $(function() {
-    hoverState.hide()
+    flashHover.hide()
+    bankHover.hide()
 })
 
 flashcards.hover(function() {
-    hoverState.show()
+    flashHover.show()
+    bankHover.show()
 }, function() {
-    hoverState.hide()
+    flashHover.hide()
+    bankHover.hide()
 })
 
 // This scroll code (and amazing explanation) is from https://codepen.io/Javarome/post/full-page-sliding
