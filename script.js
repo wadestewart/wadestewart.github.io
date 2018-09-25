@@ -1,19 +1,37 @@
-const flashcards = $('.flashcards')
+const flashcards = $('.flash-front')
 const flashHover = $('.flash-hover')
+const bank = $('.bank-front')
 const bankHover = $('.card-hover')
+const notflix = $('.notflix-front')
+const notflixHover = $('.notflix-hover')
 
 $(function() {
     flashHover.hide()
     bankHover.hide()
+    notflixHover.hide()
 })
 
 flashcards.hover(function() {
     flashHover.show()
-    bankHover.show()
 }, function() {
     flashHover.hide()
-    bankHover.hide()
 })
+
+bank.hover(function() {
+    bankHover.show()
+}, function() {
+    console.log('out')
+})
+
+notflix.hover(function() {
+    console.log('in')
+    notflixHover.show()
+}, function() {
+    console.log('out')
+    notflixHover.hide()
+})
+
+
 
 // This scroll code (and amazing explanation) is from https://codepen.io/Javarome/post/full-page-sliding
 
