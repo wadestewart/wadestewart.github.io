@@ -1,7 +1,7 @@
 const flashcards = $('.flash-front')
 const flashHover = $('.flash-hover')
 const bank = $('.bank-front')
-const bankHover = $('.card-hover')
+const bankHover = $('.bank-hover')
 const notflix = $('.notflix-front')
 const notflixHover = $('.notflix-hover')
 
@@ -20,14 +20,12 @@ flashcards.hover(function() {
 bank.hover(function() {
     bankHover.show()
 }, function() {
-    console.log('out')
+    bankHover.hide()
 })
 
 notflix.hover(function() {
-    console.log('in')
     notflixHover.show()
 }, function() {
-    console.log('out')
     notflixHover.hide()
 })
 

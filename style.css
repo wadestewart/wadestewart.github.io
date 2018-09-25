@@ -184,13 +184,7 @@ body {
     transform: scale(1);
 }
 
-.flash-hover a img, .notflix-hover a img {
-    height: auto;
-    margin: 1rem 0 0 0;
-    width: 3rem;
-}
-
-.bank-hover a img {
+.flash-hover a img, .notflix-hover a img, .bank-hover a img {
     height: auto;
     margin: 1rem 0 0 0;
     width: 3rem;
@@ -200,22 +194,22 @@ body {
     height: 26rem;
     overflow: hidden;
     position: relative;
-    width: 20rem;
+    width: 21rem;
     z-index: 0;
 }
 
 .bank figure {
     height: auto;
     margin: 0;
-    width: 20rem;
+    width: 21rem;
 }
 
 .bank figure img {
-    height: 26rem;
+    /* height: 26rem; */
     position: relative;
     transition: 0.8s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
-    width: auto;
+    /* width: auto; */
     z-index: -1;
 }
