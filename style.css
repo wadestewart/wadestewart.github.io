@@ -153,7 +153,31 @@ body {
     transform: scale(1.1);
 }
 
-.flash-hover, .bank-hover, .notflix-hover {
+.flash-hover {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 2rem;
+    position: absolute;
+    top: 3rem;
+    transition: all 0.5s ease-in-out ;
+    -webkit-transition: all 0.5s ease-in-out ;
+    z-index: 1;
+}
+
+.bank-hover {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 0.5rem;
+    position: absolute;
+    top: 3rem;
+    transition: all 0.5s ease-in-out ;
+    -webkit-transition: all 0.5s ease-in-out ;
+    z-index: 1;
+}
+
+.notflix-hover {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -168,7 +192,7 @@ body {
 .flash-hover h2, .flash-hover h4, .bank-hover h2, .bank-hover h4, .notflix-hover h2, .notflix-hover h4 {
     background-color: transparent;
     filter: alpha(opacity=0);
-    margin: 1.7rem 0;
+    margin: 1rem 0;
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -205,11 +229,9 @@ body {
 }
 
 .bank figure img {
-    /* height: 26rem; */
     position: relative;
     transition: 0.8s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
-    /* width: auto; */
     z-index: -1;
 }
