@@ -77,8 +77,12 @@ body {
 }
 
 #projects {
+    align-content: center;
     background: rgba(244,246,248,1);
+    display: flex;
+    flex-direction: column;
     font-family: 'Quicksand', sans-serif;
+    justify-content: center;
     height: 100vh;
     margin: 0;
     width: 100vw;
@@ -144,7 +148,7 @@ body {
     background:
         -webkit-radial-gradient(
             rgba(255,255,255, 0.7),
-            grey
+            goldenrod
     );
     z-index: 0;
 }
