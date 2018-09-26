@@ -143,7 +143,7 @@ body {
 .flash-front:hover, .bank-front:hover, .notflix-front:hover {
     background:
         -webkit-radial-gradient(
-            rgba(229,230,235, 0.7),
+            rgba(255,255,255, 0.7),
             grey
     );
     z-index: 0;
@@ -169,7 +169,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    left: 0.5rem;
+    left: 0.6rem;
     position: absolute;
     top: 3rem;
     transition: all 0.5s ease-in-out ;
