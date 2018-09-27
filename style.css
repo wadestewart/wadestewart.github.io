@@ -84,13 +84,12 @@ body {
     font-family: 'Quicksand', sans-serif;
     justify-content: center;
     height: 100vh;
-    margin: 0;
     width: 100vw;
 }
 
 #projects p {
-    font-size: 2rem;
-    padding: 4rem 0;
+    font-size: 2.5rem;
+    padding: 0 0 2rem 0;
     margin: 0;
     text-align: center;
 }
@@ -116,7 +115,7 @@ body {
 .project-cards {
     align-items: flex-start;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0 10.5rem;
 }
 
@@ -162,6 +161,7 @@ body {
     display: flex;
     flex-direction: column;
     left: 2rem;
+    margin: 0;
     position: absolute;
     top: 3rem;
     transition: all 0.5s ease-in-out ;
@@ -173,7 +173,8 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    left: 0.6rem;
+    justify-content: center;
+    left: 0.7rem;
     position: absolute;
     top: 3rem;
     transition: all 0.5s ease-in-out ;
