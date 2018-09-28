@@ -67,11 +67,6 @@ body {
 }
 
 #about {
-    /* background: url('./images/stay.png');
-    background-origin: content-box;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; */
     align-items: center;
     display: flex;
     justify-content: center;
@@ -176,10 +171,9 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     left: 0.7rem;
     position: absolute;
-    top: 3rem;
+    top: 6rem;
     transition: all 0.5s ease-in-out ;
     -webkit-transition: all 0.5s ease-in-out ;
     z-index: 1;
