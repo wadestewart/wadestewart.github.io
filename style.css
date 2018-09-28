@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 *,
 *::before,
@@ -28,7 +27,7 @@ body {
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Circular', Helvetica, sans-serif;
     font-size: 0.2rem;
     justify-content: flex-end;
     list-style-type: none;
@@ -79,28 +78,32 @@ body {
     display: flex;
 }
 
-.q-a {
+.q-a-slides {
     align-items: center;
     align-content: center;
     display: flex;
     flex-direction: column;
-    font-family: 'Quicksand', sans-serif;
-    height: 25rem;
-    width: 12.5rem;
+    font-family: 'Circular', Helvetica, sans-serif;
+    height: 27.5rem;
+    overflow: hidden;
+    width: 10rem;
 }
 
-.q-a i {
+.q-a-slides i {
     font-size: 4rem;
 }
 
 .q-a-q {
-    border: 1px solid goldenrod;
+    align-items: center;
+    border-top: 1px solid goldenrod;
+    border-bottom: 1px solid goldenrod;
     color: goldenrod;
+    display: flex;
     font-size: 0.9rem;
     height: 5rem;
     margin: 0.5rem;
-    padding: 0.5rem;
-    width: 12.5rem;
+    padding: 0 1rem;
+    width: 11rem;
 }
 
 .q-a-q p {
@@ -108,20 +111,35 @@ body {
 }
 
 .q-a-a {
-    border: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
-.q-a-a h4 {
-    font-weight: Bold 700;
-    margin: 0.2rem 0.5rem;
-    padding: 0.5rem;
+.q-a-a h5 {
+    color: grey;
+    align-items: center;
+    display: flex;
+    font-family: 'Circular', Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
 }
 
 .q-a-a p {
+    color: grey;
     font-size: 0.8rem;
-    margin: 0.2rem 0.5rem;
-    padding: 0.5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
 
+.q-a-buttons {
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+}
+
+.q-a-buttons button {
+    margin: 0 1rem;
 }
 
 .experience {
@@ -142,7 +160,7 @@ body {
     background: rgba(244,246,248,1);
     display: flex;
     flex-direction: column;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Circular', Helvetica, sans-serif;
     justify-content: center;
     height: 100vh;
     width: 100vw;
@@ -157,7 +175,7 @@ body {
 
 #projects .project-cards .flashcards .flashcards-backface .flashcard-title {
     color: #000;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Circular', Helvetica, sans-serif;
     font-size: 1.5rem;
     height: auto;
     padding: 1rem 0;
@@ -166,7 +184,7 @@ body {
 }
 
 #projects .project-cards .flashcards .flashcards-backface .stack-text {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Circular', Helvetica, sans-serif;
     font-size: 1rem;
     padding: 0.5rem 0;
     position: absolute;
