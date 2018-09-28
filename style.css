@@ -153,9 +153,31 @@ body {
 }
 
 .about-contact {
-    border: 1px solid black;
     height: 20rem;
     width: 10rem;
+}
+
+.about-contact ul li {
+    font-size: 4rem;
+    list-style-type: none;
+}
+
+.about-contact ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-flex {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-logo {
+    color: black;
+    height: 4rem;
+    width: auto;
 }
 
 #projects {
