@@ -77,19 +77,51 @@ body {
 .about-flex {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .q-a {
-    border: 1px solid black;
+    align-items: center;
+    align-content: center;
     display: flex;
-    height: 20rem;
-    justify-content: center;
-    width: 10rem;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    height: 25rem;
+    width: 12.5rem;
 }
 
 .q-a i {
-    font-size: 2rem;
+    font-size: 4rem;
+}
+
+.q-a-q {
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    font-size: 0.9rem;
+    height: 5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 12.5rem;
+}
+
+.q-a-q p {
+    margin: 0.5rem;
+}
+
+.q-a-a {
+    border: 1px solid grey;
+}
+
+.q-a-a h4 {
+    font-weight: Bold 700;
+    margin: 0.2rem 0.5rem;
+    padding: 0.5rem;
+}
+
+.q-a-a p {
+    font-size: 0.8rem;
+    margin: 0.2rem 0.5rem;
+    padding: 0.5rem;
+
 }
 
 .experience {
