@@ -153,12 +153,12 @@ body {
 }
 
 .about-contact {
-    height: 20rem;
+    height: 35rem;
     width: 10rem;
 }
 
 .about-contact ul li {
-    font-size: 4rem;
+    font-size: 3.5rem;
     list-style-type: none;
 }
 
@@ -176,7 +176,7 @@ body {
 
 .about-logo {
     color: black;
-    height: 4rem;
+    height: 3.5rem;
     width: auto;
 }
 
