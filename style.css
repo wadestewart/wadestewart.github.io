@@ -74,6 +74,31 @@ body {
     width: 100vw;
 }
 
+.about-flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.q-a {
+    border: 1px solid black;
+    height: 20rem;
+    width: 10rem;
+}
+
+.experience {
+    border: 1px solid black;
+    height: 35rem;
+    margin: 5rem;
+    width: 40rem;
+}
+
+.about-contact {
+    border: 1px solid black;
+    height: 20rem;
+    width: 10rem;
+}
+
 #projects {
     align-content: center;
     background: rgba(244,246,248,1);
