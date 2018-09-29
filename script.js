@@ -102,11 +102,11 @@ $(function() {
     startSlider()
 })
 
-const flashcards = $('.flash-front')
+const flashcards = $('.flashcards')
 const flashHover = $('.flash-hover')
-const bank = $('.bank-front')
+const bank = $('.bank')
 const bankHover = $('.bank-hover')
-const notflix = $('.notflix-front')
+const notflix = $('.notflix')
 const notflixHover = $('.notflix-hover')
 
 $(function() {

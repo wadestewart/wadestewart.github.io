@@ -79,7 +79,7 @@ body {
 }
 
 .slider {
-    height: 35rem;
+    height: 32rem;
     overflow: hidden;
     width: 160px;
 }
@@ -146,14 +146,23 @@ body {
 }
 
 .experience {
-    border: 1px solid black;
+    align-items: center;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Circular', Helvetica, sans-serif;
+    /* justify-content: center; */
     height: 35rem;
     margin: 5rem;
     width: 40rem;
 }
 
+.experience h1, p {
+    margin: 0.3rem;
+}
+
 .about-contact {
-    height: 35rem;
+    height: 32rem;
     width: 10rem;
 }
 
@@ -178,6 +187,28 @@ body {
     color: black;
     height: 3.5rem;
     width: auto;
+}
+
+#email {
+    display: block;
+    position: relative;
+}
+
+#email:hover .modal, #email:hover {
+    cursor: pointer;
+    visibility: visible;
+}
+
+.modal {
+    background-color: goldenrod;
+    border: 0.2rem solid grey;
+    display: block;
+    font-family: 'Circular', Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    position: absolute;
+    right: 5rem;
+    visibility: hidden;
 }
 
 #projects {
@@ -278,6 +309,7 @@ body {
     display: flex;
     flex-direction: column;
     left: 0.7rem;
+    margin: 0;
     position: absolute;
     top: 6rem;
     transition: all 0.5s ease-in-out ;
@@ -290,6 +322,7 @@ body {
     display: flex;
     flex-direction: column;
     left: 1rem;
+    margin: 0;
     position: absolute;
     top: 3rem;
     transition: all 0.5s ease-in-out ;
@@ -299,7 +332,7 @@ body {
 
 .flash-hover h2, .flash-hover h4, .bank-hover h2, .bank-hover h4, .notflix-hover h2, .notflix-hover h4 {
     background-color: transparent;
-    filter: alpha(opacity=0);
+    /* filter: alpha(opacity=0); */
     margin: 1rem 0;
     opacity: 0;
     -webkit-transform: scale(0);
@@ -310,7 +343,7 @@ body {
 }
 
 .flash-hover:hover h2, .flash-hover:hover h4, .bank-hover:hover h2, .bank-hover:hover h4, .notflix-hover:hover h2, .notflix-hover:hover h4 {
-    filter: alpha(opacity=1);
+    /* filter: alpha(opacity=1); */
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
