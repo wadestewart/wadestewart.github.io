@@ -146,7 +146,6 @@ body {
 }
 
 .experience {
-    /* align-items: center; */
     display: flex;
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
@@ -271,7 +270,7 @@ body {
     overflow: hidden;
     position: relative;
     width: 20rem;
-    z-index: 0;
+    z-index: 2;
 }
 
 .flashcards figure, .notflix figure {
@@ -296,11 +295,16 @@ body {
             rgba(255,255,255, 0.7),
             goldenrod
     );
-    z-index: 0;
 }
 
 .flashcards figure:hover img, .bank figure:hover img, .notflix figure:hover img {
     transform: scale(1.1);
+}
+
+.site {
+    color: black;
+    text-align: center;
+    text-decoration: none;
 }
 
 .flash-hover {
@@ -320,10 +324,10 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    left: 0.7rem;
+    left: 0.4rem;
     margin: 0;
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     transition: all 0.5s ease-in-out ;
     -webkit-transition: all 0.5s ease-in-out ;
     z-index: 1;
@@ -333,7 +337,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    left: 1rem;
+    left: 0.7rem;
     margin: 0;
     position: absolute;
     top: 3rem;
@@ -344,7 +348,7 @@ body {
 
 .flash-hover h2, .flash-hover h4, .bank-hover h2, .bank-hover h4, .notflix-hover h2, .notflix-hover h4 {
     background-color: transparent;
-    /* filter: alpha(opacity=0); */
+    filter: alpha(opacity=0);
     margin: 1rem 0;
     opacity: 0;
     -webkit-transform: scale(0);
@@ -355,7 +359,7 @@ body {
 }
 
 .flash-hover:hover h2, .flash-hover:hover h4, .bank-hover:hover h2, .bank-hover:hover h4, .notflix-hover:hover h2, .notflix-hover:hover h4 {
-    /* filter: alpha(opacity=1); */
+    filter: alpha(opacity=1);
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
