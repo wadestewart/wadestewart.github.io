@@ -105,9 +105,9 @@ body {
 
 .q-a-q {
     align-items: center;
-    color: goldenrod;
     display: flex;
     font-size: 0.8rem;
+    font-weight: 700;
     height: 5rem;
     margin: 0 0.5rem;
     padding: 0 0.5rem;
@@ -119,7 +119,7 @@ body {
 }
 
 .q-a-a h4 {
-    color: grey;
+    color: goldenrod;
     align-items: center;
     display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
