@@ -69,7 +69,7 @@ $('.nav-scroll').on('click', function(e) {
 $(function() {
     const width = 160
     const animationSpeed = 1000
-    const pause = 10000
+    const pause = 7000
     let currentSlide =1
     const $slider = $('.slider')
     const $slideContainer = $('.q-a-slides', $slider)

@@ -17,7 +17,6 @@ body {
 }
 
 .navbar {
-    /* border-bottom: 1px solid black; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -228,7 +227,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100vh;
     width: 100vw;
 }
@@ -311,14 +310,12 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* height: 20rem; */
     left: 2rem;
     margin: 0;
     position: absolute;
     top: 3rem;
     transition: all 0.5s ease-in-out ;
     -webkit-transition: all 0.5s ease-in-out;
-    /* width: 20rem; */
     z-index: 1;
 }
 
@@ -350,21 +347,12 @@ body {
 
 .flash-hover h2, .flash-hover h4, .bank-hover h2, .bank-hover h4, .notflix-hover h2, .notflix-hover h4 {
     background-color: transparent;
-    /* filter: alpha(opacity=0); */
     margin: 1rem 0;
-    /* opacity: 0; */
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     top: 3rem;
-}
-
-.flash-hover:hover h2, .flash-hover:hover h4, .bank-hover:hover h2, .bank-hover:hover h4, .notflix-hover:hover h2, .notflix-hover:hover h4 {
-    /* filter: alpha(opacity=1); */
-    /* opacity: 1; */
-    /* -webkit-transform: scale(1);
-    transform: scale(1); */
 }
 
 .flash-hover a img, .notflix-hover a img, .bank-hover a img {
