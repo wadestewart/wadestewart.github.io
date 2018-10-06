@@ -108,8 +108,12 @@ const flashH2 = $('.flash-h2')
 const flashH4 = $('.flash-h4')
 const bank = $('.bank')
 const bankHover = $('.bank-hover')
+const bankH2 = $('.bank-h2')
+const bankH4 = $('.bank-h4')
 const notflix = $('.notflix')
 const notflixHover = $('.notflix-hover')
+const notflixH2 = $('.notflix-h2')
+const notflixH4 = $('.notflix-h4')
 
 $(function() {
     flashHover.hide()
@@ -129,12 +133,20 @@ flashcards.hover(function() {
 
 bank.hover(function() {
     bankHover.show()
+    bankH2.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    bankH4.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     bankHover.hide()
+    bankH2.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    bankH4.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
 
 notflix.hover(function() {
     notflixHover.show()
+    notflixH2.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    notflixH4.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     notflixHover.hide()
+    notflixH2.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    notflixH4.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
