@@ -78,16 +78,17 @@ body {
 }
 
 .slider {
-    height: 32rem;
+    height: 35rem;
+    margin: 2.5em 2rem 0 0;
     overflow: hidden;
-    width: 160px;
+    width: 11rem;
 }
 
 .q-a-slides {
     font-family: 'Circular', Helvetica, sans-serif;
-    height: 27.5rem;
+    height: 29rem;
     overflow: hidden;
-    width: 680px;
+    width: 725px;
 }
 
 .slider i {
@@ -98,14 +99,14 @@ body {
 
 .slide {
     float: left;
-    height: 27.5rem;
-    width: 10rem;
+    height: 29rem;
+    width: 11rem;
 }
 
 .q-a-q {
     align-items: center;
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 700;
     height: 5rem;
     margin: 0 0.5rem;
@@ -117,7 +118,7 @@ body {
     margin: 0 0.5rem;
 }
 
-.q-a-a h4 {
+.q-a-a h3 {
     color: goldenrod;
     align-items: center;
     display: flex;
@@ -129,19 +130,9 @@ body {
 
 .q-a-a p {
     color: grey;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0 0.5rem;
     padding: 0.5rem 1rem 1rem 1rem;
-}
-
-.q-a-buttons {
-    align-items: center;
-    display: flex;
-    margin: 1rem;
-}
-
-.q-a-buttons button {
-    margin: 0 1rem;
 }
 
 .experience {
@@ -153,34 +144,30 @@ body {
     width: 40rem;
 }
 
-.experience h2 {
+/* .experience h2 {
     margin: 1rem;
-}
+} */
 
 .brand, .narrative {
     display: flex;
     flex-direction: column;
-    margin: 1rem 1rem;
+    margin: 1rem 0;
 }
 
-.brand h5, .narrative h5 {
-    margin: 0.1rem;
+.brand h4, .narrative h4 {
+    margin: 0.1rem 0;
     margin-right: auto;
 }
 
 .brand p, .narrative p {
-    font-size: 0.8rem;
-    margin: 0.1rem;
-}
-
-.about-contact {
-    height: 32rem;
-    width: 10rem;
+    font-size: 1rem;
+    margin: 0.1rem 0;
 }
 
 .about-contact ul li {
     font-size: 3rem;
     list-style-type: none;
+    padding: 0 1rem 0 0;
 }
 
 .about-contact ul li a {
@@ -190,7 +177,7 @@ body {
 
 .contact-flex {
     display: flex;
-    flex-direction: column;
+    margin: 0.5rem 0;
     padding: 0;
 }
 
@@ -202,23 +189,10 @@ body {
 
 #email {
     display: block;
+    font-size: 1.2rem;
+    line-height: 5rem;
+    margin-left: auto;
     position: relative;
-}
-
-#email:hover .modal, #email:hover {
-    cursor: pointer;
-    visibility: visible;
-}
-
-.modal {
-    background-color: goldenrod;
-    border: 0.2rem solid grey;
-    display: block;
-    font-family: 'Circular', Helvetica, sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem;
-    position: absolute;
-    visibility: hidden;
 }
 
 #projects {
