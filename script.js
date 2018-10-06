@@ -104,6 +104,8 @@ $(function() {
 
 const flashcards = $('.flashcards')
 const flashHover = $('.flash-hover')
+const flashH2 = $('.flash-h2')
+const flashH4 = $('.flash-h4')
 const bank = $('.bank')
 const bankHover = $('.bank-hover')
 const notflix = $('.notflix')
@@ -117,8 +119,12 @@ $(function() {
 
 flashcards.hover(function() {
     flashHover.show()
+    flashH2.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    flashH4.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     flashHover.hide()
+    flashH2.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    flashH4.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
 
 bank.hover(function() {
