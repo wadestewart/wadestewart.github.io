@@ -104,16 +104,16 @@ $(function() {
 
 const flashcards = $('.flashcards')
 const flashHover = $('.flash-hover')
-const flashH2 = $('.flash-h2')
-const flashH4 = $('.flash-h4')
+const flashTitle = $('.flash-title')
+const flashStack = $('.flash-stack')
 const bank = $('.bank')
 const bankHover = $('.bank-hover')
-const bankH2 = $('.bank-h2')
-const bankH4 = $('.bank-h4')
+const bankTitle = $('.bank-title')
+const bankStack = $('.bank-stack')
 const notflix = $('.notflix')
 const notflixHover = $('.notflix-hover')
-const notflixH2 = $('.notflix-h2')
-const notflixH4 = $('.notflix-h4')
+const notflixTitle = $('.notflix-title')
+const notflixStack = $('.notflix-stack')
 
 $(function() {
     flashHover.hide()
@@ -123,22 +123,22 @@ $(function() {
 
 flashcards.hover(function() {
     flashHover.show()
-    flashH2.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
-    flashH4.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    flashTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    flashStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     flashHover.hide()
-    flashH2.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
-    flashH4.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    flashTitle.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    flashStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
 
 bank.hover(function() {
     bankHover.show()
-    bankH2.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
-    bankH4.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    bankTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    bankStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     bankHover.hide()
-    bankH2.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
-    bankH4.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    bankTitle.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    bankStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
 
 notflix.hover(function() {

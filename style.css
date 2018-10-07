@@ -253,10 +253,6 @@ body {
     width: 40rem;
 }
 
-/* .experience h2 {
-    margin: 1rem;
-} */
-
 .brand, .narrative {
     display: flex;
     flex-direction: column;
@@ -337,19 +333,18 @@ body {
     z-index: 2;
 }
 
-.flashcards figure, .notflix figure {
-    height: 20rem;
+.flash-front, .notflix-front {
+    height: 17.5rem;
     margin: 0;
-    width: 20rem;
+    width: 17.5rem;
 }
 
 .flashcards figure img, .notflix figure img {
-    height: 20rem;
+    height: auto;
     position: relative;
     transition: 0.8s ease-in-out;
-    vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
-    width: auto;
+    width: 17.5;
     z-index: -1;
 }
 
@@ -361,7 +356,7 @@ body {
     );
 }
 
-.flashcards figure:hover img, .bank figure:hover img, .notflix figure:hover img {
+.flash-front:hover img, .bank-front:hover img, .notflix-front:hover img {
     transform: scale(1.1);
 }
 
@@ -375,12 +370,15 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    left: 2rem;
+    height: 17.5rem;
+    justify-content: center;
+    left: 0;
     margin: 0;
     position: absolute;
-    top: 3rem;
+    top: 0;
     transition: all 0.5s ease-in-out ;
     -webkit-transition: all 0.5s ease-in-out;
+    width: 17.5rem;
     z-index: 1;
 }
 
@@ -388,12 +386,14 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    left: 0.4rem;
+    height: 17.5rem;
+    left: 0;
     margin: 0;
     position: absolute;
-    top: 3rem;
+    top: 0;
     transition: all 0.5s ease-in-out ;
     -webkit-transition: all 0.5s ease-in-out ;
+    width: 17.5rem;
     z-index: 1;
 }
 
@@ -410,20 +410,26 @@ body {
     z-index: 1;
 }
 
-.flash-hover h2, .flash-hover h4, .bank-hover h2, .bank-hover h4, .notflix-hover h2, .notflix-hover h4 {
+.flash-title, .bank-title, .notflix-title {
     background-color: transparent;
-    margin: 1rem 0;
+    margin: 3rem 0;
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    top: 3rem;
 }
 
-.flash-hover a img, .notflix-hover a img, .bank-hover a img {
-    height: auto;
-    margin: 1rem;
-    width: 2rem;
+.flash-stack, .bank-stack, .notflix-stack {
+    background-color: transparent;
+    margin: 0.3rem 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#repo-link {
+    margin: 3rem 0;
 }
 
 .bank {
@@ -434,13 +440,13 @@ body {
     z-index: 0;
 }
 
-.bank figure {
-    height: auto;
+.bank-front {
+    height: 22.5rem;
     margin: 0;
-    width: 21rem;
+    width: 17.5rem;
 }
 
-.bank figure img {
+.bank-front img {
     position: relative;
     transition: 0.8s ease-in-out;
     vertical-align: middle;
