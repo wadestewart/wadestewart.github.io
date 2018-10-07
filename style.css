@@ -49,17 +49,16 @@ body {
 }
 
 .logo {
-    height: 3rem;
+    height: auto;
     margin-right: auto;
-    width: 3rem;
+    width: 2rem;
 }
 
 .flex-nav a {
     color: rgb(169,169,169);
     display: block;
-    float: right;
-    font-size: 5em;
-    padding: 0.2rem 1.5rem 0 0;
+    font-size: 6em;
+    padding: 0.2rem 2.5rem 0 0;
     text-decoration: none;
 }
 
@@ -73,7 +72,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 10rem;
-    margin-right: 30rem;
+    margin-right: 35rem;
     width: 24rem;
 }
 
@@ -318,41 +317,23 @@ body {
 
 #projects p {
     font-size: 2.5rem;
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
     margin: 0;
     text-align: center;
-}
-
-#projects .project-cards .flashcards .flashcards-backface .flashcard-title {
-    color: #000;
-    font-family: 'Circular', Helvetica, sans-serif;
-    font-size: 1.5rem;
-    height: auto;
-    padding: 1rem 0;
-    text-align: center;
-    width: 20rem;
-}
-
-#projects .project-cards .flashcards .flashcards-backface .stack-text {
-    font-family: 'Circular', Helvetica, sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem 0;
-    position: absolute;
-    top: 1rem;
 }
 
 .project-cards {
     align-items: flex-start;
     display: flex;
     justify-content: space-evenly;
-    padding: 0 10.5rem;
+    padding: 0 8rem;
 }
 
 .flashcards, .notflix {
-    height: 20rem;
+    height: 17.5rem;
     overflow: hidden;
     position: relative;
-    width: 20rem;
+    width: 17.5rem;
     z-index: 2;
 }
 
@@ -446,10 +427,10 @@ body {
 }
 
 .bank {
-    height: 26rem;
+    height: 22.5rem;
     overflow: hidden;
     position: relative;
-    width: 21rem;
+    width: 17.5rem;
     z-index: 0;
 }
 
