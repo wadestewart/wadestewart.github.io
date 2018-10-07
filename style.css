@@ -281,6 +281,7 @@ body {
 .about-contact ul li {
     font-size: 3rem;
     list-style-type: none;
+    margin: 1.5rem 0;
     padding: 0 1rem 0 0;
 }
 
