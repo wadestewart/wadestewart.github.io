@@ -44,7 +44,7 @@ body {
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
-    padding: 1rem 10%;
+    padding: 1.5rem 5rem;
     width: 100%;
 }
 
@@ -184,32 +184,33 @@ body {
 .about-flex {
     align-items: center;
     display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
 .slider {
     height: 35rem;
-    margin: 2.5em 2rem 0 0;
+    margin: 5rem 2.5rem 0 7.5rem;
     overflow: hidden;
-    width: 11.5rem;
+    width: 15rem;
 }
 
 .q-a-slides {
     font-family: 'Circular', Helvetica, sans-serif;
     height: 29rem;
     overflow: hidden;
-    width: 750px;
+    width: 1000px;
 }
 
 .slider i {
     font-size: 3.5rem;
-    padding: 0 3rem;
-    width: 100%;
+    padding: 0 4rem;
 }
 
 .slide {
     float: left;
     height: 29rem;
-    width: 11.5rem;
+    width: 15rem;
 }
 
 .q-a-q {
@@ -218,13 +219,19 @@ body {
     font-size: 0.9rem;
     font-weight: 700;
     height: 5rem;
-    margin: 0 0.5rem;
-    padding: 0 0.5rem;
+    padding: 0 0 0 1rem;
     width: 10rem;
 }
 
 .q-a-q p {
-    margin: 0 0.5rem;
+    margin-right: auto;
+    width: 14rem;
+}
+
+.q-a-a {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1rem;
 }
 
 .q-a-a h3 {
@@ -234,14 +241,12 @@ body {
     font-family: 'Circular', Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
-    padding: 0 0 0.5rem 1.5rem;
 }
 
 .q-a-a p {
     color: grey;
     font-size: 0.9rem;
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem 1rem 1rem;
+    width: 10rem;
 }
 
 .experience {
@@ -249,8 +254,12 @@ body {
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
     height: 35rem;
-    margin: 5rem 4rem;
-    width: 40rem;
+    margin: 5rem 5rem 0 5rem;
+    width: 45rem;
+}
+
+.experience h1 {
+    margin: 0;
 }
 
 .brand, .narrative {
