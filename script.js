@@ -143,10 +143,10 @@ bank.hover(function() {
 
 notflix.hover(function() {
     notflixHover.show()
-    notflixH2.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
-    notflixH4.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    notflixTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
+    notflixStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     notflixHover.hide()
-    notflixH2.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
-    notflixH4.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    notflixTitle.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
+    notflixStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })

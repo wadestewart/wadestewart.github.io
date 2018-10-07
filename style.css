@@ -387,6 +387,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 17.5rem;
+    justify-content: center;
     left: 0;
     margin: 0;
     position: absolute;
@@ -401,12 +402,15 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    left: 0.7rem;
+    height: 17.5rem;
+    justify-content: center;
+    left: 0;
     margin: 0;
     position: absolute;
-    top: 3rem;
+    top: 0;
     transition: all 0.5s ease-in-out ;
-    -webkit-transition: all 0.5s ease-in-out ;
+    -webkit-transition: all 0.5s ease-in-out;
+    width: 17.5rem;
     z-index: 1;
 }
 
