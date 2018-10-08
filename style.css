@@ -475,8 +475,9 @@ body {
     and (orientation: portrait) {
 
     .page {
-        width: 812px;
-        height: 375px;
+        height: 800px;
+        margin: 0;
+        width: 420px;
     }
 
     #landing-page {
@@ -487,15 +488,15 @@ body {
         background-size: cover;
         display: flex;
         flex-direction: column;
-        height: 812px;
+        height: 800px;
         justify-content: flex-start;
-        width: 375px;
+        width: 420px;
     }
 
     .navbar {
         position: fixed;
         top: 0;
-        width: 375px;
+        width: 350px;
     }
 
     .flex-nav {
@@ -506,7 +507,7 @@ body {
         list-style-type: none;
         margin: 0.5rem 1rem;
         padding: 0;
-        width: 375px;
+        width: 350px;
     }
 
     .logo {
@@ -534,20 +535,20 @@ body {
         height: 10rem;
         margin-right: 0;
         margin-top: 10rem;
-        width: 375px;
+        width: 325px;
     }
     
     .typing p {
         border-right: 0.15rem solid orange;
         color: #000;
         font-family: monospace;
-        font-size: 2.5rem;
+        font-size: 2rem;
         letter-spacing: 0.15rem;
         margin: 0 auto;
         opacity: 0;
         overflow: hidden;
         white-space: nowrap;
-        width: 24rem;
+        width: 325px;
     }
     
     .typing p:nth-child(1) {
@@ -560,7 +561,7 @@ body {
             type 5s steps(25, end),
             blink 0.5s step-end infinite;
         -webkit-animation-fill-mode: forwards;
-        width: 22.5rem;
+        width: 280px;
     }
     
     .typing p:nth-child(2) {
@@ -575,7 +576,7 @@ body {
             blink 0.5s step-end infinite;
         -webkit-animation-delay: 5s;
         -webkit-animation-fill-mode: forwards;
-        width: 23rem;
+        width: 295px;
     }
     
     .typing p:nth-child(3) {
@@ -591,7 +592,7 @@ body {
             blink 0.5s step-end infinite;
         -webkit-animation-delay: 10s;
         -webkit-animation-fill-mode: forwards;
-        width: 18rem;
+        width: 240px;
     }
 
     }
