@@ -18,7 +18,8 @@ body {
 
 #landing-page {
     align-items: center;
-    background: url('./images/Wade-Final1.2.png');
+    background: url('./images/transparent-lander.png');
+    background-color: rgba(244,246,248,1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
