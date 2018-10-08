@@ -475,9 +475,9 @@ body {
     and (orientation: portrait) {
 
     .page {
-        height: 800px;
-        margin: 0;
-        width: 420px;
+        height: 775px;
+        margin: 0 auto;
+        width: 350px;
     }
 
     #landing-page {
@@ -488,9 +488,9 @@ body {
         background-size: cover;
         display: flex;
         flex-direction: column;
-        height: 800px;
+        height: 775px;
         justify-content: flex-start;
-        width: 420px;
+        width: 350px;
     }
 
     .navbar {
@@ -535,20 +535,20 @@ body {
         height: 10rem;
         margin-right: 0;
         margin-top: 10rem;
-        width: 325px;
+        width: 260px;
     }
     
     .typing p {
         border-right: 0.15rem solid orange;
         color: #000;
         font-family: monospace;
-        font-size: 2rem;
+        font-size: 1.75rem;
         letter-spacing: 0.15rem;
         margin: 0 auto;
         opacity: 0;
         overflow: hidden;
         white-space: nowrap;
-        width: 325px;
+        width: 260px;
     }
     
     .typing p:nth-child(1) {
@@ -561,7 +561,7 @@ body {
             type 5s steps(25, end),
             blink 0.5s step-end infinite;
         -webkit-animation-fill-mode: forwards;
-        width: 280px;
+        width: 255px;
     }
     
     .typing p:nth-child(2) {
@@ -576,7 +576,7 @@ body {
             blink 0.5s step-end infinite;
         -webkit-animation-delay: 5s;
         -webkit-animation-fill-mode: forwards;
-        width: 295px;
+        width: 260px;
     }
     
     .typing p:nth-child(3) {
@@ -592,7 +592,7 @@ body {
             blink 0.5s step-end infinite;
         -webkit-animation-delay: 10s;
         -webkit-animation-fill-mode: forwards;
-        width: 240px;
+        width: 215px;
     }
 
     }
