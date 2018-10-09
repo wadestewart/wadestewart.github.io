@@ -559,47 +559,15 @@ body {
     }
     
     .typing p:nth-child(1) {
-        animation: 
-            type 5s steps(25, end),
-            blink 0.5s step-end infinite;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        -webkit-animation: 
-            type 5s steps(25, end),
-            blink 0.5s step-end infinite;
-        -webkit-animation-fill-mode: forwards;
         width: 255px;
     }
     
     .typing p:nth-child(2) {
-        animation:
-            type 5s steps(25, end),
-            blink 0.5s step-end infinite;
-        animation-delay: 5s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        -webkit-animation:
-            type 5s steps(25, end),
-            blink 0.5s step-end infinite;
-        -webkit-animation-delay: 5s;
-        -webkit-animation-fill-mode: forwards;
         width: 260px;
     }
     
     .typing p:nth-child(3) {
-        animation:
-            type-final 5s steps(25, end),
-            blink 0.5s step-end infinite;
-        animation-delay: 10s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        padding: 0.1rem;
-        -webkit-animation:
-            type-final 5s steps(25, end),
-            blink 0.5s step-end infinite;
-        -webkit-animation-delay: 10s;
-        -webkit-animation-fill-mode: forwards;
-        width: 215px;
+        width: 225px;
     }
 
     }
