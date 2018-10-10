@@ -475,12 +475,6 @@ body {
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
 
-    /* html,
-    body {
-        margin: 0;
-        padding: 0;
-    } */
-
     .page {
         height: 775px;
         margin: 0 auto;
@@ -488,73 +482,41 @@ body {
     }
 
     #landing-page {
-        align-items: center;
         background: url('./images/mobile-2.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
         height: 775px;
         justify-content: flex-start;
         width: 350px;
     }
 
     .navbar {
-        position: fixed;
-        top: 0;
         width: 350px;
     }
 
     .flex-nav {
-        align-items: center;
-        display: flex;
-        font-family: 'Circular', Helvetica, sans-serif;
-        justify-content: flex-end;
-        list-style-type: none;
         margin: 0.5rem 1rem;
         padding: 0;
-        width: 350px;
     }
 
     .logo {
         height: auto;
-        margin-right: auto;
         width: 1rem;
     }
     
     .flex-nav a {
-        color: rgb(169,169,169);
-        display: block;
         font-size: 1rem;
-        text-decoration: none;
-    }
-    
-    .flex-nav a:hover {
-        color: 	rgb(56,56,56);
     }
 
     .typing {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 10rem;
         margin-right: 0;
         margin-top: 10rem;
         width: 260px;
     }
     
     .typing p {
-        border-right: 0.15rem solid orange;
-        color: #000;
-        font-family: monospace;
         font-size: 1.75rem;
-        letter-spacing: 0.15rem;
-        margin: 0 auto;
-        opacity: 0;
-        overflow: hidden;
-        white-space: nowrap;
         width: 260px;
     }
     
@@ -569,6 +531,8 @@ body {
     .typing p:nth-child(3) {
         width: 225px;
     }
+
+    
 
     }
 
