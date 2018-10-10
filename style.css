@@ -191,16 +191,16 @@ body {
 
 .slider {
     height: 35rem;
-    margin: 5rem 2.5rem 0 7.5rem;
+    margin: 5rem 2rem 0 2rem;
     overflow: hidden;
-    width: 15rem;
+    width: 12rem;
 }
 
 .q-a-slides {
     font-family: 'Circular', Helvetica, sans-serif;
     height: 29rem;
     overflow: hidden;
-    width: 1000px;
+    width: 840px;
 }
 
 .slider i {
@@ -211,43 +211,44 @@ body {
 .slide {
     float: left;
     height: 29rem;
-    width: 15rem;
+    width: 13rem;
 }
 
-.q-a-q {
-    align-items: center;
+/* .q-a-q {
     display: flex;
     font-size: 0.9rem;
     font-weight: 700;
     height: 5rem;
     padding: 0 0 0 1rem;
     width: 10rem;
-}
+} */
 
-.q-a-q p {
-    margin-right: auto;
-    width: 14rem;
-}
-
-.q-a-a {
+.q-a {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 1rem;
+    margin: 0;
+    width: 12.5rem;
 }
 
-.q-a-a h3 {
+.q-a h3 {
+    width: 12rem;
+}
+
+.q-a h4 {
     color: goldenrod;
     align-items: center;
     display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
+    width: 12rem;
 }
 
-.q-a-a p {
+.q-a p {
     color: grey;
     font-size: 0.9rem;
-    width: 10rem;
+    /* padding: 0 0 0 1rem; */
+    width: 12rem;
 }
 
 .experience {
@@ -532,7 +533,82 @@ body {
         width: 225px;
     }
 
+    /* #about {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 775px;
+        width: 350px;
+    }
     
+    .about-flex {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .slider {
+        height: 35rem;
+        margin: 5rem 2.5rem 0 7.5rem;
+        overflow: hidden;
+        width: 15rem;
+    }
+    
+    .q-a-slides {
+        font-family: 'Circular', Helvetica, sans-serif;
+        height: 29rem;
+        overflow: hidden;
+        width: 1000px;
+    }
+    
+    .slider i {
+        font-size: 3.5rem;
+        padding: 0 4rem;
+    }
+    
+    .slide {
+        float: left;
+        height: 29rem;
+        width: 15rem;
+    }
+    
+    .q-a-q {
+        align-items: center;
+        display: flex;
+        font-size: 0.9rem;
+        font-weight: 700;
+        height: 5rem;
+        padding: 0 0 0 1rem;
+        width: 10rem;
+    }
+    
+    .q-a-q p {
+        margin-right: auto;
+        width: 14rem;
+    }
+    
+    .q-a-a {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 1rem;
+    }
+    
+    .q-a-a h3 {
+        color: goldenrod;
+        align-items: center;
+        display: flex;
+        font-family: 'Circular', Helvetica, sans-serif;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .q-a-a p {
+        color: grey;
+        font-size: 0.9rem;
+        width: 10rem;
+    } */
 
     }
 
