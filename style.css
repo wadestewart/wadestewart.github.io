@@ -193,45 +193,37 @@ body {
     height: 35rem;
     margin: 5rem 2rem 0 2rem;
     overflow: hidden;
-    width: 12rem;
+    width: 11rem;
 }
 
 .q-a-slides {
     font-family: 'Circular', Helvetica, sans-serif;
     height: 29rem;
     overflow: hidden;
-    width: 840px;
+    width: 710px;
 }
 
 .slider i {
     font-size: 3.5rem;
-    padding: 0 4rem;
+    text-align: center;
 }
 
 .slide {
     float: left;
     height: 29rem;
-    width: 13rem;
+    width: 11rem;
 }
-
-/* .q-a-q {
-    display: flex;
-    font-size: 0.9rem;
-    font-weight: 700;
-    height: 5rem;
-    padding: 0 0 0 1rem;
-    width: 10rem;
-} */
 
 .q-a {
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: 12.5rem;
+    text-align: justify;
+    width: 10.5rem;
 }
 
 .q-a h3 {
-    width: 12rem;
+    width: 9rem;
 }
 
 .q-a h4 {
@@ -241,14 +233,13 @@ body {
     font-family: 'Circular', Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
-    width: 12rem;
+    width: 10rem;
 }
 
 .q-a p {
     color: grey;
     font-size: 0.9rem;
-    /* padding: 0 0 0 1rem; */
-    width: 12rem;
+    width: 10rem;
 }
 
 .experience {
