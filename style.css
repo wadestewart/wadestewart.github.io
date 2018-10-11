@@ -213,9 +213,41 @@ body {
     width: 100vw;
 }
 
+.experience {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Circular', Helvetica, sans-serif;
+    height: 35rem;
+    margin: 7rem 0 0 5rem;
+    width: 55rem;
+}
+
+.experience h1 {
+    margin: 0 0 1rem 0;
+    text-align: justify;
+}
+
+.brand, .narrative {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.brand h4, .narrative h4 {
+    margin: 0.1rem 0;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.brand p, .narrative p {
+    font-size: 1rem;
+    margin: 0.1rem 0;
+    text-align: justify;
+}
+
 .slider {
     height: 35rem;
-    /* margin: 5rem 2.5rem 0 5rem; */
+    margin: 7rem 2.5rem 0 5rem;
     overflow: hidden;
     text-align: center;
     width: 11rem;
@@ -243,12 +275,13 @@ body {
     flex-direction: column;
     margin: 0;
     text-align: justify;
-    text-align-last: center;
+    /* text-align-last: center; */
     padding: 0 0 0 0.5rem;
     width: 10.5rem;
 }
 
 .q-a h3 {
+    margin: 1rem 0 0 0;
     width: 10rem;
 }
 
@@ -258,7 +291,7 @@ body {
     display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
     font-weight: bold;
-    margin: 0;
+    margin: 1rem 0 0 0;
     width: 10rem;
 }
 
@@ -268,51 +301,27 @@ body {
     width: 10rem;
 }
 
-.experience {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Circular', Helvetica, sans-serif;
-    height: 35rem;
-    /* margin: 5rem 2.5rem 0 2.5rem; */
-    width: 45rem;
-}
-
-.experience h1 {
-    margin: 0;
-}
-
-.brand, .narrative {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-}
-
-.brand h4, .narrative h4 {
-    margin: 0.1rem 0;
-    margin-right: auto;
-}
-
-.brand p, .narrative p {
-    font-size: 1rem;
-    margin: 0.1rem 0;
-}
-
 .about-contact ul li {
     font-size: 3rem;
     list-style-type: none;
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
     padding: 0 1rem 0 0;
-}
-
-.about-contact ul li a {
-    color: black;
-    text-decoration: none;
 }
 
 .contact-flex {
     display: flex;
     margin: 0.5rem 0;
     padding: 0;
+}
+
+.contact-flex li a {
+    color: black;
+    text-decoration: none;
+}
+
+.resume-icon {
+    height: auto;
+    width: 3rem;
 }
 
 .about-logo {
