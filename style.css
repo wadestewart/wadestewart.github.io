@@ -247,17 +247,17 @@ body {
 
 .slider {
     height: 35rem;
-    margin: 7rem 2.5rem 0 5rem;
+    margin: 7rem 0 0 5rem;
     overflow: hidden;
     text-align: center;
-    width: 11rem;
+    width: 14rem;
 }
 
 .q-a-slides {
     font-family: 'Circular', Helvetica, sans-serif;
     height: 29rem;
     overflow: hidden;
-    width: 710px;
+    width: 875px;
 }
 
 .slider i {
@@ -267,7 +267,7 @@ body {
 .slide {
     float: left;
     height: 29rem;
-    width: 11rem;
+    width: 14rem;
 }
 
 .q-a {
@@ -275,14 +275,13 @@ body {
     flex-direction: column;
     margin: 0;
     text-align: justify;
-    /* text-align-last: center; */
     padding: 0 0 0 0.5rem;
-    width: 10.5rem;
+    width: 13.5rem;
 }
 
 .q-a h3 {
     margin: 1rem 0 0 0;
-    width: 10rem;
+    width: 13rem;
 }
 
 .q-a h4 {
@@ -292,13 +291,13 @@ body {
     font-family: 'Circular', Helvetica, sans-serif;
     font-weight: bold;
     margin: 1rem 0 0 0;
-    width: 10rem;
+    width: 13rem;
 }
 
 .q-a p {
     color: grey;
     font-size: 0.9rem;
-    width: 10rem;
+    width: 13rem;
 }
 
 .about-contact ul li {

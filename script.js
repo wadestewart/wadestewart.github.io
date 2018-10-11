@@ -67,7 +67,7 @@ $('.nav-scroll').on('click', function(e) {
 // This slider function found here http://jsfiddle.net/uctr94ve/
 
 $(function() {
-    const width = 176
+    const width = 225
     const animationSpeed = 1000
     const pause = 7000
     let currentSlide =1
