@@ -46,7 +46,16 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 1.5rem 5rem;
+    text-align: center;
+    vertical-align: middle;
     width: 100%;
+}
+
+.flex-nav li {
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: center;
+    width: 7rem;
 }
 
 .logo {
@@ -57,13 +66,25 @@ body {
 
 .flex-nav a {
     color: rgb(169,169,169);
-    display: block;
+    display: inline-block;
     font-size: 6em;
-    padding: 0.2rem 2.5rem 0 0;
     text-decoration: none;
 }
 
 .flex-nav a:hover {
+    color: 	rgb(56,56,56);
+}
+
+.resume {
+    border: 1px solid rgb(169,169,169);
+    border-radius: 0.5rem;
+    height: 2rem;
+    vertical-align: middle;
+    width: 2rem;;
+}
+
+.resume:hover {
+    background-color: goldenrod;
     color: 	rgb(56,56,56);
 }
 
@@ -191,7 +212,7 @@ body {
 
 .slider {
     height: 35rem;
-    margin: 5rem 2rem 0 2rem;
+    margin: 5rem 2.5rem 0 5rem;
     overflow: hidden;
     text-align: center;
     width: 11rem;
