@@ -257,8 +257,14 @@ body {
     width: 3rem;
 }
 
-.contact-flex li:hover {
+/* .contact-flex li:hover {
     background-color: goldenrod;
+} */
+
+.svg-logo a svg{
+    fill: goldenrod;
+    height: 2rem;
+    width: auto;
 }
 
 .contact-flex li a {
@@ -271,6 +277,7 @@ body {
 }
 
 .about-logo {
+    fill: goldenrod;
     height: 3rem;
     width: auto;
 }
