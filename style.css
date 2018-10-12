@@ -245,25 +245,22 @@ body {
 .contact-flex {
     align-items: center;
     display: flex;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     padding: 0;
 }
 
 .contact-flex li {
-    font-size: 3rem;
-    height: 3rem;
     list-style-type: none;
-    margin: 2rem 1rem;
-    width: 3rem;
 }
-
-/* .contact-flex li:hover {
-    background-color: goldenrod;
-} */
 
 .gh-logo a svg {
     height: auto;
+    margin: 0 2rem 0 0;
     width: 7rem;
+}
+
+.gh-logo a:hover svg {
+    fill: goldenrod;
 }
 
 .contact-flex li a {
@@ -272,14 +269,13 @@ body {
 
 .contact-icon a svg {
     height: auto;
+    margin: 0 2rem 0 0;
     width: 2rem;
 }
 
-/* .about-logo {
+.contact-icon a:hover svg {
     fill: goldenrod;
-    height: 3rem;
-    width: auto;
-} */
+}
 
 #email {
     display: block;
