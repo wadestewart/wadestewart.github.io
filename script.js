@@ -123,30 +123,36 @@ $(function() {
 
 flashcards.hover(function() {
     flashHover.show()
+    flashcards.css('border', '1px solid black')
     flashTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
     flashStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     flashHover.hide()
+    flashcards.css('border', 'none')
     flashTitle.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
     flashStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
 
 bank.hover(function() {
     bankHover.show()
+    bank.css('border', '1px solid black')
     bankTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
     bankStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     bankHover.hide()
+    bank.css('border', 'none')
     bankTitle.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
     bankStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
 
 notflix.hover(function() {
     notflixHover.show()
+    notflix.css('border', '1px solid black')
     notflixTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
     notflixStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
     notflixHover.hide()
+    notflix.css('border', 'none')
     notflixTitle.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
     notflixStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })

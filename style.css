@@ -38,10 +38,8 @@ body {
 
 .flex-nav {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0);
     display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
-    /* font-size: 0.1rem; */
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
@@ -69,7 +67,7 @@ body {
 .flex-nav a {
     color: rgb(169,169,169);
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     text-decoration: none;
     width: 7rem;
 }
@@ -149,7 +147,6 @@ body {
     animation-fill-mode: forwards;
     margin: 0 1rem 0 0;
     opacity: 0;
-    /* padding: 0 0.5rem 0 0; */
     -webkit-animation:
         type-final 3s steps(25, end),
         blink 0.5s step-end infinite;
@@ -245,6 +242,49 @@ body {
     text-align: justify;
 }
 
+.contact-flex {
+    align-items: center;
+    display: flex;
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+.contact-flex li {
+    font-size: 3rem;
+    height: 3rem;
+    list-style-type: none;
+    margin: 2rem 1rem;
+    width: 3rem;
+}
+
+.contact-flex li:hover {
+    background-color: goldenrod;
+}
+
+.contact-flex li a {
+    text-decoration: none;
+}
+
+.resume-icon {
+    height: auto;
+    width: 3rem;
+}
+
+.about-logo {
+    height: 3rem;
+    width: auto;
+}
+
+#email {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 5rem;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    width: 12.5rem;
+}
+
 .slider {
     height: 35rem;
     margin: 7rem 0 0 5rem;
@@ -301,43 +341,6 @@ body {
     width: 13rem;
 }
 
-.about-contact ul li {
-    font-size: 3rem;
-    list-style-type: none;
-    margin: 2.5rem 0;
-    padding: 0 1rem 0 0;
-}
-
-.contact-flex {
-    display: flex;
-    margin: 0.5rem 0;
-    padding: 0;
-}
-
-.contact-flex li a {
-    color: black;
-    text-decoration: none;
-}
-
-.resume-icon {
-    height: auto;
-    width: 3rem;
-}
-
-.about-logo {
-    color: black;
-    height: 3rem;
-    width: auto;
-}
-
-#email {
-    display: block;
-    font-size: 1.2rem;
-    line-height: 5rem;
-    margin-left: auto;
-    position: relative;
-}
-
 #projects {
     align-content: center;
     background: rgba(244,246,248,1);
@@ -364,6 +367,7 @@ body {
 }
 
 .flashcards, .notflix {
+    background-color: #fff;
     height: 17.5rem;
     overflow: hidden;
     position: relative;
@@ -377,12 +381,12 @@ body {
     width: 17.5rem;
 }
 
-.flashcards figure img, .notflix figure img {
-    height: auto;
+.flash-front img, .notflix-front img {
+    /* height: 17.5; */
     position: relative;
     transition: 0.8s ease-in-out;
     -webkit-transition: 0.8s ease-in-out;
-    width: 17.5;
+    /* width: 17.5rem; */
     z-index: -1;
 }
 
@@ -390,7 +394,7 @@ body {
     background:
         -webkit-radial-gradient(
             rgba(255,255,255, 0.7),
-            goldenrod
+            rgba(244,246,248,1)
     );
 }
 
@@ -475,6 +479,7 @@ body {
 }
 
 .bank {
+    background-color: #fff;
     height: 22.5rem;
     overflow: hidden;
     position: relative;
@@ -489,11 +494,13 @@ body {
 }
 
 .bank-front img {
+    height: 22.5;
     position: relative;
     transition: 0.8s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
     z-index: -1;
+    width: 17.5;
 }
 
 @media only screen 
@@ -503,9 +510,9 @@ body {
     and (orientation: portrait) {
 
     .page {
-        height: 775px;
+        height: 48.5em;
         margin: 0 auto;
-        width: 350px;
+        width: 21.9em;
     }
 
     #landing-page {
@@ -513,27 +520,37 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 775px;
+        height: 48.5em;
         justify-content: flex-start;
-        width: 350px;
+        width: 21.9em;
     }
 
     .navbar {
-        width: 350px;
+        width: 21.9em;
     }
 
     .flex-nav {
-        margin: 0.5rem 1rem;
-        padding: 0;
+        margin: 0;
+        padding: 1.5em 0;
+        text-align: center;
+        vertical-align: middle;
+        width: 21.9em;
+    }
+
+    .flex-nav li {
+        height: 1em;
+        line-height: 1em;
+        vertical-align: middle;
+        width: 3em;
     }
 
     .logo {
         height: auto;
-        width: 1rem;
+        width: 1em;
     }
     
     .flex-nav a {
-        font-size: 1rem;
+        font-size: 0.5em;
     }
 
     .typing {
