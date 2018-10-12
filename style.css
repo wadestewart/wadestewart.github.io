@@ -381,19 +381,19 @@ body {
     width: 17.5rem;
 }
 
-.flash-front img, .notflix-front img {
-    /* height: 17.5; */
+.flash-img, .notflix-img {
+    height: 17.5;
     position: relative;
     transition: 0.8s ease-in-out;
     -webkit-transition: 0.8s ease-in-out;
-    /* width: 17.5rem; */
+    width: 17.5rem;
     z-index: -1;
 }
 
 .flash-front:hover, .bank-front:hover, .notflix-front:hover {
     background:
         -webkit-radial-gradient(
-            rgba(255,255,255, 0.7),
+            rgba(255,255,255, 0.6),
             rgba(244,246,248,1)
     );
 }
@@ -475,7 +475,9 @@ body {
 }
 
 #repo-link {
+    height: 2rem;
     margin: 3rem 0;
+    width: auto;
 }
 
 .bank {
@@ -493,14 +495,14 @@ body {
     width: 17.5rem;
 }
 
-.bank-front img {
-    height: 22.5;
+.bank-img {
+    height: 22.5rem;
     position: relative;
     transition: 0.8s ease-in-out;
     vertical-align: middle;
     -webkit-transition: 0.8s ease-in-out;
     z-index: -1;
-    width: 17.5;
+    width: 17.5rem;
 }
 
 @media only screen 
