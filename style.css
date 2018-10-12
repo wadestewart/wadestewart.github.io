@@ -551,14 +551,14 @@ body {
     }
     
     .flex-nav a {
-        font-size: 0.6em;
+        font-size: 0.7em;
         height: 2em;
         width: 4em;
     }
 
     .typing {
-        margin-right: 0;
-        margin-top: 10rem;
+        margin-left: auto;
+        margin-top: 12rem;
         width: 260px;
     }
     
