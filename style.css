@@ -539,19 +539,21 @@ body {
     }
 
     .flex-nav li {
-        height: 1em;
-        line-height: 1em;
+        height: 2em;
+        line-height: 2em;
         vertical-align: middle;
-        width: 3em;
+        width: 4em;
     }
 
     .logo {
         height: auto;
-        width: 1em;
+        width: 2em;
     }
     
     .flex-nav a {
-        font-size: 0.5em;
+        font-size: 0.6em;
+        height: 2em;
+        width: 4em;
     }
 
     .typing {
