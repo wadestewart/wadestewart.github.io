@@ -53,14 +53,19 @@ body {
     height: 2rem;
     line-height: 2rem;
     vertical-align: middle;
-    width: 7rem;
+    width: 6rem;
 }
 
 .logo {
-    height: 1.5rem;
+    height: 2rem;
     margin-right: auto;
     text-align: left;
     vertical-align: middle;
+    width: 6rem;
+}
+
+.logo a img {
+    height: 2rem;
     width: auto;
 }
 
@@ -69,7 +74,7 @@ body {
     display: inline-block;
     font-size: 1rem;
     text-decoration: none;
-    width: 7rem;
+    width: 6rem;
 }
 
 .flex-nav a:hover {
@@ -532,7 +537,7 @@ body {
 
     .flex-nav {
         margin: 0;
-        padding: 1.5em 1rem;
+        padding: 1em;
         text-align: center;
         vertical-align: middle;
         width: 21.9em;
@@ -541,20 +546,31 @@ body {
     .flex-nav li {
         height: 2em;
         line-height: 2em;
+        /* margin: 0.5em; */
         vertical-align: middle;
         width: 4em;
+    }
+
+    .flex-nav a {
+        font-size: 0.8em;
+        height: 2.5em;
+        width: 5em;
     }
 
     .logo {
         height: auto;
         width: 2em;
     }
-    
-    .flex-nav a {
-        font-size: 0.8em;
+
+    .projects {
         height: 2em;
-        width: 4em;
+        width: 6em;
     }
+
+    /* .projects a {
+        height: 2em;
+        width: 5em;
+    } */
 
     .typing {
         margin-left: auto;
