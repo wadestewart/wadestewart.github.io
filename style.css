@@ -517,20 +517,20 @@ body {
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
 
-    .page {
+    /* .page {
         height: 48em;
         margin: 0 auto;
         width: 21.5em;
-    }
+    } */
 
     #landing-page {
         background: url('./images/mobile-2.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 48.5em;
+        /* height: 48.5em; */
         justify-content: flex-start;
-        width: 21.9em;
+        /* width: 21.9em; */
     }
 
     .navbar {
@@ -542,7 +542,7 @@ body {
         padding: 1em;
         text-align: center;
         vertical-align: middle;
-        width: 21.9em;
+        /* width: 21.9em; */
     }
 
     .flex-nav li {
@@ -603,6 +603,7 @@ body {
     .about-flex {
         align-items: center;
         display: flex;
+        flex-direction: column;
         height: 100vh;
         width: 100vw;
     }
