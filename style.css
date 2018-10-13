@@ -580,6 +580,23 @@ body {
         width: 6em;
     }
 
+    .resume {
+        border:  1px solid rgb(169,169,169);
+        height: 2rem;
+        margin-left: 1rem;
+        width: 2rem;;
+    }
+    
+    .resume a {
+        color: rgb(169,169,169);
+        display: inline-block;
+        font-size: 0.8em;
+        height: 2rem;
+        text-decoration: none;
+        vertical-align: middle;
+        width: 6rem;
+    }
+
     .typing {
         margin-left: auto;
         margin-top: 12rem;
