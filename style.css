@@ -548,6 +548,7 @@ body {
     .flex-nav li {
         height: 2em;
         line-height: 2em;
+        margin: 0 0.5em;
         vertical-align: middle;
         width: 4em;
     }
