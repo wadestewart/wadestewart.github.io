@@ -511,9 +511,9 @@ body {
     and (orientation: portrait) {
 
     .page {
-        height: 48.5em;
+        height: 48em;
         margin: 0 auto;
-        width: 21.9em;
+        width: 21.5em;
     }
 
     #landing-page {
@@ -532,7 +532,7 @@ body {
 
     .flex-nav {
         margin: 0;
-        padding: 1.5em 0;
+        padding: 1.5em 1rem;
         text-align: center;
         vertical-align: middle;
         width: 21.9em;
@@ -551,7 +551,7 @@ body {
     }
     
     .flex-nav a {
-        font-size: 0.7em;
+        font-size: 0.8em;
         height: 2em;
         width: 4em;
     }
@@ -577,6 +577,53 @@ body {
     
     .typing p:nth-child(3) {
         width: 225px;
+    }
+
+    #about {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .about-flex {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .experience {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Circular', Helvetica, sans-serif;
+        height: 35rem;
+        margin: 7rem 0 0 5rem;
+        width: 55rem;
+    }
+    
+    .experience h1 {
+        margin: 0 0 1rem 0;
+        text-align: justify;
+    }
+    
+    .brand, .narrative {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    
+    .brand h4, .narrative h4 {
+        margin: 0.1rem 0;
+        margin-right: auto;
+        text-align: justify;
+    }
+    
+    .brand p, .narrative p {
+        font-size: 1rem;
+        margin: 0.1rem 0;
+        text-align: justify;
     }
 
     /* #about {
