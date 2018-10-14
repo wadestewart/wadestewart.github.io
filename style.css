@@ -593,20 +593,20 @@ body {
 
     #about {
         flex-direction: column;
-        height: 85em;
+        height: 77em;
         margin: 0 auto;
         width: 20.5em;
     }
     
     .about-flex {
         flex-direction: column;
-        height: 85em;
+        height: 77em;
         width: 20.5em;
     }
     
     .about {
         align-items: center;
-        height: 85em;
+        height: 50em;
         margin: 4em 0 0 0;
         width: 20.5em;
     }
@@ -621,13 +621,13 @@ body {
     }
     
     .brand {
-        height: 8rem;
+        height: 8em;
         margin: 0.2em 0;
         width: 20.5em;
     }
 
     .narrative {
-        height: 28rem;
+        height: 30em;
         margin: 0.2em 0;
         width: 20.5em;
     }
@@ -639,41 +639,25 @@ body {
     }
 
     .contact-flex {
-        align-items: center;
-        display: flex;
         justify-content: center;
         margin: 0;
-        padding: 0;
-    }
-    
-    .contact-flex li {
-        list-style-type: none;
     }
     
     .slider {
-        height: 35rem;
+        height: 25em;
         margin: 0;
-        overflow: hidden;
-        width: 15rem;
+        width: 15em;
     }
     
-    /* .slider {
-        height: 35rem;
-        margin: 5rem 2.5rem 0 7.5rem;
-        overflow: hidden;
-        width: 15rem;
-    } */
-    
     .q-a-slides {
-        font-family: 'Circular', Helvetica, sans-serif;
-        height: 29rem;
-        overflow: hidden;
+        height: 25rem;
         width: 1000px;
     }
     
     .slider i {
         font-size: 3.5rem;
-        padding: 0 4rem;
+        margin: 0;
+        padding: 0 1rem 0 0;
     }
     
     .slide {
@@ -727,12 +711,12 @@ body {
         justify-content: center;
         height: 100vh;
         width: 100vw;
-    }
+    } */
     
-    #projects h1 {
+    /* #projects h1 {
         margin: 1.5rem 5rem 1.5rem 5rem;
         text-align: center;
-    }
+    } */
     
     .project-cards {
         align-items: flex-start;
@@ -742,7 +726,7 @@ body {
         margin: 2rem 5rem;
     }
     
-    .flashcards, .notflix {
+    /* .flashcards, .notflix {
         background-color: #fff;
         height: 20rem;
         overflow: hidden;
@@ -755,36 +739,36 @@ body {
         height: 20rem;
         margin: 0;
         width: 20rem;
-    }
+    } */
     
-    .flash-img, .notflix-img {
+    /* .flash-img, .notflix-img {
         height: 20;
         position: relative;
         transition: 0.8s ease-in-out;
         -webkit-transition: 0.8s ease-in-out;
         width: 20rem;
         z-index: -1;
-    }
+    } */
     
-    .flash-front:hover, .bank-front:hover, .notflix-front:hover {
+    /* .flash-front:hover, .bank-front:hover, .notflix-front:hover {
         background:
             -webkit-radial-gradient(
                 rgba(255,255,255, 0.6),
                 rgba(244,246,248,1)
         );
-    }
+    } */
     
-    .flash-front:hover img, .bank-front:hover img, .notflix-front:hover img {
+    /* .flash-front:hover img, .bank-front:hover img, .notflix-front:hover img {
         transform: scale(1.1);
-    }
+    } */
     
-    .site {
+    /* .site {
         color: black;
         text-align: center;
         text-decoration: none;
-    }
+    } */
     
-    .flash-hover {
+    /* .flash-hover {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -798,9 +782,9 @@ body {
         -webkit-transition: all 0.5s ease-in-out;
         width: 20rem;
         z-index: 1;
-    }
+    } */
     
-    .bank-hover {
+    /* .bank-hover {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -814,9 +798,9 @@ body {
         -webkit-transition: all 0.5s ease-in-out ;
         width: 20rem;
         z-index: 1;
-    }
+    } */
     
-    .notflix-hover {
+    /* .notflix-hover {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -830,48 +814,48 @@ body {
         -webkit-transition: all 0.5s ease-in-out;
         width: 20rem;
         z-index: 1;
-    }
+    } */
     
-    .flash-title, .bank-title, .notflix-title {
+    /* .flash-title, .bank-title, .notflix-title {
         background-color: transparent;
         margin: 3rem 0;
         -webkit-transform: scale(0);
         transform: scale(0);
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
-    }
+    } */
     
-    .flash-stack, .bank-stack, .notflix-stack {
+    /* .flash-stack, .bank-stack, .notflix-stack {
         background-color: transparent;
         margin: 0.3rem 0;
         -webkit-transform: scale(0);
         transform: scale(0);
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
-    }
+    } */
     
-    #repo-link {
+    /* #repo-link {
         height: 2rem;
         margin: 3rem 0;
         width: auto;
-    }
+    } */
     
-    .bank {
+    /* .bank {
         background-color: #fff;
         height: 25rem;
         overflow: hidden;
         position: relative;
         width: 20rem;
         z-index: 0;
-    }
+    } */
     
-    .bank-front {
+    /* .bank-front {
         height: 25rem;
         margin: 0;
         width: 20rem;
-    }
+    } */
     
-    .bank-img {
+    /* .bank-img {
         height: 25rem;
         position: relative;
         transition: 0.8s ease-in-out;
