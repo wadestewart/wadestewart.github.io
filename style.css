@@ -667,41 +667,9 @@ body {
         width: 15rem;
     }
     
-    /* .q-a-q {
-        align-items: center;
-        display: flex;
-        font-size: 0.9rem;
-        font-weight: 700;
-        height: 5rem;
-        padding: 0 0 0 1rem;
-        width: 10rem;
-    }
-    
-    .q-a-q p {
-        margin-right: auto;
-        width: 14rem;
-    }
-    
-    .q-a-a {
-        display: flex;
-        flex-direction: column;
-        padding: 0 0 0 1rem;
-    }
-    
-    .q-a-a h3 {
-        color: goldenrod;
-        align-items: center;
-        display: flex;
-        font-family: 'Circular', Helvetica, sans-serif;
-        font-weight: bold;
+    .q-a h3 {
         margin: 0;
     }
-    
-    .q-a-a p {
-        color: grey;
-        font-size: 0.9rem;
-        width: 10rem;
-    } */
 
     #projects {
         align-content: center;
