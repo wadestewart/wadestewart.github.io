@@ -530,7 +530,8 @@ body {
     and (orientation: portrait) {
 
     #landing-page {
-        background: url('./images/mobile-2.png');
+        background: url('./images/mobile-lander.png');
+        background-color: rgba(244,246,248,1);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -702,6 +703,16 @@ body {
         width: 10rem;
     }
 
+    #projects {
+        align-content: center;
+        background: rgba(244,246,248,1);
+        display: flex;
+        flex-direction: column;
+        font-family: 'Circular', Helvetica, sans-serif;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
     /* #projects {
         align-content: center;
         background: rgba(244,246,248,1);
