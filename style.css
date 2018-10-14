@@ -568,10 +568,6 @@ body {
         width: auto;
     }
 
-    /* #projects {
-        margin: 0;
-    } */
-
     .typing {
         margin-left: auto;
         margin-top: 10rem;
@@ -597,19 +593,20 @@ body {
 
     #about {
         flex-direction: column;
-        height: 60em;
+        height: 75em;
         margin: 0 auto;
         width: 20.5em;
     }
     
     .about-flex {
         flex-direction: column;
-        height: 60em;
+        height: 75em;
         width: 20.5em;
     }
     
     .about {
-        height: 60em;
+        align-items: center;
+        height: 75em;
         margin: 4em 0 0 0;
         width: 20.5em;
     }
@@ -620,30 +617,19 @@ body {
     
     .about h3 {
         font-size: 1em;
-        margin: 0.25rem 0;
+        margin: 0.5em 0;
     }
     
-    .brand, .narrative {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 0;
+    .brand {
+        height: 7rem;
+        margin: 0.2em 0;
         width: 20.5em;
     }
-    
-    .brand h4, .narrative h4 {
-        margin: 0.1rem 0;
-        margin-right: auto;
-        text-align: justify;
-        width: 20.5em;
 
-    }
-    
-    .brand p, .narrative p {
-        font-size: 1rem;
-        margin: 0.1rem 0;
-        text-align: justify;
+    .narrative {
+        height: 26rem;
+        margin: 0.2em 0;
         width: 20.5em;
-
     }
 
     /* #about {
