@@ -651,7 +651,7 @@ body {
     }
     
     .q-a-slides {
-        height: 25rem;
+        height: 27rem;
         width: 1000px;
     }
     
@@ -663,11 +663,11 @@ body {
     
     .slide {
         float: left;
-        height: 29rem;
+        height: 27rem;
         width: 15rem;
     }
     
-    .q-a-q {
+    /* .q-a-q {
         align-items: center;
         display: flex;
         font-size: 0.9rem;
@@ -701,7 +701,7 @@ body {
         color: grey;
         font-size: 0.9rem;
         width: 10rem;
-    }
+    } */
 
     #projects {
         align-content: center;
