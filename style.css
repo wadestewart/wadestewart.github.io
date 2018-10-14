@@ -544,7 +544,7 @@ body {
     .navbar {
         height: 4em;
         width: 20.5em;
-        z-index: 2;
+        z-index: 9;
     }
 
     .flex-nav {
@@ -555,10 +555,6 @@ body {
         vertical-align: middle;
         width: 20.5em;
     }
-
-    /* .flex-nav li {
-        margin: 0 1rem;
-    } */
 
     .nav-scroll {
         font-size: 0.9em;
