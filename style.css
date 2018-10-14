@@ -248,14 +248,8 @@ body {
     text-align: justify;
 }
 
-.about h2 {
-    /* display: block; */
-    /* font-size: 1.2rem;
-    line-height: 5rem;
-    margin-left: auto;
-    margin-right: 0;
-    position: relative;
-    width: 12.5rem; */
+.about h3 {
+    margin: 0.25rem 0;
 }
 
 .brand, .narrative {
@@ -535,19 +529,14 @@ body {
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
 
-    .page {
-        height: 45em;
-        margin: 0 auto;
-        width: 20.5em;
-    }
-
     #landing-page {
         background: url('./images/mobile-2.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 45em;
+        height: 40em;
         justify-content: flex-start;
+        margin: 0 auto;
         width: 20.5em;
     }
 
@@ -574,30 +563,18 @@ body {
         width: 4em;
     }
 
-    /* .logo {
-        margin-right: 0;
-    } */
-
-    .logo a img {
-        height: 1.5em;
+    #logo a img {
+        height: 2em;
         width: auto;
     }
 
-    .resume {
-        /* border:  0.1em solid rgb(169,169,169); */
-        /* height: 2em; */
-        margin-left: 0;
-        /* width: 4em; */
-    }
-
-    .resume a {
-        font-size: 0.9em;
-        width: 4em; 
-    }
+    /* #projects {
+        margin: 0;
+    } */
 
     .typing {
         margin-left: auto;
-        margin-top: 12rem;
+        margin-top: 10rem;
         width: 260px;
     }
     
@@ -619,51 +596,54 @@ body {
     }
 
     #about {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
+        flex-direction: column;
+        height: 60em;
+        margin: 0 auto;
+        width: 20.5em;
     }
     
     .about-flex {
-        align-items: center;
-        display: flex;
         flex-direction: column;
-        height: 100vh;
-        width: 100vw;
+        height: 60em;
+        width: 20.5em;
     }
     
-    .experience {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Circular', Helvetica, sans-serif;
-        height: 100vh;
-        /* margin: 7rem 0 0 5rem; */
-        width: 100vw;
+    .about {
+        height: 60em;
+        margin: 4em 0 0 0;
+        width: 20.5em;
     }
     
-    .experience h1 {
-        margin: 0 0 1rem 0;
-        text-align: justify;
+    .about h1 {
+        margin: 0;
+    }
+    
+    .about h3 {
+        font-size: 1em;
+        margin: 0.25rem 0;
     }
     
     .brand, .narrative {
         display: flex;
         flex-direction: column;
         margin: 1rem 0;
+        width: 20.5em;
     }
     
     .brand h4, .narrative h4 {
         margin: 0.1rem 0;
         margin-right: auto;
         text-align: justify;
+        width: 20.5em;
+
     }
     
     .brand p, .narrative p {
         font-size: 1rem;
         margin: 0.1rem 0;
         text-align: justify;
+        width: 20.5em;
+
     }
 
     /* #about {
@@ -741,6 +721,169 @@ body {
         color: grey;
         font-size: 0.9rem;
         width: 10rem;
+    } */
+
+    #projects {
+        align-content: center;
+        background: rgba(244,246,248,1);
+        display: flex;
+        flex-direction: column;
+        font-family: 'Circular', Helvetica, sans-serif;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    #projects h1 {
+        margin: 1.5rem 5rem 1.5rem 5rem;
+        text-align: center;
+    }
+    
+    .project-cards {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2rem 5rem;
+    }
+    
+    .flashcards, .notflix {
+        background-color: #fff;
+        height: 20rem;
+        overflow: hidden;
+        position: relative;
+        width: 20rem;
+        z-index: 2;
+    }
+    
+    /* .flash-front, .notflix-front {
+        height: 20rem;
+        margin: 0;
+        width: 20rem;
+    }
+    
+    .flash-img, .notflix-img {
+        height: 20;
+        position: relative;
+        transition: 0.8s ease-in-out;
+        -webkit-transition: 0.8s ease-in-out;
+        width: 20rem;
+        z-index: -1;
+    }
+    
+    .flash-front:hover, .bank-front:hover, .notflix-front:hover {
+        background:
+            -webkit-radial-gradient(
+                rgba(255,255,255, 0.6),
+                rgba(244,246,248,1)
+        );
+    }
+    
+    .flash-front:hover img, .bank-front:hover img, .notflix-front:hover img {
+        transform: scale(1.1);
+    }
+    
+    .site {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .flash-hover {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: center;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.5s ease-in-out ;
+        -webkit-transition: all 0.5s ease-in-out;
+        width: 20rem;
+        z-index: 1;
+    }
+    
+    .bank-hover {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: center;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.5s ease-in-out ;
+        -webkit-transition: all 0.5s ease-in-out ;
+        width: 20rem;
+        z-index: 1;
+    }
+    
+    .notflix-hover {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: center;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.5s ease-in-out ;
+        -webkit-transition: all 0.5s ease-in-out;
+        width: 20rem;
+        z-index: 1;
+    }
+    
+    .flash-title, .bank-title, .notflix-title {
+        background-color: transparent;
+        margin: 3rem 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .flash-stack, .bank-stack, .notflix-stack {
+        background-color: transparent;
+        margin: 0.3rem 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #repo-link {
+        height: 2rem;
+        margin: 3rem 0;
+        width: auto;
+    }
+    
+    .bank {
+        background-color: #fff;
+        height: 25rem;
+        overflow: hidden;
+        position: relative;
+        width: 20rem;
+        z-index: 0;
+    }
+    
+    .bank-front {
+        height: 25rem;
+        margin: 0;
+        width: 20rem;
+    }
+    
+    .bank-img {
+        height: 25rem;
+        position: relative;
+        transition: 0.8s ease-in-out;
+        vertical-align: middle;
+        -webkit-transition: 0.8s ease-in-out;
+        z-index: -1;
+        width: 20rem;
     } */
 
     }
