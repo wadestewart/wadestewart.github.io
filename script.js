@@ -64,7 +64,7 @@ $('.nav-scroll').on('click', function(e) {
     }, 1000)
 })
 
-// This slider function found here http://jsfiddle.net/uctr94ve/
+// This slider found here http://jsfiddle.net/uctr94ve/
 
 $(function() {
     const width = 225
