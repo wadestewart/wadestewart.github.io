@@ -594,20 +594,20 @@ body {
 
     #about {
         flex-direction: column;
-        height: 78em;
+        height: 80em;
         margin: 0 auto;
         width: 20.5em;
     }
     
     .about-flex {
         flex-direction: column;
-        height: 78em;
+        height: 80em;
         width: 20.5em;
     }
     
     .about {
         align-items: center;
-        height: 50em;
+        height: 52em;
         margin: 4em 0 0 0;
         width: 20.5em;
     }
