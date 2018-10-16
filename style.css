@@ -507,6 +507,7 @@ body {
 
 .contact-flex li {
     list-style-type: none;
+    margin: 0 2rem;
 }
 
 .gh-logo a svg {
