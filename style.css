@@ -19,7 +19,7 @@ body {
 #landing-page {
     align-items: center;
     background: url('./images/transparent-lander.png');
-    background-color: rgba(244,246,248,1);
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,6 +31,7 @@ body {
 }
 
 .navbar {
+    background-color: #fff;
     height: 5rem;
     position: fixed;
     top: 0;
@@ -195,6 +196,7 @@ body {
 
 #about {
     align-items: center;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -256,13 +258,14 @@ body {
 }
 
 .gh-logo a svg {
+    fill: goldenrod;
     height: auto;
     margin: 0 2rem 0 0;
     width: 7rem;
 }
 
 .gh-logo a:hover svg {
-    fill: goldenrod;
+    fill: #000;
 }
 
 .contact-flex li a {
@@ -270,13 +273,14 @@ body {
 }
 
 .contact-icon a svg {
+    fill: goldenrod;
     height: auto;
     margin: 0 2rem 0 0;
     width: 2rem;
 }
 
 .contact-icon a:hover svg {
-    fill: goldenrod;
+    fill: #000;
 }
 
 .slider {
@@ -337,7 +341,7 @@ body {
 
 #projects {
     align-content: center;
-    background: rgba(244,246,248,1);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
