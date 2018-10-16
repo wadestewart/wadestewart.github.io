@@ -226,7 +226,6 @@ body {
 
 .about h1 {
     margin: 0 0 1rem 0;
-    text-align: justify;
 }
 
 .about h3 {
@@ -242,13 +241,11 @@ body {
 .brand h4, .narrative h4 {
     margin: 0.1rem 0;
     margin-right: auto;
-    text-align: justify;
 }
 
 .brand p, .narrative p {
     font-size: 1rem;
     margin: 0.1rem 0;
-    text-align: justify;
 }
 
 .contact-flex {
@@ -292,8 +289,14 @@ body {
     height: 35rem;
     margin: 7rem 0 0 5rem;
     overflow: hidden;
-    text-align: center;
+    padding: 0 0 0 0.5rem;
     width: 14rem;
+}
+
+.slider svg {
+    height: 3rem;
+    margin: 0 0 1rem 0;
+    width: auto;
 }
 
 .q-a-slides {
@@ -303,12 +306,8 @@ body {
     width: 896px;
 }
 
-.slider i {
-    font-size: 2.5rem;
-    margin: 0 0 1rem 0;
-}
-
 .slide {
+    cursor: pointer;
     float: left;
     height: 29rem;
     width: 14rem;
@@ -318,8 +317,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    text-align: justify;
-    padding: 0 0 0 0.5rem;
+    /* padding: 0 0 0 0.5rem; */
     width: 13.5rem;
 }
 
@@ -330,7 +328,6 @@ body {
 
 .q-a h4 {
     color: goldenrod;
-    align-items: center;
     display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
     font-weight: bold;
@@ -393,7 +390,7 @@ body {
 .flash-front:hover, .bank-front:hover, .notflix-front:hover {
     background:
         -webkit-radial-gradient(
-            rgba(255,255,255, 0.6),
+            rgba(255,255,255, 0.7),
             rgb(255, 255, 255)
     );
 }
