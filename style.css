@@ -770,7 +770,7 @@ body {
     .contact-flex {
         align-items: center;
         flex-direction: column;
-        margin: 0;
+        margin-bottom: 15em;
         padding: 0;
         width: 20.5em;
     }
