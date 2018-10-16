@@ -575,9 +575,13 @@ body {
         width: 4em;
     }
 
-    #logo a img {
+    #logo a svg {
         height: 2em;
         width: auto;
+    }
+
+    #nav-contact {
+        margin-left: 1.5em;
     }
 
     .typing {
