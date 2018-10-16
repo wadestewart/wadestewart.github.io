@@ -657,19 +657,13 @@ body {
         margin: 0.2em 0;
         width: 20.5em;
     }
-
-    .about-contact {
-        height: 2em;
-        margin: 1em 0;
-        width: 20.5em;
-    }
     
     .slider-flex {
         display: none;
     }
 
     #projects {
-        height: 50em;
+        height: 55em;
         margin: 0 auto;
         width: 20.5em;
     }
@@ -681,7 +675,7 @@ body {
     .project-cards {
         align-items: center;
         flex-direction: column;
-        height: 50em;
+        height: 55em;
         justify-content: flex-start;
         margin: 2em 0 0 0;
         width: 20.5em;
@@ -709,7 +703,7 @@ body {
     }
     
     .bank-hover {
-        height: 17.5em;
+        height: 16.875em;
         width: 15em;
     }
     
@@ -740,18 +734,18 @@ body {
     }
     
     .bank {
-        height: 17.5em;
+        height: 16.875em;
         width: 15em;
     }
     
     .bank-front {
-        height: 17.5em;
+        height: 16.875em;
         margin: 0;
         width: 15em;
     }
     
     .bank-img {
-        height: 17.5em;
+        height: 16.875em;
         width: 15em;
     }
 
