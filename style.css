@@ -67,9 +67,14 @@ body {
     width: 6rem;
 }
 
-#logo a img {
-    height: 2rem;
+#logo a svg {
+    fill: goldenrod;
+    height: 3rem;
     width: auto;
+}
+
+#logo a:hover svg {
+    fill: #000;
 }
 
 .nav-scroll {
@@ -470,13 +475,14 @@ body {
 }
 
 #repo-link a svg {
+    fill: goldenrod;
     height: 2rem;
     margin: 3rem 0;
     width: auto;
 }
 
 #repo-link a:hover svg {
-    fill: goldenrod;
+    fill: #000;
 }
 
 .bank {
