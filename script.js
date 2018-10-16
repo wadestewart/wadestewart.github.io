@@ -123,7 +123,7 @@ $(function() {
 
 flashcards.hover(function() {
     flashHover.show()
-    flashcards.css('border', '1px solid black')
+    flashcards.css('border', '1px solid #000')
     flashTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
     flashStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
@@ -135,7 +135,7 @@ flashcards.hover(function() {
 
 bank.hover(function() {
     bankHover.show()
-    bank.css('border', '1px solid black')
+    bank.css('border', '1px solid #000')
     bankTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
     bankStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
@@ -147,7 +147,7 @@ bank.hover(function() {
 
 notflix.hover(function() {
     notflixHover.show()
-    notflix.css('border', '1px solid black')
+    notflix.css('border', '1px solid #000')
     notflixTitle.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
     notflixStack.css({"-webkit-transform": "scale(1)", "transform": "scale(1)"})
 }, function() {
