@@ -346,7 +346,7 @@ body {
 }
 
 .flash-img, .notflix-img {
-    height: 20;
+    height: 20rem;
     position: relative;
     transition: 0.8s ease-in-out;
     -webkit-transition: 0.8s ease-in-out;
@@ -651,8 +651,7 @@ body {
     }
 
     #projects {
-        background: #fff;
-        height: 80em;
+        height: 40em;
         margin: 0 auto;
         width: 20.5em;
     }
@@ -664,13 +663,17 @@ body {
     .project-cards {
         align-items: center;
         flex-direction: column;
-        height: 80em;
+        height: 40em;
         justify-content: flex-start;
         margin: 0;
         width: 20.5em;
 
     }
     
+    .flashcards, .notflix {
+        height: 10em;
+        width: 10em;
+    }
     /* .flashcards, .notflix {
         background-color: #fff;
         height: 20rem;
@@ -680,12 +683,16 @@ body {
         z-index: 2;
     } */
     
-    /* .flash-front, .notflix-front {
-        height: 20rem;
+    .flash-front, .notflix-front {
+        height: 10em;
         margin: 0;
-        width: 20rem;
-    } */
+        width: 10em;
+    }
     
+    .flash-img, .notflix-img {
+        height: 10em;
+        width: 10em;
+    }
     /* .flash-img, .notflix-img {
         height: 20;
         position: relative;
@@ -785,21 +792,21 @@ body {
         width: auto;
     } */
     
-    /* .bank {
-        background-color: #fff;
-        height: 25rem;
-        overflow: hidden;
-        position: relative;
-        width: 20rem;
-        z-index: 0;
-    } */
+    .bank {
+        height: 12.5em;
+        width: 10em;
+    }
     
-    /* .bank-front {
-        height: 25rem;
+    .bank-front {
+        height: 12.5em;
         margin: 0;
-        width: 20rem;
-    } */
+        width: 10em;
+    }
     
+    .bank-img {
+        height: 12.5em;
+        width: 10em;
+    }
     /* .bank-img {
         height: 25rem;
         position: relative;
