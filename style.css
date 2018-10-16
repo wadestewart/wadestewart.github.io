@@ -496,17 +496,26 @@ body {
 .contact-flex {
     align-items: center;
     display: flex;
-    margin-left: 1rem;
+    justify-content: center;
+    margin-left: 2rem;
 }
 
 .contact-flex li {
+    height: 2rem;
     list-style-type: none;
+    text-align: center;
+    width: 7rem;
+}
+
+.contact-flex li a {
+    display: inline;
+    text-decoration: none;
+    vertical-align: top;
 }
 
 .gh-logo a svg {
     fill: goldenrod;
     height: auto;
-    margin: 0 2rem 0 0;
     width: 7rem;
 }
 
@@ -514,14 +523,9 @@ body {
     fill: #000;
 }
 
-.contact-flex li a {
-    text-decoration: none;
-}
-
 .contact-icon a svg {
     fill: goldenrod;
     height: auto;
-    margin: 0 2rem 0 0;
     width: 2rem;
 }
 
@@ -532,6 +536,7 @@ body {
 .mail i {
     color: goldenrod;
     font-size: 3rem;
+    vertical-align: top;
 }
 
 .mail i:hover {
@@ -609,15 +614,19 @@ body {
 
     #about {
         flex-direction: column;
-        height: 55em;
+        height: 50em;
         margin: 0 auto;
         width: 20.5em;
+    }
+
+    #about h1 {
+        display: none;
     }
     
     .about-flex {
         flex-direction: column;
         height: 65em;
-        margin: 1rem auto;
+        margin: 5rem 0 0 0;
         width: 20.5em;
     }
     
@@ -626,10 +635,6 @@ body {
         height: 55em;
         margin: 0 auto;
         width: 20.5em;
-    }
-    
-    .about h1 {
-        margin: 0;
     }
     
     .brand {
@@ -655,53 +660,53 @@ body {
     }
 
     #projects {
-        height: 40em;
+        height: 50em;
         margin: 0 auto;
         width: 20.5em;
     }
 
     .project-title {
-        margin: 5rem 5rem 0 5rem;
-    }
+        display: none;
+}
     
     .project-cards {
         align-items: center;
         flex-direction: column;
-        height: 40em;
+        height: 50em;
         justify-content: flex-start;
-        margin: 1em 0;
+        margin: 2em 0 0 0;
         width: 20.5em;
     }
     
     .flashcards, .notflix {
-        height: 10em;
-        width: 10em;
+        height: 15em;
+        width: 15em;
     }
     
     .flash-front, .notflix-front {
-        height: 10em;
+        height: 15em;
         margin: 0;
-        width: 10em;
+        width: 15em;
     }
     
     .flash-img, .notflix-img {
-        height: 10em;
-        width: 10em;
+        height: 15em;
+        width: 15em;
     }
     
     .flash-hover {
-        height: 10em;
-        width: 10em;
+        height: 15em;
+        width: 15em;
     }
     
     .bank-hover {
-        height: 12.5em;
-        width: 10em;
+        height: 17.5em;
+        width: 15em;
     }
     
     .notflix-hover {
-        height: 10em;
-        width: 10em;
+        height: 15em;
+        width: 15em;
     }
     
     .flash-title, .bank-title, .notflix-title {
@@ -726,31 +731,33 @@ body {
     }
     
     .bank {
-        height: 12.5em;
-        width: 10em;
+        height: 17.5em;
+        width: 15em;
     }
     
     .bank-front {
-        height: 12.5em;
+        height: 17.5em;
         margin: 0;
-        width: 10em;
+        width: 15em;
     }
     
     .bank-img {
-        height: 12.5em;
-        width: 10em;
+        height: 17.5em;
+        width: 15em;
     }
 
     #contact {
         flex-direction: column;
-        height: 40em;
+        height: 50em;
         margin: 0 auto;
         width: 20.5em;
     }
 
     #contact h1 {
-        margin: 1.5em 5em 5em 5em;
+        display: none;
+        margin: 0;
         text-align: center;
+        width: 20.5em;
     }
     
     .vl {
@@ -758,13 +765,15 @@ body {
     }
     
     .contact-flex {
+        flex-direction: column;
         margin: 0;
         padding: 0;
+        width: 20.5em;
     }
     
     .contact-flex li {
         list-style-type: none;
-        margin: 0;
+        margin: 1em 0;
     }
     
     .gh-logo a:hover svg {
@@ -794,7 +803,6 @@ body {
     .mail i:hover {
         color: #000;
     }
-
 
     }
 
