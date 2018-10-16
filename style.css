@@ -77,6 +77,10 @@ body {
     fill: #000;
 }
 
+#contact {
+    margin-left: 0.5rem;
+}
+
 .nav-scroll {
     color: goldenrod;
     display: inline-block;
