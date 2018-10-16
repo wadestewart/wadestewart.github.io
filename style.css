@@ -768,8 +768,13 @@ body {
         text-align: center;
         width: 20.5em;
     }
+
+    .vl {
+        display: none;
+    }
     
     .contact-flex {
+        align-items: center;
         flex-direction: column;
         margin: 0;
         padding: 0;
@@ -792,7 +797,7 @@ body {
     .contact-icon a svg {
         fill: goldenrod;
         height: auto;
-        margin: 0 2rem 0 0;
+        margin: 0;
         width: 2rem;
     }
     
