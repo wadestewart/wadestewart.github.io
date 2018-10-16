@@ -242,6 +242,7 @@ body {
 .brand, .narrative {
     display: flex;
     flex-direction: column;
+    font-weight: 300;
     margin: 0.5rem 0;
     width: 50rem;
 }
@@ -269,7 +270,7 @@ body {
 
 .slider {
     height: 10rem;
-    margin: 0 5rem 0 0;
+    /* margin: 0 5rem 0 0; */
     overflow: hidden;
     padding: 0 0 0 0.5rem;
     width: 50rem;
@@ -293,19 +294,20 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: 50rem;
+    width: 55rem;
 }
 
 .q-a h3 {
-    font-weight: 300;
+    font-weight: 100;
     margin: 0 0.5rem 0 0;
-    width: 35rem;
+    width: 42.5rem;
 }
 
 .answer p {
-    color: grey;
+    color: #000;
     font-size: 0.9rem;
-    width: 35rem;
+    font-weight: 300;
+    width: 42.5rem;
 }
 
 #projects {
@@ -489,12 +491,18 @@ body {
 }
 
 .vl {
-    border-left: 0.1rem solid black;
+    border-left: 0.1rem solid #000;
     height: 5rem;
 }
 
+/* .contact-links {
+    height: 25rem;
+    padding: 2rem 0;
+    width: 100%;
+} */
+
 .contact-flex {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -758,10 +766,6 @@ body {
         margin: 0;
         text-align: center;
         width: 20.5em;
-    }
-    
-    .vl {
-        display: none;
     }
     
     .contact-flex {
