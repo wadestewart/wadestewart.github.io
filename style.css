@@ -257,7 +257,6 @@ body {
 }
 
 .slider-flex {
-    /* align-items: center; */
     display: flex;
     width: 50rem;
 }
@@ -275,7 +274,6 @@ body {
     padding: 0 0 0 0.5rem;
     width: 50rem;
 }
-
 
 .q-a-slides {
     font-family: 'Circular', Helvetica, sans-serif;
@@ -607,21 +605,22 @@ body {
 
     #about {
         flex-direction: column;
-        height: 80em;
+        height: 55em;
         margin: 0 auto;
         width: 20.5em;
     }
     
     .about-flex {
         flex-direction: column;
-        height: 80em;
+        height: 65em;
+        margin: 1rem auto;
         width: 20.5em;
     }
     
     .about {
         align-items: center;
-        height: 56em;
-        margin: 2em 0 0 0;
+        height: 55em;
+        margin: 0 auto;
         width: 20.5em;
     }
     
@@ -646,51 +645,9 @@ body {
         margin: 1em 0;
         width: 20.5em;
     }
-
-    .contact-flex {
-        justify-content: center;
-        margin: 0;
-    }
-    
     
     .slider-flex {
-        /* align-items: center; */
-        display: flex;
-        flex-direction: column;
-        width: 50rem;
-    }
-    
-    .slider-flex svg {
-        height: 4rem;
-        margin: 0 1rem 0 0;
-        width: auto;
-    }
-    
-    .slider {
-        height: 27em;
-        margin: 0;
-        width: 15em;
-    }
-
-    .q-a-slides {
-        height: 27rem;
-        width: 1000px;
-    }
-    
-    .slider i {
-        font-size: 3.5rem;
-        margin: 0;
-        padding: 0 1rem 0 0;
-    }
-    
-    .slide {
-        float: left;
-        height: 27rem;
-        width: 15rem;
-    }
-    
-    .q-a h3 {
-        margin: 0;
+        display: none;
     }
 
     #projects {
