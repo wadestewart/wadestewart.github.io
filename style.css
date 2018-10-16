@@ -623,7 +623,7 @@ body {
 
     #about {
         flex-direction: column;
-        height: 60em;
+        height: 62.5em;
         margin: 0 auto;
         width: 20.5em;
     }
@@ -634,7 +634,7 @@ body {
     
     .about-flex {
         flex-direction: column;
-        height: 60em;
+        height: 62.5em;
         margin: 5rem 0 0 0;
         width: 20.5em;
     }
