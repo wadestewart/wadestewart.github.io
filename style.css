@@ -77,7 +77,7 @@ body {
     fill: #000;
 }
 
-#contact {
+#nav-contact {
     margin-left: 0.5rem;
 }
 
@@ -250,43 +250,6 @@ body {
 .brand p, .narrative p {
     font-size: 1rem;
     margin: 0.1rem 0;
-}
-
-.contact-flex {
-    align-items: center;
-    display: flex;
-    margin: 1rem 0;
-    padding: 0;
-}
-
-.contact-flex li {
-    list-style-type: none;
-}
-
-.gh-logo a svg {
-    fill: goldenrod;
-    height: auto;
-    margin: 0 2rem 0 0;
-    width: 7rem;
-}
-
-.gh-logo a:hover svg {
-    fill: #000;
-}
-
-.contact-flex li a {
-    text-decoration: none;
-}
-
-.contact-icon a svg {
-    fill: goldenrod;
-    height: auto;
-    margin: 0 2rem 0 0;
-    width: 2rem;
-}
-
-.contact-icon a:hover svg {
-    fill: #000;
 }
 
 .slider {
@@ -507,6 +470,59 @@ body {
     -webkit-transition: 0.8s ease-in-out;
     z-index: -1;
     width: 20rem;
+}
+
+#contact {
+    align-content: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Circular', Helvetica, sans-serif;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contact-flex {
+    align-items: center;
+    display: flex;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.contact-flex li {
+    list-style-type: none;
+}
+
+.gh-logo a svg {
+    fill: goldenrod;
+    height: auto;
+    margin: 0 2rem 0 0;
+    width: 7rem;
+}
+
+.gh-logo a:hover svg {
+    fill: #000;
+}
+
+.contact-flex li a {
+    height: ;
+    text-decoration: none;
+}
+
+.contact-icon a svg {
+    fill: goldenrod;
+    height: auto;
+    margin: 0 2rem 0 0;
+    width: 2rem;
+}
+
+.contact-icon a:hover svg {
+    fill: #000;
+}
+
+.mail {
+    font-size: 4rem;
 }
 
 @media only screen 

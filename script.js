@@ -54,6 +54,7 @@ function ScrollHandler(pageId) {
 new ScrollHandler('landing-page')
 new ScrollHandler('about')
 new ScrollHandler('projects')
+new ScrollHandler('contact')
 
 // This scroll found here: https://stackoverflow.com/questions/15158937/jquery-jump-or-scroll-to-certain-position-div-or-target-on-the-page-from-button
 
