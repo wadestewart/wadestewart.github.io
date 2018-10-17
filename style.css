@@ -227,7 +227,7 @@ body {
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
     height: 20rem;
-    margin: 0 0 1rem 5rem;
+    margin: 0 0 3rem 5rem;
     width: 55rem;
 }
 
@@ -505,15 +505,17 @@ body {
 }
 
 .contact-flex li a {
-    display: inline;
     text-decoration: none;
-    vertical-align: top;
+}
+
+.gh-logo {
+    margin-right: 3rem;
 }
 
 .gh-logo a svg {
     fill: goldenrod;
-    height: auto;
-    width: 7rem;
+    height: 2rem;
+    width: auto;
 }
 
 .gh-logo a:hover svg {
@@ -522,18 +524,18 @@ body {
 
 .contact-icon a svg {
     fill: goldenrod;
-    height: auto;
-    width: 2rem;
+    height: 2rem;
+    width: auto;
 }
 
 .contact-icon a:hover svg {
     fill: #000;
 }
 
-.mail i {
-    color: goldenrod;
-    font-size: 3rem;
-    vertical-align: top;
+.mail svg {
+    fill: goldenrod;
+    height: auto;
+    width: 3rem;
 }
 
 .mail i:hover {
