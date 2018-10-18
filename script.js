@@ -167,7 +167,7 @@ const email = $('.contact-email')
 
 $('.contact-github').hover(function() {
     contactBack.html('GITHUB')
-    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)', 'transform-origin': '100% 1rem', '-webkit-transform-origin': '100% 1rem'})
+    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)'})
 }, function() {
     flipper.css({'transform': 'rotateX(0deg)', '-webkit-transform': 'rotateX(0deg)'})
     contactBack.html('GITHUB')
@@ -175,7 +175,7 @@ $('.contact-github').hover(function() {
 
 $('.contact-linkedin').hover(function() {
     contactBack.html('LINKEDIN')
-    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)', 'transform-origin': '100% 1rem', '-webkit-transform-origin': '100% 1rem'})
+    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)'})
 }, function() {
     flipper.css({'transform': 'rotateX(0deg)', '-webkit-transform': 'rotateX(0deg)'})
     contactBack.html('LINKEDIN')
@@ -183,7 +183,7 @@ $('.contact-linkedin').hover(function() {
 
 $('.contact-resume').hover(function() {
     contactBack.html('RESUME')
-    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)', 'transform-origin': '100% 1rem', '-webkit-transform-origin': '100% 1rem'})
+    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)'})
 }, function() {
     flipper.css({'transform': 'rotateX(0deg)', '-webkit-transform': 'rotateX(0deg)'})
     contactBack.html('RESUME')
@@ -191,7 +191,7 @@ $('.contact-resume').hover(function() {
 
 $('.contact-email').hover(function() {
     contactBack.html('EMAIL')
-    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)', 'transform-origin': '100% 1rem', '-webkit-transform-origin': '100% 1rem'})
+    flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)'})
 }, function() {
     flipper.css({'transform': 'rotateX(0deg)', '-webkit-transform': 'rotateX(0deg)'})
     contactBack.html('EMAIL')
