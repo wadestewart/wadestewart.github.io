@@ -702,7 +702,7 @@ body {
         width: 20.5em;
     }
 
-    .project-title {
+    .project-title  {
         display: none;
 }
     
@@ -790,11 +790,7 @@ body {
         width: 20.5em;
     }
 
-    .title-front {
-        margin: 0;
-    }
-
-    .contact-front {
+    .contact-front, .contact-back {
         display: none;
     }
 
@@ -835,14 +831,6 @@ body {
         fill: #000;
     }
     
-    .mail i {
-        color: goldenrod;
-        font-size: 3rem;
-    }
-    
-    .mail i:hover {
-        color: #000;
-    }
 
     }
 
