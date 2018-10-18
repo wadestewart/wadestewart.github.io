@@ -173,7 +173,7 @@ $('.contact-github').hover(function() {
     contactBack.html('GITHUB')
 })
 
-$('.contact-linkedin').hover(function() {
+linkedin.hover(function() {
     contactBack.html('LINKEDIN')
     flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)'})
 }, function() {
@@ -181,7 +181,7 @@ $('.contact-linkedin').hover(function() {
     contactBack.html('LINKEDIN')
 })
 
-$('.contact-resume').hover(function() {
+resume.hover(function() {
     contactBack.html('RESUME')
     flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)'})
 }, function() {
@@ -189,7 +189,7 @@ $('.contact-resume').hover(function() {
     contactBack.html('RESUME')
 })
 
-$('.contact-email').hover(function() {
+email.hover(function() {
     contactBack.html('EMAIL')
     flipper.css({'transform': 'rotateX(-180deg)', '-webkit-transform': 'rotateX(-180deg)'})
 }, function() {
