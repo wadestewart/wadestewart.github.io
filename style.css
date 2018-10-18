@@ -480,9 +480,18 @@ body {
     width: 100vw;
 }
 
-#contact h1 {
-    margin: 1.5rem 5rem 1.5rem 5rem;
+.contact-hover {
+    height: 5rem;
+    width: 10rem;
+}
+
+.contact-title, .title-back {
+    margin: 0;
     text-align: center;
+}
+
+.contact-back {
+    margin: 0;
 }
 
 .vl {
@@ -532,14 +541,53 @@ body {
     fill: #000;
 }
 
-.mail svg {
-    fill: goldenrod;
-    height: auto;
-    width: 3rem;
+.flip-container, .title-front, .title-back {
+    height: 2rem;
+    width: 9.4rem;
 }
 
-.mail i:hover {
-    color: #000;
+.flip-container {
+    margin: 1.5rem 5rem 1.5rem 5rem;
+    perspective: 175px;
+    position: relative;
+    /* transform-origin: 100% 1rem;
+    -webkit-transform-origin: 100% 1rem; */
+}
+
+.flipper {
+    position: relative;
+    transition: 1s;
+    -webkit-transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.title-front, .title-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title-front {
+    transform: rotateX(0deg);
+    z-index: 2;
+}
+
+.title-back {
+    transform: rotateX(180deg)
+}
+
+@keyframes rotateText {
+    0% {transform: scaleY(1)}
+    50% {transform: scaleY(-1)}
+    100% {transform: scaleY(1)}
+
+}
+
+.contact-title > span {
+    animation: rotateText 2s;
+    display: inline-block;
 }
 
 @media only screen 

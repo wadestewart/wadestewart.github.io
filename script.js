@@ -157,3 +157,20 @@ notflix.hover(function() {
     notflixTitle.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
     notflixStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
+
+const contact = $('.contact-title')
+const contactBack = $('.contact-back')
+const flipper = $('.flipper')
+const linkedin = $('.contact-linkedin')
+const resume = $('.contact-resume')
+const email = $('.contact-email')
+
+$('.contact-github').hover(function() {
+    // console.log('in')
+    contactBack.html('GITHUB')
+    flipper.css({'-webkit-transform': 'rotateX(-180deg)', '-webkit-transform-origin': '100% 1rem'})
+}, function() {
+    // console.log('out')
+    flipper.css('transform', 'rotateX(0deg)')
+    contactBack.html('GITHUB')
+})
