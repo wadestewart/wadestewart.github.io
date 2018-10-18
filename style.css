@@ -97,7 +97,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 10rem;
-    margin-left: 5rem;
+    margin-left: 30rem;
     margin-right: auto;
     width: 24rem;
 }
@@ -306,7 +306,7 @@ body {
 }
 
 #projects {
-    align-content: center;
+    align-items: center;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -324,8 +324,10 @@ body {
 .project-cards {
     align-items: flex-start;
     display: flex;
+    height: 20rem;
     justify-content: space-between;
     margin: 2rem 5rem;
+    width: 75rem;
 }
 
 .flashcards, .notflix {
