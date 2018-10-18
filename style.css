@@ -747,8 +747,8 @@ body {
     }
     
     .flash-title, .bank-title, .notflix-title {
-        font-size: 1em;
-        margin: 0.5em 0;
+        font-size: 1.5em;
+        margin: 0 0 2em 0;
     }
     
     .flash-hover h4, .bank-hover h4, .notflix-hover h4 {
@@ -762,7 +762,7 @@ body {
     }
     
     #repo-link a svg{
-        height: 1em;
+        height: 1.5em;
         margin: 0;
         width: auto; 
     }
