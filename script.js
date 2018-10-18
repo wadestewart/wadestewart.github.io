@@ -158,7 +158,7 @@ notflix.hover(function() {
     notflixStack.css({"-webkit-transform": "scale(0)", "transform": "scale(0)"})
 })
 
-const contact = $('.contact-title')
+const contact = $('.contact-front')
 const contactBack = $('.contact-back')
 const flipper = $('.flipper')
 const linkedin = $('.contact-linkedin')
