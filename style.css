@@ -853,6 +853,10 @@ and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) {
 
     #landing-page {
+        background: url('./images/mobile-landscape.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 22.5em;
         width: 50em;
     }
