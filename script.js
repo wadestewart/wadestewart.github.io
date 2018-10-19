@@ -65,83 +65,50 @@ $('.nav-scroll').on('click', function(e) {
     }, 1000)
 })
 
-// This slider found here http://jsfiddle.net/uctr94ve/
+// This slider mixture of these 2: http://jsfiddle.net/uctr94ve/ https://codepen.io/derwinsadiwa/pen/emPgwQ?editors=0100
 
-// $(function() {
-//     const width = 800
-//     const animationSpeed = 1000
-//     const pause = 7000
-//     let currentSlide =1
-//     const $slider = $('.slider')
-//     const $slideContainer = $('.q-a-slides', $slider)
-//     const $slides = $('.slide', $slider)
+$(function() {
+    const width = 100
+    const animationSpeed = 1000
+    const pause = 7000
+    let currentSlide = 1
+    
+    const $slider = $('.slider')
+    const $slideContainer = $('.q-a-slides')
+    const $slides = $('.slide')
+    
+    let interval
+    
+    $slides.each(function(index) {
+        $(this).css('left',(index*100)+'%')
+    })
 
-//     function startSlider() {
-//         interval = setInterval(slide, pause)
-//     }
-
-//     function slide() {
-//         $slideContainer.animate({
-//             'margin-left': '-=' + width
-//         }, animationSpeed, function() {
-//             if(++currentSlide === $slides.length) {
-//                 currentSlide = 1
-//                 $slideContainer.css('margin-left', 0)
-//             }
-//         })
-//     }
-
-//     function pauseSlider() {
-//         clearInterval(interval)
-//     }
-
-//     $slideContainer
-//         .on('mouseenter', pauseSlider)
-//         .on('mouseleave', startSlider)
-//         .on('click', slide)
-
-//     startSlider()
-// })
-
-const width = 100
-const animationSpeed = 1000
-const timeValue = 7000
-let currentSlide = 1
-
-const $slider = $('.slider')
-const $slideContainer = $('.q-a-slides')
-const $slides = $('.slide')
-
-let interval
-
-$slides.each(function(index) {
-    $(this).css('left',(index*100)+'%')
-})
-
-function startSlider() {
-    interval = setInterval(function() {
-        $slideContainer.animate({'left': '-='+(width+'%')},
-        animationSpeed, function() {
+    function startSlider() {
+        interval = setInterval(slide, pause)
+    }
+    
+    function slide() {
+        $slideContainer.animate({
+            'left': '-='+(width+'%')
+        }, animationSpeed, function() {
             if (++currentSlide === $slides.length) {
                 currentSlide = 1
                 $slideContainer.css('left', 0)
             }
         })
-    }, timeValue)
-}
+    }
 
-// function pauseSlider() {
-//     clearInterval(interval)
-// }
+    function pauseSlider() {
+        clearInterval(interval)
+    }
 
-// $slideContainer
-//     .on('mouseenter', pauseSlider)
-//     .on('mouseleave', startSlider)
-//     .on('click', slide)
+    $slideContainer
+        .on('mouseenter', pauseSlider)
+        .on('mouseleave', startSlider)
+        .on('click', slide)
 
-startSlider()
-
-
+    startSlider()
+})
 
 const flashcards = $('.flashcards')
 const flashHover = $('.flash-hover')

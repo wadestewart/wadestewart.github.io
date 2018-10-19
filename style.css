@@ -193,57 +193,34 @@ body {
 
 #about svg {
     height: 3rem;
+    margin-right: auto;
     text-align: left;
     width: auto;
 }
 
 .about {
     font-family: 'Circular', Helvetica, sans-serif;
+    margin-bottom: 1rem;
 }
 
 .narrative {
     font-weight: 400;
 }
 
-/* .qa-flex {
-    display: flex;
-    flex-flow: row wrap;
-    width: 55rem;
-} */
-
 .slider {
-    /* flex: 0 1 50rem; */
     height: 10rem;
-    /* margin: 0 1rem; */
     overflow: hidden;
-    /* padding: 0 0 0 0.5rem; */
     width: 100%;
 }
-/* .slider {
-    height: 10rem;
-    margin: 0 1rem;
-    overflow: hidden;
-    padding: 0 0 0 0.5rem;
-    width: 50rem;
-} */
 
 .q-a-slides {
     position: relative;
     margin: 0;
     padding: 0;
 }
-/* .q-a-slides {
-    display: flex;
-    flex-flow: row wrap;
-    font-family: 'Circular', Helvetica, sans-serif;
-    height: 29rem;
-    overflow: hidden;
-    width: 3200px;
-} */
 
 .slide {
     cursor: pointer;
-    /* float: left; */
     height: 10rem;
     left: 0;
     position: absolute;
@@ -251,24 +228,17 @@ body {
     top: 0;
     width: 100%;
 }
-/* .slide {
-    cursor: pointer;
-    float: left;
-    height: 29rem;
-    width: 50rem;
-} */
 
 .q-a {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 1rem 0 0 0;
     width: 55rem;
 }
 
 .q-a p {
     font-weight: 100;
-    /* margin: 0 0.5rem 0 0;
-    width: 42.5rem; */
+    margin: 0 0.5rem 0 0;
 }
 
 .answer p {
