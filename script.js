@@ -67,41 +67,41 @@ $('.nav-scroll').on('click', function(e) {
 
 // This slider found here http://jsfiddle.net/uctr94ve/
 
-$(function() {
-    const width = 800
-    const animationSpeed = 1000
-    const pause = 7000
-    let currentSlide =1
-    const $slider = $('.slider')
-    const $slideContainer = $('.q-a-slides', $slider)
-    const $slides = $('.slide', $slider)
+// $(function() {
+//     const width = 800
+//     const animationSpeed = 1000
+//     const pause = 7000
+//     let currentSlide =1
+//     const $slider = $('.slider')
+//     const $slideContainer = $('.q-a-slides', $slider)
+//     const $slides = $('.slide', $slider)
 
-    function startSlider() {
-        interval = setInterval(slide, pause)
-    }
+//     function startSlider() {
+//         interval = setInterval(slide, pause)
+//     }
 
-    function slide() {
-        $slideContainer.animate({
-            'margin-left': '-=' + width
-        }, animationSpeed, function() {
-            if(++currentSlide === $slides.length) {
-                currentSlide = 1
-                $slideContainer.css('margin-left', 0)
-            }
-        })
-    }
+//     function slide() {
+//         $slideContainer.animate({
+//             'margin-left': '-=' + width
+//         }, animationSpeed, function() {
+//             if(++currentSlide === $slides.length) {
+//                 currentSlide = 1
+//                 $slideContainer.css('margin-left', 0)
+//             }
+//         })
+//     }
 
-    function pauseSlider() {
-        clearInterval(interval)
-    }
+//     function pauseSlider() {
+//         clearInterval(interval)
+//     }
 
-    $slideContainer
-        .on('mouseenter', pauseSlider)
-        .on('mouseleave', startSlider)
-        .on('click', slide)
+//     $slideContainer
+//         .on('mouseenter', pauseSlider)
+//         .on('mouseleave', startSlider)
+//         .on('click', slide)
 
-    startSlider()
-})
+//     startSlider()
+// })
 
 const flashcards = $('.flashcards')
 const flashHover = $('.flash-hover')
