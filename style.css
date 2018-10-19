@@ -79,10 +79,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* height: 10rem; */
-    /* margin-left: 20rem; */
     margin-right: 30rem;
-    /* width: 24rem; */
 }
 
 .typing p {
@@ -188,66 +185,37 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
-    justify-content: center;
-    /* height: 100vh;
-    width: 100vw; */
+
 }
 
 #about h1 {
-    margin: 7rem 5rem 0 5rem;
-    text-align: center;
-}
-
-.about-flex {
-    align-items: center;
-    border: 1px solid #000;
-    display: flex;
-    flex: 1 1 250px;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    margin: 2rem 5rem;
-    overflow: hidden;
+    margin: 7rem 0 2.5rem 0;
 }
 
 .about {
     font-family: 'Circular', Helvetica, sans-serif;
-    /* height: 20rem; */
-    margin: 0 0 3rem 5rem;
-    /* width: 55rem; */
+    margin: 0 30rem 5rem 30rem;
 }
 
 .about h1 {
     margin: 0 0 1rem 0;
 }
 
-.brand, .narrative {
-    display: flex;
-    flex-direction: column;
+.narrative {
     font-weight: 400;
-    margin: 0.5rem 0;
-    /* width: 50rem; */
-}
-
-.brand h4, .narrative h4 {
-    margin: 0.1rem 0;
-    margin-right: auto;
-}
-
-.brand p, .narrative p {
-    font-size: 1rem;
-    margin: 0.1rem 0;
 }
 
 .slider-flex {
+    border: 1px solid black;
     display: flex;
+    margin: 0 35rem;
     /* width: 50rem; */
 }
 
 .slider-flex svg {
-    /* height: 4rem; */
+    height: 4rem;
     margin: 0 1rem 0 0;
-    /* width: auto; */
+    width: auto;
 }
 
 .slider {
