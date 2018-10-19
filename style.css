@@ -185,16 +185,16 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
-
 }
 
 #about h1 {
-    margin: 7rem 0 2.5rem 0;
+    margin: 7rem 0 0 0;
 }
 
 .about {
+    flex: 0 1 15rem;
     font-family: 'Circular', Helvetica, sans-serif;
-    margin: 0 30rem 5rem 30rem;
+    margin: 0 15rem 5rem 15rem;
 }
 
 .about h1 {
@@ -205,58 +205,57 @@ body {
     font-weight: 400;
 }
 
-.slider-flex {
-    border: 1px solid black;
+.qa-flex {
     display: flex;
-    margin: 0 35rem;
-    /* width: 50rem; */
 }
 
-.slider-flex svg {
-    height: 4rem;
-    margin: 0 1rem 0 0;
+.qa-flex svg {
+    flex: 1 1 auto;
+    height: 3rem;
     width: auto;
 }
 
 .slider {
+    flex: 0 1 50rem;
     height: 10rem;
-    /* margin: 0 5rem 0 0; */
+    margin: 0 1rem;
     overflow: hidden;
     padding: 0 0 0 0.5rem;
-    /* width: 50rem; */
+    width: 50rem;
 }
 
 .q-a-slides {
+    display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
     height: 29rem;
     overflow: hidden;
-    /* width: 3200px; */
+    width: 3200px;
 }
 
 .slide {
     cursor: pointer;
     float: left;
-    /* height: 29rem;
-    width: 50rem; */
+    height: 29rem;
+    width: 50rem;
 }
 
 .q-a {
     display: flex;
     flex-direction: column;
     margin: 0;
-    /* width: 55rem; */
+    width: 55rem;
 }
 
 .q-a p {
-    /* font-weight: 100; */
+    font-weight: 100;
     margin: 0 0.5rem 0 0;
-    /* width: 42.5rem; */
+    width: 42.5rem;
 }
 
 .answer p {
     color: #000;
     font-weight: 300;
-    /* width: 42.5rem; */
+    width: 42.5rem;
 }
 
 #projects {
