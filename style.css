@@ -25,9 +25,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
     justify-content: center;
-    /* width: 100vw; */
 }
 
 .navbar {
@@ -185,6 +183,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
+    padding: 0 12.5rem;
 }
 
 #about h1 {
@@ -192,13 +191,7 @@ body {
 }
 
 .about {
-    flex: 0 1 15rem;
     font-family: 'Circular', Helvetica, sans-serif;
-    margin: 0 15rem 5rem 15rem;
-}
-
-.about h1 {
-    margin: 0 0 1rem 0;
 }
 
 .narrative {
@@ -207,6 +200,7 @@ body {
 
 .qa-flex {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .qa-flex svg {
@@ -216,7 +210,7 @@ body {
 }
 
 .slider {
-    flex: 0 1 50rem;
+    /* flex: 0 1 50rem; */
     height: 10rem;
     margin: 0 1rem;
     overflow: hidden;
@@ -265,22 +259,19 @@ body {
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
 }
 
-.project-title {
-    margin: 1.5rem 5rem;
-    text-align: center;
-}
+/* .project-title {
+    flex: 0 1 auto;
+} */
 
 .project-cards {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
-    height: 20rem;
-    justify-content: space-between;
-    margin: 2rem 5rem;
-    width: 65rem;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 0 6rem 0;
+    width: 100vw;
 }
 
 .flashcards, .notflix {
