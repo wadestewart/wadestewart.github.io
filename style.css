@@ -12,7 +12,7 @@ body {
 }
 
 .page {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -33,7 +33,7 @@ body {
     height: 5rem;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -513,9 +513,10 @@ body {
     transform: rotateX(180deg)
 }
 
+/* iPhone 6/7/8 */
 @media only screen 
-    and (min-width: 320px)
-    and (max-width: 480px)
+    and (min-width: 375px)
+    and (max-width: 812px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
 
@@ -524,34 +525,27 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 40em;
         justify-content: flex-start;
         margin: 0 auto;
-        width: 20.5em;
     }
 
     .navbar {
         height: 4em;
-        width: 20.5em;
         z-index: 9;
     }
 
     .flex-nav {
-        justify-content: flex-start;
-        height: 4em;
-        margin: 0;
+        align-items: center;
+        justify-content: center;
         padding: 0;
-        vertical-align: middle;
-        width: 20.5em;
     }
 
     .flex-nav li {
-        margin: 0.5em;
+        margin: 0.5em 0;
     }
 
     .nav-scroll {
         font-size: 0.9em;
-        width: 4em;
     }
 
     #logo a svg {
@@ -559,32 +553,72 @@ body {
         width: auto;
     }
 
-    #nav-contact {
-        margin-left: 2em;
-    }
-
     .typing {
-        margin-left: auto;
-        margin-top: 10rem;
-        width: 260px;
+        margin-right: 0;
+        margin-top: 15rem;
+        width: 16.25em;
     }
     
     .typing p {
         font-size: 1.75rem;
-        width: 260px;
     }
     
     .typing p:nth-child(1) {
-        width: 255px;
+        width: 12em;
     }
     
     .typing p:nth-child(2) {
-        width: 260px;
+        width: 12.25em;
     }
     
     .typing p:nth-child(3) {
-        width: 225px;
+        width: 10em;
     }
+
+    
+    /* .typing p:nth-child(1) {
+        animation: 
+            type 2s steps(25, end),
+            blink 0.5s step-end infinite;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        -webkit-animation: 
+            type 2s steps(25, end),
+            blink 0.5s step-end infinite;
+        -webkit-animation-fill-mode: forwards;
+        width: 19.3rem;
+    } */
+    
+    /* .typing p:nth-child(2) {
+        animation:
+            type 2s steps(25, end),
+            blink 0.5s step-end infinite;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        -webkit-animation:
+            type 2s steps(25, end),
+            blink 0.5s step-end infinite;
+        -webkit-animation-delay: 2s;
+        -webkit-animation-fill-mode: forwards;
+        width: 19.8rem;
+    } */
+    
+    /* .typing p:nth-child(3) {
+        animation:
+            type-final 2s steps(25, end),
+            blink 0.5s step-end infinite;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        margin: 0 1rem 0 0;
+        opacity: 0;
+        -webkit-animation:
+            type-final 2s steps(25, end),
+            blink 0.5s step-end infinite;
+        -webkit-animation-delay: 4s;
+        -webkit-animation-fill-mode: forwards;
+        width: 15.8rem;
+    } */
 
     #about {
         flex-direction: column;
