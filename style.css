@@ -199,7 +199,6 @@ body {
 
 .about {
     font-family: 'Circular', Helvetica, sans-serif;
-    margin-bottom: 1rem;
 }
 
 .about > p {
@@ -230,20 +229,14 @@ body {
 }
 
 .q-a {
-    display: flex;
-    /* flex-direction: column; */
-    flex-flow: column wrap;
+    font-weight: 100;
     margin: 1rem 0 0 0;
     width: 55rem;
 }
 
-.q-a p {
-    font-weight: 100;
-    margin: 0 0.5rem 0 0;
-}
-
-.answer p {
+.answer {
     font-weight: 300;
+    margin: 1rem 0 0 0;
 }
 
 #projects {
@@ -532,7 +525,7 @@ body {
     }
 
     .navbar {
-        height: 4em;
+        height: 2em;
         z-index: 9;
     }
 
@@ -548,6 +541,10 @@ body {
 
     .nav-scroll {
         font-size: 0.9em;
+    }
+
+    #logo {
+        margin: 0;
     }
 
     #logo a svg {
@@ -589,6 +586,10 @@ body {
         margin-bottom: 0;
     }
 
+    .about > p {
+        margin: 0.5em 0;
+    }
+
     #about svg {
         flex: 0 1 2rem;
         height: 3rem;
@@ -597,8 +598,17 @@ body {
         width: auto;
     }
     
-    .slider-flex {
-        display: none;
+    .q-a {
+        margin: 0.5rem 0 0 0;
+    }
+    
+    .q-a p {
+        font-weight: 100;
+        margin: 0 0.5rem 0 0;
+    }
+    
+    .answer p {
+        font-weight: 300;
     }
 
     #projects {
