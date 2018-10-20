@@ -38,12 +38,17 @@ body {
 }
 
 .flex-nav {
+    align-items: center;
     display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 1.5rem 5rem;
     text-align: left;
+}
+
+.flav-nav li {
+    margin: 0;
 }
 
 #logo {
