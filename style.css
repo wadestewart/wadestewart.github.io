@@ -596,7 +596,7 @@ body {
     }
 
     .about {
-        margin-top: 1.5em;
+        margin-top: 0.5em;
         margin-bottom: 0;
     }
 
@@ -606,9 +606,10 @@ body {
     }
 
     #about svg {
-        flex: 0 1 2rem;
+        display: none;
+        /* flex: 0 1 2rem;
         height: 2rem;
-        margin-right: 0;
+        margin-right: 0; */
     }
     
     .question {
