@@ -607,13 +607,11 @@ body {
 
     #about svg {
         flex: 0 1 2rem;
-        height: 3rem;
+        height: 2rem;
         margin-right: 0;
-        text-align: center;
-        width: auto;
     }
     
-    .q-a {
+    .question {
         font-size: 0.9em;
         margin: 0.5rem 0 0 0;
     }
