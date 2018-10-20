@@ -588,7 +588,6 @@ body {
     }
 
     #about {
-        height: 60rem;
         padding: 1.5em;
     }
     
@@ -597,15 +596,17 @@ body {
     }
 
     .about {
+        margin-top: 1.5em;
         margin-bottom: 0;
     }
 
     .about > p {
+        font-size: 0.9em;
         margin: 0.5em 0;
     }
 
     #about svg {
-        flex: 0 1 1rem;
+        flex: 0 1 2rem;
         height: 3rem;
         margin-right: 0;
         text-align: center;
@@ -613,10 +614,17 @@ body {
     }
     
     .q-a {
+        font-size: 0.9em;
         margin: 0.5rem 0 0 0;
     }
     
     .answer {
+        font-size: 0.9em;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .depth {
+        font-size: 0.9em;
         margin: 0.5rem 0 0 0;
     }
 
