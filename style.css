@@ -202,11 +202,12 @@ body {
     margin-bottom: 1rem;
 }
 
-.narrative {
+.about > p {
     font-weight: 400;
 }
 
 .slider {
+    flex: 1 1 10rem;
     height: 10rem;
     overflow: hidden;
     width: 100%;
@@ -230,7 +231,8 @@ body {
 
 .q-a {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-flow: column wrap;
     margin: 1rem 0 0 0;
     width: 55rem;
 }
@@ -513,7 +515,7 @@ body {
     transform: rotateX(180deg)
 }
 
-/* iPhone 6/7/8 */
+/* iPhone x */
 @media only screen 
     and (min-width: 375px)
     and (max-width: 812px)
@@ -575,86 +577,24 @@ body {
         width: 10em;
     }
 
-    
-    /* .typing p:nth-child(1) {
-        animation: 
-            type 2s steps(25, end),
-            blink 0.5s step-end infinite;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        -webkit-animation: 
-            type 2s steps(25, end),
-            blink 0.5s step-end infinite;
-        -webkit-animation-fill-mode: forwards;
-        width: 19.3rem;
-    } */
-    
-    /* .typing p:nth-child(2) {
-        animation:
-            type 2s steps(25, end),
-            blink 0.5s step-end infinite;
-        animation-delay: 2s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        -webkit-animation:
-            type 2s steps(25, end),
-            blink 0.5s step-end infinite;
-        -webkit-animation-delay: 2s;
-        -webkit-animation-fill-mode: forwards;
-        width: 19.8rem;
-    } */
-    
-    /* .typing p:nth-child(3) {
-        animation:
-            type-final 2s steps(25, end),
-            blink 0.5s step-end infinite;
-        animation-delay: 4s;
-        animation-fill-mode: forwards;
-        margin: 0 1rem 0 0;
-        opacity: 0;
-        -webkit-animation:
-            type-final 2s steps(25, end),
-            blink 0.5s step-end infinite;
-        -webkit-animation-delay: 4s;
-        -webkit-animation-fill-mode: forwards;
-        width: 15.8rem;
-    } */
-
     #about {
-        flex-direction: column;
-        height: 45em;
-        margin: 0 auto;
-        width: 20.5em;
+        padding: 1rem 1rem 0 1rem;
     }
-
+    
     #about h1 {
         display: none;
     }
-    
-    .about-flex {
-        flex-direction: column;
-        height: 45em;
-        margin: 5rem 0 0 0;
-        width: 20.5em;
-    }
-    
+
     .about {
-        align-items: center;
-        height: 45em;
-        margin: 0 auto;
-        width: 20.5em;
-    }
-    
-    .brand {
-        height: 8em;
-        margin: 0.2em 0;
-        width: 20.5em;
+        margin-bottom: 0;
     }
 
-    .narrative {
-        height: 35em;
-        margin: 0.2em 0;
-        width: 20.5em;
+    #about svg {
+        flex: 0 1 2rem;
+        height: 3rem;
+        margin-right: 0;
+        text-align: center;
+        width: auto;
     }
     
     .slider-flex {
