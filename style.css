@@ -196,7 +196,7 @@ body {
 }
 
 #about svg {
-    height: 3rem;
+    height: 2rem;
     margin-right: auto;
     text-align: left;
     width: auto;
@@ -271,7 +271,8 @@ body {
 }
 
 .flashcards, .notflix {
-    height: 20rem;
+    flex-flow: 1 1 20rem;
+    height: auto;
     overflow: hidden;
     position: relative;
     width: 20rem;
@@ -279,9 +280,7 @@ body {
 }
 
 .flash-front, .notflix-front {
-    height: 20rem;
     margin: 0;
-    width: 20rem;
 }
 
 .flash-img, .notflix-img {
@@ -397,9 +396,9 @@ body {
 }
 
 .bank-front {
-    height: 25rem;
+    /* height: 25rem; */
     margin: 0;
-    width: 20rem;
+    /* width: 20rem; */
 }
 
 .bank-img {
@@ -516,17 +515,16 @@ body {
     transform: rotateX(180deg)
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
 /* iPhone x */
 @media only screen 
     and (min-width: 375px)
     and (max-width: 812px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
-
-    /* .page {
-        height: 100%;
-        width: 100%;
-    } */
 
     #landing-page {
         background: url('./images/mobile-lander.png');
@@ -635,7 +633,7 @@ body {
 
     .project-title  {
         display: none;
-}
+    }
     
     .project-cards {
         align-items: center;
