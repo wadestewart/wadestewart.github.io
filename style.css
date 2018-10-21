@@ -80,7 +80,6 @@ body {
 .typing {
     align-items: center;
     display: flex;
-    flex-direction: column;
     flex-flow: column wrap;
     justify-content: center;
     margin-right: 15rem;
@@ -188,7 +187,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Circular', Helvetica, sans-serif;
-    padding: 0 12.5rem;
+    padding: 0 11rem;
 }
 
 #about h1 {
@@ -310,7 +309,7 @@ body {
     text-decoration: none;
 }
 
-.flash-hover {
+.flash-hover, .notflix-hover {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -331,22 +330,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 25rem;
-    justify-content: center;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    width: 20rem;
-    z-index: 1;
-}
-
-.notflix-hover {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 20rem;
     justify-content: center;
     left: 0;
     margin: 0;
@@ -388,7 +371,7 @@ body {
 }
 
 .bank {
-    height: 25rem;
+    flex: 1 1 25rem;
     overflow: hidden;
     position: relative;
     width: 20rem;
@@ -396,9 +379,7 @@ body {
 }
 
 .bank-front {
-    /* height: 25rem; */
     margin: 0;
-    /* width: 20rem; */
 }
 
 .bank-img {
@@ -515,16 +496,98 @@ body {
     transform: rotateX(180deg)
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    
+@media (max-width: 1024px) {
+    #about {
+        padding: 0 7.5em;
+    }
 }
 
-/* iPhone x */
-@media only screen 
-    and (min-width: 375px)
-    and (max-width: 812px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: portrait) {
+@media (max-width: 960px) {
+    .flashcards, .notflix {
+        flex: 1 1 15em;
+        width: 15em;
+        z-index: 0;
+    }
+    
+    .flash-img, .notflix-img {
+        height: 15em;
+        width: 15em;
+    }
+
+    .bank {
+        flex: 1 1 18.75em;
+        width: 15em;
+    }
+    
+    .bank-img {
+        height: 18.75em;
+        width: 15em;
+    }
+
+    .flash-hover, .notflix-hover {
+        height: 15em;
+        width: 15em;
+    }
+    
+    .bank-hover {
+        height: 18.75em;
+        width: 15em;
+    }
+
+    .flash-hover h4, .bank-hover h4, .notflix-hover h4 {
+        display: none;
+    }
+
+    .flash-title, .bank-title, .notflix-title {
+        font-size: 1.5em;
+        /* margin: 0; */
+    }
+}
+
+@media (max-width: 880px) {
+    #about {
+        padding: 0 5em;
+    }
+
+    #contact {
+        flex-flow: column wrap;
+    }
+
+    .vl {
+        border-bottom: 0.1rem solid #000;
+        border-left: none;
+        height: 0;
+        width: 5rem;
+    }
+
+    .contact-flex {
+        margin-top: 1.5em;
+    }
+}
+
+@media (max-width: 770px) {
+    #landing-page {
+        background: url('./images/tablet-lander.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .typing {
+        margin-right: 0;
+    }
+
+    #about {
+        padding: 0 3em;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
 
     #landing-page {
         background: url('./images/mobile-lander.png');
@@ -604,7 +667,6 @@ body {
     }
 
     #about svg {
-        /* display: none; */
         flex: 0 1 1.5rem;
         height: 1.5rem;
         margin-right: 0;
