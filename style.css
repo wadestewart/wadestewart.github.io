@@ -191,7 +191,33 @@ body {
 }
 
 #about h1 {
-    margin: 7rem 0 0 0;
+    margin: 7rem 0;
+}
+
+.about-flex {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.venn {
+    width: 50%;
+}
+
+.venn img {
+    height: auto;
+    width: 20rem;
+}
+
+.slider-flex {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    height: 20rem;
+    justify-content: center;
+    width: 50%;
 }
 
 #about svg {
@@ -201,17 +227,9 @@ body {
     width: auto;
 }
 
-.about {
-    font-family: 'Circular', Helvetica, sans-serif;
-}
-
-.about > p {
-    font-weight: 400;
-}
-
 .slider {
     flex: 1 1 10rem;
-    height: 10rem;
+    height: 20rem;
     overflow: hidden;
     width: 100%;
 }
@@ -226,6 +244,7 @@ body {
     cursor: pointer;
     height: 10rem;
     left: 0;
+    padding: 0 5rem;
     position: absolute;
     text-align: left;
     top: 0;
@@ -828,7 +847,7 @@ body {
 @media only screen 
 and (min-width: 375px)
 and (max-width: 812px)
-and (-webkit-min-device-pixel-ratio: 3)
+/* and (-webkit-min-device-pixel-ratio: 3) */
 and (orientation: landscape) {
 
     #landing-page {
