@@ -198,40 +198,32 @@ body {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 11rem;
+    width: 100vw;
 }
 
-.venn {
-    width: 50%;
+.venn > figure {
+    height: 21rem;
+    margin: 0;
 }
 
 .venn img {
-    height: auto;
-    width: 20rem;
+    height: 21rem;
+    width: 21rem;
 }
 
-.slider-flex {
-    align-items: center;
-    display: flex;
-    flex-flow: column wrap;
-    height: 20rem;
-    justify-content: center;
-    width: 50%;
-}
-
-#about svg {
-    height: 2rem;
-    margin-right: auto;
-    text-align: left;
-    width: auto;
+.vl-about {
+    border-left: 0.1rem solid #000;
+    height: 10rem;
+    margin: 2rem;
 }
 
 .slider {
-    flex: 1 1 10rem;
-    height: 20rem;
+    /* flex: 1 1 20rem; */
+    height: 21rem;
     overflow: hidden;
-    width: 100%;
+    width: 21rem;
 }
 
 .q-a-slides {
@@ -242,9 +234,8 @@ body {
 
 .slide {
     cursor: pointer;
-    height: 10rem;
+    height: 21rem;
     left: 0;
-    padding: 0 5rem;
     position: absolute;
     text-align: left;
     top: 0;
@@ -252,13 +243,14 @@ body {
 }
 
 .question {
-    font-weight: 100;
+    font-weight: 700;
     margin: 0.5rem 0;
 }
 
 .answer {
+    color: goldenrod;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
 .depth {
@@ -618,14 +610,14 @@ body {
     }
 
     .navbar {
-        height: 2em;
+        height: 4em;
         z-index: 9;
     }
 
     .flex-nav {
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 1em;
     }
 
     .flex-nav li {
@@ -668,41 +660,62 @@ body {
     }
 
     #about {
-        padding: 1.5em 1em;
+        padding: 2.5em 1em;
     }
     
     #about h1 {
         display: none;
     }
 
-    .about {
-        margin-top: 0.5em;
-        margin-bottom: 0;
+    .about-flex {
+        flex-flow: column wrap;
+        height: 100vh;
+        width: 100%;
     }
 
-    .about > p {
-        font-size: 0.9em;
-        margin: 0 0 0.5em 0;
+    .venn {
+        width: auto;
     }
 
-    #about svg {
-        flex: 0 1 1.5rem;
-        height: 1.5rem;
-        margin-right: 0;
+    .venn figure {
+        margin: 2em;
+    }
+    
+    .venn img {
+        height: auto;
+        width: 20rem;
+    }
+
+    .slider {
+        flex: 1 1 10rem;
+        height: 20rem;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .slide {
+        cursor: pointer;
+        height: 20rem;
+        left: 0;
+        padding: 0 1em;
+        position: absolute;
+        text-align: left;
+        top: 0;
+        width: 100%;
     }
     
     .question {
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
         margin: 0;
     }
     
     .answer {
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
         margin: 0.5rem 0 0 0;
     }
 
     .depth {
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
         margin: 0.5rem 0 0 0;
     }
 
@@ -847,7 +860,7 @@ body {
 @media only screen 
 and (min-width: 375px)
 and (max-width: 812px)
-/* and (-webkit-min-device-pixel-ratio: 3) */
+and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) {
 
     #landing-page {
