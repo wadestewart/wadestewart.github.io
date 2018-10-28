@@ -213,7 +213,7 @@ body {
     width: 21rem;
 }
 
-.vl-about {
+.vl {
     border-left: 0.1rem solid #000;
     height: 10rem;
     margin: 2rem;
@@ -421,10 +421,10 @@ body {
     margin: 0;
 }
 
-.vl {
+/* .vl {
     border-left: 0.1rem solid #000;
     height: 5rem;
-}
+} */
 
 .contact-flex {
     align-items: flex-start;
@@ -673,21 +673,21 @@ body {
         width: 100%;
     }
 
-    .venn {
+    /* .venn {
         width: auto;
-    }
+    } */
 
-    .venn figure {
+    /* .venn figure {
         margin: 2em;
-    }
+    } */
     
-    .venn img {
-        height: auto;
+    /* .venn img {
+        height: 21em;
         width: 20rem;
-    }
+    } */
 
     .slider {
-        flex: 1 1 10rem;
+        /* flex: 1 1 10rem; */
         height: 20rem;
         overflow: hidden;
         width: 100%;
