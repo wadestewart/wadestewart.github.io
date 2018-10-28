@@ -667,32 +667,16 @@ body {
         height: 100vh;
         width: 100%;
     }
-
-    /* .venn {
-        width: auto;
-    } */
-
-    /* .venn figure {
-        margin: 2em;
-    } */
-    
-    /* .venn img {
-        height: 21em;
-        width: 20rem;
-    } */
     
     .question {
-        /* font-size: 0.9em; */
         margin: 0;
     }
     
     .answer {
-        /* font-size: 0.9em; */
         margin: 0.5rem 0 0 0;
     }
 
     .depth {
-        /* font-size: 0.9em; */
         margin: 0.5rem 0 0 0;
     }
 
