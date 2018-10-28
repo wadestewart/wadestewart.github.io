@@ -593,7 +593,11 @@ body {
 
 
 
-@media (max-width: 480px) {
+@media only screen 
+and (min-width: 375px)
+and (max-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
 
     #landing-page {
         background: url('./images/mobile-lander.png');
@@ -655,7 +659,7 @@ body {
     }
 
     #about {
-        padding: 2.5em 1em;
+        padding: 0 1em;
     }
     
     #about h1 {
@@ -665,7 +669,30 @@ body {
     .about-flex {
         flex-flow: column wrap;
         height: 100vh;
+        justify-content: flex-start;
         width: 100%;
+    }
+
+    .venn > figure {
+        height: 19rem;
+        margin: 4em 0 2em 0;
+    }
+    
+    .venn img {
+        height: 19rem;
+    }
+
+    .vl {
+        display: none;
+    }
+    
+    .slider {
+        height: 22rem;
+        width: 19rem;
+    }
+    
+    .slide {
+        height: 22rem;
     }
     
     .question {
@@ -775,10 +802,6 @@ body {
     }
 
     .contact-front, .contact-back {
-        display: none;
-    }
-
-    .vl {
         display: none;
     }
     
