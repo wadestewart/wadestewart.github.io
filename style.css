@@ -673,12 +673,12 @@ and (orientation: portrait) {
     }
 
     .venn > figure {
-        height: 19rem;
-        margin: 4em 0 2em 0;
+        height: 19em;
+        margin: 3em 0 1em 0;
     }
     
     .venn img {
-        height: 19rem;
+        height: 19em;
     }
 
     .vl {
@@ -686,12 +686,12 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 23rem;
-        width: 19rem;
+        height: 21em;
+        width: 19em;
     }
     
     .slide {
-        height: 23rem;
+        height: 21em;
     }
     
     .question {
@@ -699,11 +699,11 @@ and (orientation: portrait) {
     }
     
     .answer {
-        margin: 0.5rem 0 0 0;
+        margin: 0.5em 0 0 0;
     }
 
     .depth {
-        margin: 0.5rem 0 0 0;
+        margin: 0.5em 0 0 0;
     }
 
     #projects {
