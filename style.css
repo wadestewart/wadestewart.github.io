@@ -686,12 +686,12 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 22rem;
+        height: 23rem;
         width: 19rem;
     }
     
     .slide {
-        height: 22rem;
+        height: 23rem;
     }
     
     .question {
