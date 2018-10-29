@@ -591,8 +591,6 @@ body {
 
 }
 
-
-
 @media only screen 
 and (min-width: 375px)
 and (max-width: 812px)
@@ -667,10 +665,10 @@ and (orientation: portrait) {
     }
 
     .about-flex {
-        flex-direction: column;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         height: 100vh;
         justify-content: flex-start;
+        padding: 0 1em;
         width: 100%;
     }
 
