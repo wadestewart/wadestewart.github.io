@@ -695,14 +695,18 @@ and (orientation: portrait) {
     }
     
     .question {
+        font-size: 0.9em;
         margin: 0;
     }
     
     .answer {
+        font-size: 0.9em;
         margin: 0.5em 0 0 0;
     }
 
     .depth {
+        font-size: 0.9em;
+        line-height: 1.35em;
         margin: 0.5em 0 0 0;
     }
 
