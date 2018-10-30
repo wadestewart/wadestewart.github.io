@@ -693,6 +693,7 @@ and (orientation: portrait) {
     
     .slide {
         height: 22em;
+        padding: 0.25em;
     }
     
     .question {
