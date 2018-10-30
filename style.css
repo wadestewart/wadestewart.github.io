@@ -657,6 +657,7 @@ and (orientation: portrait) {
     }
 
     #about {
+        height: 52em;
         padding: 0 1em;
     }
     
@@ -686,27 +687,23 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 21em;
+        height: 22em;
         width: 19em;
     }
     
     .slide {
-        height: 21em;
+        height: 22em;
     }
     
     .question {
-        font-size: 0.9em;
         margin: 0;
     }
     
     .answer {
-        font-size: 0.9em;
         margin: 0.5em 0 0 0;
     }
 
     .depth {
-        font-size: 0.9em;
-        line-height: 1.35em;
         margin: 0.5em 0 0 0;
     }
 
