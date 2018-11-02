@@ -741,18 +741,13 @@ and (orientation: portrait) {
         width: 15em;
     }
     
-    .flash-hover {
+    .flash-hover, .notflix-hover {
         height: 15em;
         width: 15em;
     }
     
     .bank-hover {
         height: 16.875em;
-        width: 15em;
-    }
-    
-    .notflix-hover {
-        height: 15em;
         width: 15em;
     }
     
@@ -851,8 +846,6 @@ and (orientation: landscape) {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 22.5em;
-        width: 50em;
     }
 
     .navbar {
@@ -893,7 +886,7 @@ and (orientation: landscape) {
     }
     
     .venn > figure {
-        height: 21rem;
+        height: 21em;
         margin: 3.5em 0 0 0;
     }
     
@@ -910,27 +903,74 @@ and (orientation: landscape) {
     }
     
     .project-cards {
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        margin: 2rem 0 0 0;
+        height: 100vh;
+        margin: 2em 0 0 0;
         width: 100vw;
     }
     
     .flashcards, .notflix {
-        flex-flow: 1 1 20rem;
-        height: auto;
-        overflow: hidden;
-        position: relative;
-        width: 20rem;
-        z-index: 0;
+        flex-flow: 1 1 12.5rem;
+        height: 12.5em;
+        width: 12.5em;
+    }
+
+    .flash-front, .notflix-front {
+        height: 12.5em;
+        margin: 0;
+        width: 12.5em;
+    }
+
+    .flash-img, .notflix-img {
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+
+    .flash-hover, .notflix-hover {
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+
+    .flash-title, .bank-title, .notflix-title {
+        font-size: 1.5em;
+        margin: 0 0 2em 0;
+    }
+    
+    .flash-hover h4, .bank-hover h4, .notflix-hover h4 {
+        display: none;
     }
 
     .bank {
         flex: 1 1 25rem;
-        overflow: hidden;
-        position: relative;
-        width: 20rem;
-        z-index: 0;
+        height: 15.625em;
+        width: 12.5em;
+    }
+
+    .bank-front {
+        height: 15.625em;
+        margin: 0;
+        width: 12.5em;
+    }
+
+    .bank-img {
+        height: 15.625em;
+        width: 12.5em;
+    }
+
+    .bank-hover {
+        height: 15.625em;
+        width: 12.5em;
+    }
+
+    #repo-link {
+        height: 1em;
+        margin: 0;
+        width: auto;
+    }
+    
+    #repo-link a svg{
+        height: 1.5em;
+        margin: 0;
+        width: auto; 
     }
 
     }
