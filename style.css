@@ -867,6 +867,10 @@ and (orientation: landscape) {
         width: 6rem;
     }
 
+    .typing {
+        margin-right: 10em;
+    }
+
     #about {
         height: 47em;
         padding: 0 5.5em;
@@ -892,7 +896,7 @@ and (orientation: landscape) {
     }
 
     .slider {
-        margin: 2em;
+        margin: 0 2em;
     }
     
     .project-title {
