@@ -847,13 +847,13 @@ and (orientation: landscape) {
     }
 
     .navbar {
-        height: 3em;
+        height: 4em;
     }
     
     .flex-nav {
-        height: 3em;
+        height: 4em;
         margin: 0;
-        padding: 0 2em;
+        padding: 1em 2em;
         text-align: center;
         vertical-align: middle;
         width: 100%;
@@ -872,7 +872,7 @@ and (orientation: landscape) {
     }
 
     #about {
-        height: 47em;
+        height: 48em;
         padding: 0 5.5em;
     }
     
