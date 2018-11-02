@@ -872,7 +872,7 @@ and (orientation: landscape) {
     }
 
     #about {
-        height: 48em;
+        height: 47em;
         padding: 0 5.5em;
     }
     
@@ -896,7 +896,11 @@ and (orientation: landscape) {
     }
 
     .slider {
+        height: 22em;
         margin: 0 2em;
+    }
+    .slide {
+        height: 22em;
     }
     
     .project-title {
