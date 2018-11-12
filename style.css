@@ -672,7 +672,7 @@ and (orientation: portrait) {
     }
 
     .venn {
-        margin: 3em 0 1em 0;
+        margin: 4em 0 1em 0;
     }
 
     .venn > figure {
@@ -688,12 +688,12 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 22em;
+        height: 23em;
         width: 19em;
     }
     
     .slide {
-        height: 22em;
+        height: 23em;
         padding: 0.25em;
     }
     
