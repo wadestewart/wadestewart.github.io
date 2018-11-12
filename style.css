@@ -226,6 +226,7 @@ body {
 }
 
 .q-a-slides {
+    height: 21rem;
     position: relative;
     margin: 0;
     padding: 0;
@@ -235,6 +236,7 @@ body {
     cursor: pointer;
     height: 21rem;
     left: 0;
+    padding: 0 0.5rem;
     position: absolute;
     text-align: left;
     top: 0;
@@ -667,7 +669,7 @@ and (orientation: portrait) {
         flex-flow: column nowrap;
         height: 100vh;
         justify-content: flex-start;
-        padding: 0 1em;
+        padding: 0;
         width: 100%;
     }
 
@@ -688,12 +690,16 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 25em;
+        height: 23em;
         width: 19em;
+    }
+
+    .q-a-slides {
+        height: 23em;
     }
     
     .slide {
-        height: 25em;
+        height: 23em;
         padding: 0.25em;
     }
     
