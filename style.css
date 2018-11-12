@@ -688,12 +688,12 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 23em;
+        height: 25em;
         width: 19em;
     }
     
     .slide {
-        height: 23em;
+        height: 25em;
         padding: 0.25em;
     }
     
