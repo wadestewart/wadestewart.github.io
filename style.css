@@ -204,12 +204,12 @@ body {
 }
 
 .venn > figure {
-    height: 21rem;
+    height: 22rem;
     margin: 0;
 }
 
 .venn img {
-    height: 21rem;
+    height: 22rem;
     width: auto;
 }
 
@@ -220,13 +220,13 @@ body {
 }
 
 .slider {
-    height: 21rem;
+    height: 22rem;
     overflow: hidden;
-    width: 21rem;
+    width: 22rem;
 }
 
 .q-a-slides {
-    height: 21rem;
+    height: 22rem;
     position: relative;
     margin: 0;
     padding: 0;
@@ -234,7 +234,7 @@ body {
 
 .slide {
     cursor: pointer;
-    height: 21rem;
+    height: 22rem;
     left: 0;
     padding: 0 0.5rem;
     position: absolute;
@@ -690,16 +690,16 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 23em;
+        height: 19em;
         width: 19em;
     }
 
     .q-a-slides {
-        height: 23em;
+        height: 19em;
     }
     
     .slide {
-        height: 23em;
+        height: 19em;
         padding: 0.25em;
     }
     
