@@ -667,7 +667,7 @@ and (orientation: portrait) {
 
     .about-flex {
         flex-flow: column nowrap;
-        height: 100vh;
+        /* height: 52em; */
         justify-content: flex-start;
         padding: 0;
         width: 100%;
@@ -690,16 +690,16 @@ and (orientation: portrait) {
     }
     
     .slider {
-        height: 19em;
+        height: 23em;
         width: 19em;
     }
 
     .q-a-slides {
-        height: 19em;
+        height: 23em;
     }
     
     .slide {
-        height: 19em;
+        height: 23em;
         padding: 0.25em;
     }
     
