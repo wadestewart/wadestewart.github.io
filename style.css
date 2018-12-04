@@ -592,7 +592,7 @@ body {
   and (min-width: 768px) 
   /* and (max-width: 1024px)  */
   and (orientation: portrait) {
-      
+
     #landing-page {
         background: url('./images/tablet-lander.png');
         background-position: center;
@@ -655,10 +655,7 @@ body {
   and (orientation: landscape) {
 
     .about-flex {
-        /* flex-flow: column nowrap; */
-        /* justify-content: flex-start; */
         padding: 0;
-        /* width: 100vw; */
     }
 
   }
