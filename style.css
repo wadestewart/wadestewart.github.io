@@ -107,7 +107,7 @@ body {
         type 2s steps(25, end),
         blink 0.5s step-end infinite;
     -webkit-animation-fill-mode: forwards;
-    width: 19.3rem;
+    width: 16rem;
 }
 
 .typing p:nth-child(2) {
@@ -122,23 +122,39 @@ body {
         blink 0.5s step-end infinite;
     -webkit-animation-delay: 2s;
     -webkit-animation-fill-mode: forwards;
-    width: 19.8rem;
+    width: 30.5rem;
 }
 
 .typing p:nth-child(3) {
     animation:
-        type-final 2s steps(25, end),
+        type 2s steps(25, end),
         blink 0.5s step-end infinite;
     animation-delay: 4s;
     animation-fill-mode: forwards;
     margin: 0 1rem 0 0;
     opacity: 0;
     -webkit-animation:
-        type-final 2s steps(25, end),
+        type 2s steps(25, end),
         blink 0.5s step-end infinite;
     -webkit-animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
-    width: 15.8rem;
+    width: 27.5rem;
+}
+
+.typing p:nth-child(4) {
+    animation:
+        type-final 2s steps(25, end),
+        blink 0.5s step-end infinite;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    margin: 0 1rem 0 0;
+    opacity: 0;
+    -webkit-animation:
+        type-final 2s steps(25, end),
+        blink 0.5s step-end infinite;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    width: 17.8rem;
 }
 
 @keyframes type {
@@ -670,7 +686,7 @@ and (orientation: portrait) {
         /* height: 52em; */
         justify-content: flex-start;
         padding: 0;
-        width: 100%;
+        width: 100vw;
     }
 
     .venn {
