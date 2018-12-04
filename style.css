@@ -602,11 +602,49 @@ body {
     }
 
     .typing {
+        margin-bottom: 15em;
         margin-right: 0;
+    }
+
+    .typing p:nth-child(1) {
+        width: 9em;
+    }
+    
+    .typing p:nth-child(2) {
+        width: 18.65em;
+    }
+    
+    .typing p:nth-child(3) {
+        margin: 0;
+        width: 16.5em;
+    }
+
+    .typing p:nth-child(4) {
+        margin: 0;
+        width: 11em;
     }
 
     #about {
         padding: 0 3em;
+    }
+
+    #about h1 {
+        font-size: 1.5em;
+        margin: 4em 0 2em 0;
+    }
+
+    .project-title  {
+        font-size: 1.5em;
+        margin: 3em 0 0 0;
+    }
+
+    .project-cards {
+        align-items: center;
+        flex-direction: column;
+        /* height: 50em; */
+        justify-content: flex-start;
+        margin: 2em 0 0 0;
+        width: 20.5em;
     }
 
 }
@@ -906,7 +944,7 @@ and (orientation: landscape) {
     }
 
     .typing p {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 
     .typing p:nth-child(1) {
@@ -914,15 +952,15 @@ and (orientation: landscape) {
     }
     
     .typing p:nth-child(2) {
-        width: 19.5em;
+        width: 19.8em;
     }
     
     .typing p:nth-child(3) {
-        width: 17.5em;
+        width: 17.6em;
     }
 
     .typing p:nth-child(4) {
-        width: 11.5em;
+        width: 11.8em;
     }
 
     #about {
