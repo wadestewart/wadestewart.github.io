@@ -657,19 +657,23 @@ and (orientation: portrait) {
     }
     
     .typing p {
-        font-size: 1.75rem;
+        font-size: 1em;
     }
     
     .typing p:nth-child(1) {
-        width: 12em;
+        width: 10em;
     }
     
     .typing p:nth-child(2) {
-        width: 12.25em;
+        width: 21.5em;
     }
     
     .typing p:nth-child(3) {
-        width: 10em;
+        width: 18.5em;
+    }
+
+    .typing p:nth-child(4) {
+        width: 12.5em;
     }
 
     #about {
