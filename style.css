@@ -77,19 +77,16 @@ body {
     color: 	rgb(56,56,56);
 }
 
-.typing {
-    align-items: center;
+/* .typing {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     margin-right: 15rem;
-}
+} */
 
 .typing p {
-    border-right: 0.15rem solid orange;
-    color: #000;
+    border-right: 0.15rem solid goldenrod;
     font-family: monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.15rem;
     margin: 0;
     opacity: 0;
@@ -97,8 +94,42 @@ body {
     white-space: nowrap;
 }
 
-
 .typing p:nth-child(1) {
+    animation: 
+        type-final 0.75s steps(15, end),
+        blink 0.5s step-end infinite;
+    /* animation-delay: 3.5s; */
+    animation-fill-mode: forwards;
+    opacity: 0;
+    -webkit-animation: 
+        type-final 0.75s steps(15, end),
+        blink 0.5s step-end infinite;
+    /* -webkit-animation-delay: 3.5s; */
+    -webkit-animation-fill-mode: forwards;
+    width: 13.5rem;
+}
+
+.hl {
+    border-bottom: 1px solid #000;
+    margin: 2rem 0;
+    width: 10rem;
+}
+
+.landing-text {
+    /* align-items: center; */
+    display: flex;
+    flex-flow: column wrap;
+    font-family: monospace;
+    font-size: 1.5rem;
+    /* justify-content: center; */
+    margin-right: 15rem;
+}
+
+.landing-text p {
+    margin: 0;
+}
+
+/* .typing p:nth-child(1) {
     animation:
     type 0.5s steps(10, end),
     blink 0.5s step-end infinite;
@@ -109,9 +140,10 @@ body {
     blink 0.5s step-end infinite;
     -webkit-animation-fill-mode: forwards;
     width: 7rem;
-}
+} */
 
-.typing p:nth-child(2) {
+
+/* .typing p:nth-child(2) {
     animation:
     type 1s steps(25, end),
     blink 0.5s step-end infinite;
@@ -132,7 +164,6 @@ body {
     blink 0.5s step-end infinite;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
-    /* margin: 0 1rem 0 0; */
     opacity: 0;
     -webkit-animation:
     type 1s steps(25, end),
@@ -148,7 +179,6 @@ body {
         blink 0.5s step-end infinite;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
-    /* margin: 0 1rem 0 0; */
     opacity: 0;
     -webkit-animation:
         type 1s steps(25, end),
@@ -156,22 +186,7 @@ body {
     -webkit-animation-delay: 2.5s;
     -webkit-animation-fill-mode: forwards;
     width: 17.8rem;
-}
-
-.typing p:nth-child(5) {
-    animation: 
-        type-final 0.75s steps(15, end),
-        blink 0.5s step-end infinite;
-    animation-delay: 3.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    -webkit-animation: 
-        type-final 0.75s steps(15, end),
-        blink 0.5s step-end infinite;
-    -webkit-animation-delay: 3.5s;
-    -webkit-animation-fill-mode: forwards;
-    width: 14.5rem;
-}
+} */
 
 @keyframes type {
     0% { width: 0 }
