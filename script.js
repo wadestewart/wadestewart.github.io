@@ -73,9 +73,9 @@ $(function() {
     const pause = 7000
     let currentSlide = 1
     
-    const $slider = $('.slide-container')
-    const $slideContainer = $('.slides', $slider)
-    const $slides = $('.slide', $slider)
+    // const $slider = $('.slide-container')
+    const $slideContainer = $('.slides')
+    const $slides = $('.slide')
     
     let interval
     
@@ -106,14 +106,14 @@ $(function() {
         showSlides(slideIndex += n)
     }
 
-    function pauseSlider() {
-        clearInterval(interval)
-    }
+    // function pauseSlider() {
+    //     clearInterval(interval)
+    // }
 
-    $slideContainer
-        .on('mouseenter', pauseSlider)
-        .on('mouseleave', startSlider)
-        .on('click', slide)
+    // $slideContainer
+    //     .on('mouseenter', pauseSlider)
+    //     .on('mouseleave', startSlider)
+    //     .on('click', slide)
 
     startSlider()
 })

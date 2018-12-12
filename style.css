@@ -243,6 +243,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    z-index: 1;
 }
 
 .prev, .next {
