@@ -68,10 +68,11 @@
             </div>
 
             <div class="vl"></div>
+
         
-            <div class="slider">
+            <div class="slide-container">
     
-                <div class="q-a-slides">
+                <div class="slides">
     
                     <div class="slide slide-1">
                         <p class="question">Why did you change careers?</p>
@@ -102,6 +103,30 @@
                         </p>
                     </div>
     
+                </div>
+
+                <div class="slide-controls">
+
+                    <button class="prev" onclick="plusSlides(-1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                    </button>
+        
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                    <button class="next" onclick="plusSlides(1)"">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                    </button>
+
                 </div>
     
             </div>

@@ -73,9 +73,9 @@ $(function() {
     const pause = 7000
     let currentSlide = 1
     
-    const $slider = $('.slider')
-    const $slideContainer = $('.q-a-slides')
-    const $slides = $('.slide')
+    const $slider = $('.slide-container')
+    const $slideContainer = $('.slides', $slider)
+    const $slides = $('.slide', $slider)
     
     let interval
     
@@ -96,6 +96,14 @@ $(function() {
                 $slideContainer.css('left', 0)
             }
         })
+    }
+
+    // This slideshow from this link: https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+    let slideIndex = 1
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n)
     }
 
     function pauseSlider() {
