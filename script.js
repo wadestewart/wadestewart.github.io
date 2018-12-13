@@ -67,55 +67,75 @@ $('.nav-scroll').on('click', function(e) {
 
 // This slider mixture of these 2: http://jsfiddle.net/uctr94ve/ https://codepen.io/derwinsadiwa/pen/emPgwQ?editors=0100
 
-$(function() {
-    const width = 100
-    const animationSpeed = 1000
-    const pause = 7000
-    let currentSlide = 1
+const width = 100
+const animationSpeed = 1000
+let slideIndex = 1
+
+const $slideContainer = $('.slides')
+const $slides = $('.slide')
     
-    // const $slider = $('.slide-container')
-    const $slideContainer = $('.slides')
-    const $slides = $('.slide')
-    
-    let interval
-    
-    $slides.each(function(index) {
-        $(this).css('left',(index*100)+'%')
+$slides.each(function(index) {
+    $(this).css('left',(index*100)+'%')
+})
+
+// function slide() {
+//     $slideContainer.animate({
+//         'left': '-='+(width+'%')
+//     }, animationSpeed, function() {
+//         if (++slideIndex === $slides.length) {
+//             slideIndex = 1
+//             $slideContainer.css('left', 0)
+//         }
+//     })
+// }
+
+// This functionality found here: https://codepen.io/theabuitendyk/pen/yJbpBw?editors=0010
+
+const $maxDotIndex = $('.dot:last-child').attr('dot-index')
+const currentDot = $('.activeDot')
+const currentDotIndex = currentDot.attr('dot-index')
+
+$('.dot').click(function(){
+    let currentDot = $('.activeDot')
+    let currentDotIndex = currentDot.attr('dot-index')
+    let targetDot = $(this)
+    let targetDotIndex = targetDot.attr('dot-index')
+
+    if (currentDotIndex == targetDotIndex) {
+        return
+    } else {
+        currentDot.removeClass('activeDot')
+        targetDot.addClass('activeDot')
+
+    }
+})
+
+$('.next').click(function() {
+    let currentDot = $('.activeDot')
+    let currentDotIndex = currentDot.attr('dot-index')
+
+    if (currentDotIndex == $maxDotIndex) {
+        return
+    } else {
+        let targetDotIndex = (parseInt(currentDotIndex) + 1)
+        let dotSelector = ".dot[dot-index='"+ targetDotIndex + "']"
+        let targetDot = $(dotSelector)
+        currentDot.removeClass('activeDot')
+        targetDot.addClass('activeDot')
+    }
+
+    $slideContainer.animate({
+        'left': '-='+(width+'%')
+    }, animationSpeed, function() {
+        if (++slideIndex === $slides.length) {
+            slideIndex = 1
+            $slideContainer.css('left', 0)
+        }
     })
+})
 
-    function startSlider() {
-        interval = setInterval(slide, pause)
-    }
-    
-    function slide() {
-        $slideContainer.animate({
-            'left': '-='+(width+'%')
-        }, animationSpeed, function() {
-            if (++currentSlide === $slides.length) {
-                currentSlide = 1
-                $slideContainer.css('left', 0)
-            }
-        })
-    }
+$('.prev').click(function() {
 
-    // This slideshow from this link: https://www.w3schools.com/howto/howto_js_slideshow.asp
-
-    let slideIndex = 1
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n)
-    }
-
-    // function pauseSlider() {
-    //     clearInterval(interval)
-    // }
-
-    // $slideContainer
-    //     .on('mouseenter', pauseSlider)
-    //     .on('mouseleave', startSlider)
-    //     .on('click', slide)
-
-    startSlider()
 })
 
 const flashcards = $('.flashcards')
