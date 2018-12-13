@@ -92,27 +92,24 @@ $slides.each(function(index) {
 // This functionality found here: https://codepen.io/theabuitendyk/pen/yJbpBw?editors=0010
 
 const $maxDotIndex = $('.dot:last-child').attr('dot-index')
-const currentDot = $('.activeDot')
-const currentDotIndex = currentDot.attr('dot-index')
 
 $('.dot').click(function(){
-    let currentDot = $('.activeDot')
-    let currentDotIndex = currentDot.attr('dot-index')
-    let targetDot = $(this)
-    let targetDotIndex = targetDot.attr('dot-index')
+    const currentDot = $('.activeDot')
+    const currentDotIndex = currentDot.attr('dot-index')
+    const targetDot = $(this)
+    const targetDotIndex = targetDot.attr('dot-index')
 
     if (currentDotIndex == targetDotIndex) {
         return
     } else {
         currentDot.removeClass('activeDot')
         targetDot.addClass('activeDot')
-
     }
 })
 
 $('.next').click(function() {
-    let currentDot = $('.activeDot')
-    let currentDotIndex = currentDot.attr('dot-index')
+    const currentDot = $('.activeDot')
+    const currentDotIndex = currentDot.attr('dot-index')
 
     if (currentDotIndex == $maxDotIndex) {
         return
@@ -135,7 +132,27 @@ $('.next').click(function() {
 })
 
 $('.prev').click(function() {
+    const currentDot = $('.activeDot')
+    const currentDotIndex = currentDot.attr('dot-index')
 
+    if (currentDotIndex == 1) {
+        return
+    } else {
+        let targetDotIndex = (parseInt(currentDotIndex) - 1)
+        let dotSelector = ".dot[dot-index='"+ targetDotIndex + "']"
+        let targetDot = $(dotSelector)
+        currentDot.removeClass('activeDot')
+        targetDot.addClass('activeDot')
+    }
+
+    $slideContainer.animate({
+        'left': '+='+(width+'%')
+    }, animationSpeed, function() {
+        if (--slideIndex === 1) {
+            slideIndex = -1
+            $slideContainer.css('left', 0)
+        }
+    })
 })
 
 const flashcards = $('.flashcards')
