@@ -182,12 +182,12 @@ body {
 }
 
 .venn > figure {
-    height: 22rem;
+    height: 23rem;
     margin: 0;
 }
 
 .venn img {
-    height: 22rem;
+    height: 23rem;
     width: auto;
 }
 
@@ -200,20 +200,20 @@ body {
 .slide-container {
     display: flex;
     flex-flow: column nowrap;
-    height: 22rem;
+    height: 23rem;
     overflow: hidden;
-    width: 22rem;
+    width: 23rem;
 }
 
 .slides {
-    height: 22rem;
+    height: 23rem;
     position: relative;
     margin: 0;
     padding: 0;
 }
 
 .slide {
-    height: 22rem;
+    height: 23rem;
     left: 0;
     padding: 0 0.5rem;
     position: absolute;
@@ -242,6 +242,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    margin: 0.5rem 0 0 0;
     z-index: 1;
 }
 
@@ -250,6 +251,10 @@ body {
     border: none;
     cursor: pointer;
     padding: 0;
+}
+
+.prev svg, .next svg {
+    fill: #bbb;
 }
 
 .prev:focus, .next:focus {
@@ -266,7 +271,7 @@ body {
 }
 
 .dot {
-    background-color: #000;
+    background-color: #bbb;
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
