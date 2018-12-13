@@ -104,6 +104,10 @@ $('.dot').click(function(){
     } else {
         currentDot.removeClass('activeDot')
         targetDot.addClass('activeDot')
+        let margin = ((targetDotIndex - 1) * -100) + '%'
+        $slideContainer.animate({
+            'left': margin
+        }, animationSpeed)
     }
 })
 
