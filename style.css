@@ -169,7 +169,7 @@ body {
 }
 
 #about h1 {
-    margin: 7rem 0;
+    margin: 7rem 0 4rem 0;
 }
 
 .about-flex {
@@ -213,7 +213,6 @@ body {
 }
 
 .slide {
-    /* cursor: pointer; */
     height: 22rem;
     left: 0;
     padding: 0 0.5rem;
@@ -251,6 +250,10 @@ body {
     border: none;
     cursor: pointer;
     padding: 0;
+}
+
+.prev:focus, .next:focus {
+    outline: none;
 }
 
 .prev:hover svg, .next:hover svg {
