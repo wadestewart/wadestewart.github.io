@@ -528,6 +528,18 @@ body {
     transform: rotateX(180deg)
 }
 
+@media screen 
+    and (min-width: 1025px)
+    and (max-width: 1254px) {
+        #about {
+            padding: 0;
+        }
+
+        .about-flex {
+            padding: 0;
+        }
+    }
+
 @media (max-width: 1024px) {
     #about {
         padding: 0 7.5em;
@@ -616,24 +628,6 @@ body {
         margin-right: 0;
     }
 
-    .typing p:nth-child(1) {
-        width: 9em;
-    }
-    
-    .typing p:nth-child(2) {
-        width: 18.65em;
-    }
-    
-    .typing p:nth-child(3) {
-        margin: 0;
-        width: 16.5em;
-    }
-
-    .typing p:nth-child(4) {
-        margin: 0;
-        width: 11em;
-    }
-
     #about {
         padding: 0 3em;
     }
@@ -711,9 +705,13 @@ and (orientation: portrait) {
         width: auto;
     }
 
+    .landing-text {
+        margin-right: 0;
+    }
+
     .typing {
         margin-right: 0;
-        margin-top: 15rem;
+        margin-top: 12rem;
         width: 17.5em;
     }
     
