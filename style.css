@@ -182,7 +182,7 @@ body {
 }
 
 .venn > figure {
-    height: 23rem;
+    height: 20rem;
     margin: 0;
 }
 
@@ -739,7 +739,7 @@ and (orientation: portrait) {
 
     #about {
         height: 52em;
-        padding: 0 1em;
+        padding: 0;
     }
     
     #about h1 {
@@ -970,10 +970,6 @@ and (orientation: landscape) {
         margin-right: 15em;
     }
 
-    /* .typing {
-        margin-right: 10em;
-    } */
-
     .typing p {
         font-size: 1.25em;
     }
@@ -996,7 +992,7 @@ and (orientation: landscape) {
 
     #about {
         height: 47em;
-        padding: 0 5.5em;
+        padding: 0;
     }
     
     #about h1 {
@@ -1004,27 +1000,54 @@ and (orientation: landscape) {
     }
     
     .about-flex {
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: space-evenly;
-        padding: 0 5.5em;
+        padding: 0 1em;
     }
     
     .venn > figure {
-        height: 21em;
-        margin: 3.5em 0 0 0;
+        height: 19em;
+        margin: 4.1em 0 0 0;
+        width: 19em;
+    }
+
+    .venn > figure > img {
+        height: 19em;
+        width: 19em;
     }
     
     .vl {
         display: none;
     }
 
+    .slide-container {
+        height: 21em;
+        padding: 2em 0 0 0;
+        width: 19em;;
+    }
+
     .slider {
-        height: 22em;
+        height: 19em;
         margin: 0 2em;
+        width: 19em;;
     }
     .slide {
-        height: 22em;
+        height: 19em;
+        width: 19em;
     }
+
+    .question, .answer, .depth {
+        font-size: 0.8em;
+    }
+
+    .prev svg, .next svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    /* .dot {
+
+    } */
     
     .project-title {
         display: none;
