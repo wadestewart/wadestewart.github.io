@@ -182,15 +182,13 @@ body {
 }
 
 .venn {
-    width: 23rem;;
-}
-
-.venn > figure {
+    height: 23rem;
     margin: 0;
     width: 23rem;
 }
 
 .venn img {
+    height: 23rem;
     width: auto;
 }
 
@@ -214,6 +212,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    width: 23rem;
 }
 
 .slide {
@@ -758,17 +757,16 @@ and (orientation: portrait) {
     }
 
     .venn {
-        margin: 4em 0 1em 0;
-    }
-
-    .venn > figure {
         display: flex;
         height: 19em;
+        margin: 2em 0 1em 0;
         justify-content: center;
+        width: 19em;
     }
     
-    .venn > figure > img {
+    .venn img {
         height: 19em;
+        width: auto;
     }
 
     .vl {
@@ -1008,16 +1006,21 @@ and (orientation: landscape) {
         flex-flow: row nowrap;
         justify-content: space-evenly;
     }
+
+    .venn {
+        height: 15em;
+        width: 15em;
+    }
     
     .venn > figure {
-        height: 19em;
+        height: 15em;
         margin: 4.1em 0 0 0;
-        width: 19em;
+        width: 15em;
     }
 
-    .venn > figure > img {
-        height: 19em;
-        width: 19em;
+    .venn > img {
+        height: 15em;
+        width: 15em;
     }
     
     .vl {
