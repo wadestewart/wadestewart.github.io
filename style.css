@@ -762,10 +762,12 @@ and (orientation: portrait) {
     }
 
     .venn > figure {
+        display: flex;
         height: 19em;
+        justify-content: center;
     }
     
-    .venn img {
+    .venn > figure > img {
         height: 19em;
     }
 
