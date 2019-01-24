@@ -1005,6 +1005,7 @@ and (orientation: landscape) {
     
     .about-flex {
         flex-flow: row nowrap;
+        justify-content: space-around;
     }
     
     .venn {
