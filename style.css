@@ -723,7 +723,7 @@ and (orientation: portrait) {
     }
     
     .typing p:nth-child(1) {
-        width: 10em;
+        width: 9.5em;
     }
     
     .typing p:nth-child(2) {
@@ -759,7 +759,7 @@ and (orientation: portrait) {
     .venn {
         display: flex;
         height: 19em;
-        margin: 2em 0 1em 0;
+        margin: 4em 0 2em 0;
         justify-content: center;
         width: 19em;
     }
@@ -774,18 +774,18 @@ and (orientation: portrait) {
     }
 
     .slide-container {
-        height: 25em;
-        width: 20em;
+        height: 27.5em;
+        width: 19em;
     }
 
     .slides {
         height: 24em;
-        width: 20em;
+        width: 19em;
     }
     
     .slider {
         height: 24em;
-        width: 20em;
+        width: 19em;
     }
 
     .q-a-slides {
@@ -995,6 +995,7 @@ and (orientation: landscape) {
     }
 
     #about {
+        height: 30em;
         padding: 0;
     }
     
@@ -1004,23 +1005,17 @@ and (orientation: landscape) {
     
     .about-flex {
         flex-flow: row nowrap;
-        justify-content: space-evenly;
-    }
-
-    .venn {
-        height: 15em;
-        width: 15em;
     }
     
-    .venn > figure {
-        height: 15em;
-        margin: 4.1em 0 0 0;
-        width: 15em;
+    .venn {
+        height: 17em;
+        margin: 4em 0 0 0;
+        width: 17em;
     }
 
     .venn > img {
-        height: 15em;
-        width: 15em;
+        height: 17em;
+        width: 17em;
     }
     
     .vl {
@@ -1028,24 +1023,25 @@ and (orientation: landscape) {
     }
 
     .slide-container {
-        height: 20em;
-        padding: 2.2em 0 0 0;
-        width: 20em;;
+        height: 18em;
+        margin: 4em 0 0 0;
+        width: 21em;;
     }
 
     .slider {
-        height: 20em;
+        height: 16em;
         margin: 0 2em;
-        width: 20em;;
+        width: 21em;;
     }
+
     .slide {
-        height: 20em;
-        width: 20em;
+        height: 16em;
+        width: 21em;
     }
 
     .slides {
-        height: 20em;
-        width: 20em;
+        height: 16em;
+        width: 21em;
     }
 
     .question, .answer, .depth {
@@ -1053,7 +1049,7 @@ and (orientation: landscape) {
     }
 
     .slide-controls {
-        margin: 1rem 0 0 0;
+        margin: 0;
     }
 
     .prev svg, .next svg {
