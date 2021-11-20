@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #fff;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.flex-nav {
+    align-items: center;
+    display: flex;
+    font-family: 'Circular', Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem 5rem;
+    text-align: left;
+}
+
+.flex-nav li {
+    margin: 0;
+}

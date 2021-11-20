@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wade-img {
+  height: 40vmin;
+}
+
+.typing p {
+  border-right: 0.15rem solid goldenrod;
+  font-family: monospace;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.typing p:nth-child(1) {
+  animation: 
+      type-final 0.75s steps(15, end),
+      blink 0.5s step-end infinite;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  -webkit-animation: 
+      type-final 0.75s steps(15, end),
+      blink 0.5s step-end infinite;
+  -webkit-animation-fill-mode: forwards;
+  width: 13.5rem;
+}
+
+.hl {
+  border-bottom: 1px solid #000;
+  margin: 2rem 0;
+  width: 10rem;
+}
+
+.landing-text {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin-right: 25rem;
+}
+
+.landing-text p {
+  margin: 0;
+}
+
+@keyframes type {
+  0% { width: 0 }
+  1% { opacity: 1; }
+  99.9% { border-right: 0.15rem solid orange; }
+  100% {
+      opacity: 1; 
+      border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% { width: 0 }
+  1% { opacity: 1; }
+  99.9% { border-right: 0.15rem solid orange; }
+  100% {
+      opacity: 1; 
+      border: none;
+  }
+}
+
+@keyframes type-final {
+  0% { width: 0; }
+  1% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes type-final {
+  0% { width: 0; }
+  1% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@-webkit-keyframes blink {
+  50% { border-color: transparent; }
+}
+
