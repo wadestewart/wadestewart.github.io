@@ -1,7 +1,0 @@
-{
-    "editor.parameterHints.enabled": false,
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.hover": false,
-    "html.suggest.html5": false,
-}
