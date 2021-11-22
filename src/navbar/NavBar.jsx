@@ -1,17 +1,15 @@
 import React from "react";
 import "./NavBar.css";
-import LogoHomeButton from "../home-logo-button/LogoHomeButton";
+import NavBarLinks from "./navbar-links/NavBarLinks";
 
 const NavBar = () => {
+    const links = [ 'HOME', 'ABOUT', 'PROJECTS', 'CONTACT' ];
     return(
         <nav className="navbar">
-        <ul className="flex-nav">
-            <LogoHomeButton />
-            
-            <li>PROJECTS</li>
-            <li>CONTACT</li>
-        </ul>
-    </nav>
+            <ul className="flex-nav">
+                <NavBarLinks links={links} />
+            </ul>
+        </nav>
     )
 }
 
