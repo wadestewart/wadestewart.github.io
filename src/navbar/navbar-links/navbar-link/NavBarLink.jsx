@@ -1,12 +1,16 @@
 import React from "react";
+import {
+    Link
+} from "react-router-dom";
 import "./NavBarLink.css";
 
 const NavBarLink = props => {
     const { index, name } = props;
-    if (name === 'HOME') {
+    const path = `/${name}`;
+    if (name === 'Home') {
         return (
             <li className="logo" key={index} >
-            <a className="home-logo" href="#home">
+            <a className="link" href={path}>
                         <svg className="WadeLogo1_Image" data-name="WadeLogo1 Image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.071 75.889">
                             <title>WadeLogo</title>
                                 <path className="cls-1" d="M67.209,51.84a4.119,4.119,0,0,1-3.6.72C64.408,51.919,66.111,52.181,67.209,51.84Z"/>
@@ -22,9 +26,7 @@ const NavBarLink = props => {
     } else {
         return (
             <li key={index}>
-                <a className="nav-scroll" href="#about">
-                    {name}
-                </a>
+                <Link to={path} className="link" >{name.toUpperCase()}</Link>
             </li>
         )
     }

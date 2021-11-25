@@ -12,3 +12,10 @@
 .logo a:hover svg {
     fill: #000;
 }
+
+.link {
+    color: goldenrod;
+    flex: 1 1 auto;
+    margin: 1rem;
+    text-decoration: none;
+}

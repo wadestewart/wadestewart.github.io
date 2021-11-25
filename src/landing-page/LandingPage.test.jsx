@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import NavBar from './NavBar';
+import LandingPage from './LandingPage';
 
-describe('<NavBar />', () => {
+describe('<LandingPage />', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<NavBar />, div);
+        ReactDOM.render(<LandingPage />, div);
     });
 });
