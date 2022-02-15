@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import About from './About';
+import Projects from './Projects';
 
 test('renders yello message', () => {
-  render(<About />);
-  const linkElement = screen.getByText(/Yello About!/i);
+  render(<Projects />);
+  const linkElement = screen.getByText(/Yello Projects!/i);
   expect(linkElement).toBeInTheDocument();
 });

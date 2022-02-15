@@ -7,7 +7,7 @@ import "./NavBarLink.css";
 const NavBarLink = props => {
     const { index, name } = props;
     const path = `/${name}`;
-    if (name === 'Home') {
+    if (name === 'home') {
         return (
             <li className="logo" key={index} >
             <a className="link" href={path}>

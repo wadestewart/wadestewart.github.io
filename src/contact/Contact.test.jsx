@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import About from './About';
+import Contact from './Contact';
 
 test('renders yello message', () => {
-  render(<About />);
-  const linkElement = screen.getByText(/Yello About!/i);
+  render(<Contact />);
+  const linkElement = screen.getByText(/Yello Contact!/i);
   expect(linkElement).toBeInTheDocument();
 });

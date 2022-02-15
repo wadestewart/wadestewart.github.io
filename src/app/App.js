@@ -1,5 +1,5 @@
-import NavBar from "../navbar/NavBar"
-import LandingPage from "../landing-page/LandingPage";
+// import NavBar from "../navbar/NavBar";
+import Routing from "../routing/Routing";
 import './App.css';
 
 /**
@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <NavBar key={0}/>
-        <LandingPage />
+        {/* <NavBar key={0}/> */}
+        <Routing />
     </div>
   );
 }
