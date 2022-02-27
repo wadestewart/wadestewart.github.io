@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import Projects from './Projects';
 
-test('renders yello message', () => {
+test('renders Project Cards', () => {
   render(<Projects />);
-  const linkElement = screen.getByText(/Yello Projects!/i);
-  expect(linkElement).toBeInTheDocument();
+  const projectCardsElement = screen.getByRole('list');
+  expect(projectCardsElement).toBeInTheDocument();
 });

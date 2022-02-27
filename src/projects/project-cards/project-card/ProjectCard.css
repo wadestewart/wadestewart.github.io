@@ -1,0 +1,17 @@
+.project-card {
+    flex-flow: 1 1 20rem;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 20rem;
+    z-index: 0;
+}
+
+.card-img {
+    height: 20rem;
+    position: relative;
+    transition: 0.8s ease-in-out;
+    -webkit-transition: 0.8s ease-in-out;
+    width: 20rem;
+    z-index: -1;
+}
