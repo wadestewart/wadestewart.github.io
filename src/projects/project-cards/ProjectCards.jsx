@@ -13,7 +13,7 @@ const ProjectCards = () => {
                 stack={project.stack}
             />
         )
-    })
+    });
     return cards;
 };
 

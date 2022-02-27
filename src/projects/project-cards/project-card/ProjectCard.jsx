@@ -5,11 +5,11 @@ import gh from '../../../img/gh-logo.png';
 const ProjectCard = props => {
     const parsedStack = props.stack.map((technology, i) => {
         return (
-            <p key={i}>{technology}</p>
+            <p key={i} role="note">{technology}</p>
         )
     })
     return (
-        <div className="project-card">
+        <div className="project-card" role="listitem">
             <h1>{props.name}</h1>
             <img className="card-img" src={props.image} alt="Visual Card Description" />
             <span>{parsedStack}</span>
