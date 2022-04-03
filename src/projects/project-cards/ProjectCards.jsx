@@ -6,11 +6,11 @@ const ProjectCards = () => {
     const cards = projects.map((project, i) => {
         return (
             <ProjectCard
+                appUrl={project.appUrl}
                 githubUrl={project.githubUrl}
-                image = {project.image}
                 key={i}
-                name={project.name}
                 stack={project.stack}
+                video={project.video}
             />
         )
     });

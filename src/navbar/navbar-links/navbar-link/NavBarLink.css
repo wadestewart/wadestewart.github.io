@@ -16,6 +16,17 @@
 .link {
     color: goldenrod;
     flex: 1 1 auto;
-    margin: 1rem;
+    /* margin: 1rem; */
     text-decoration: none;
+}
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 823px)
+and (orientation: portrait) {
+
+    /* .link {
+        height: 1.25rem;
+        width: auto;  
+    } */
 }

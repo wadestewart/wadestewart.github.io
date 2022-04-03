@@ -6,7 +6,7 @@ import NavBarLinks from "./navbar-links/NavBarLinks";
  * @summary This component renders the NavBar which 
  */
 const NavBar = () => {
-    const links = [ 'home', 'about', 'projects', 'contact' ];
+    const links = [ 'home', 'github', 'linkedin', 'resume' ];
     return(
         <nav className="navbar">
             <ul className="flex-nav">

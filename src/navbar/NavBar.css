@@ -1,6 +1,5 @@
 .navbar {
     background-color: #fff;
-    height: 5rem;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -11,12 +10,19 @@
     align-items: center;
     display: flex;
     font-family: 'Circular', Helvetica, sans-serif;
+    gap: 1rem;
+    justify-content: flex-end;
     list-style-type: none;
-    margin: 0;
-    padding: 1.5rem 5rem;
+    padding-right: 1rem;
     text-align: left;
 }
 
-.flex-nav li {
-    margin: 0;
+@media only screen 
+and (min-width: 320px)
+and (max-width: 823px)
+and (orientation: portrait) {
+
+    /* .flex-nav > li {
+        height: 10rem;
+    } */
 }

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { render, screen } from '@testing-library/react';
 
 import Routing from './Routing';
-import NavBar from '../navbar/NavBar';
 
 describe('<Routing />', () => {
     it('renders without crashing', () => {

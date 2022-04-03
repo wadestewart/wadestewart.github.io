@@ -1,12 +1,13 @@
 import React from "react";
-import {
-    Link
-} from "react-router-dom";
+import { navUrls } from '../../../data/navbarData';
+import resume from '../../../img/wade_stewart_resume.pdf';
+
 import "./NavBarLink.css";
 
 const NavBarLink = props => {
     const { index, name } = props;
     const path = `/${name}`;
+    const link = navUrls[name];
     if (name === 'home') {
         return (
             <li className="logo" key={index} >
@@ -23,13 +24,27 @@ const NavBarLink = props => {
                     </a>
             </li>
         )
-    } else {
+    }
+
+    if (name === 'resume') {
         return (
             <li key={index}>
-                <Link to={path} className="link" >{name.toUpperCase()}</Link>
+                <a href={resume} target="_blank" rel="noreferrer" className="link">
+                    {name.toUpperCase()}
+                </a>
+                {/* <Link to={path} className="link" >{name.toUpperCase()}</Link> */}
             </li>
         )
     }
+
+    return (
+        <li key={index}>
+            <a href={link.url} target="_blank" rel="noreferrer" className="link">
+                {name.toUpperCase()}
+            </a>
+            {/* <Link to={path} className="link" >{name.toUpperCase()}</Link> */}
+        </li>
+    )
 
 }
 

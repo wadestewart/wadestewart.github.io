@@ -1,30 +1,28 @@
-import art from '../img/art-ill.png';
-import bank from '../img/bank-ill.png';
-import flash from '../img/flash-ill.png';
-import placeHolder from '../img/mobile-landscape.png';
+import artVid from '../img/art_ed_gif_480.mov';
+import bank from '../img/fake_bank.png';
+import flashVid from '../img/flash_gif_480.mov';
+import placeHolder from '../img/placeholder.png';
 
 
 export const projects = [
     {
-        "name": "Flashdance Flashcards",
-        "image": flash,
+        "video": flashVid,
         "stack": ["JavaScript"],
-        "githubUrl": "https://github.com/wadestewart/Flashcards"
+        "githubUrl": "https://github.com/wadestewart/Flashcards",
+        "appUrl": "https://wadestewart.github.io/Flashcards/"
     },
     {
-        "name": "Fake Banking",
+        "video": artVid,
+        "stack": ["Node/Express", "React/Js", "Cooper Hewitt API"],
+        "githubUrl": "https://github.com/wadestewart/art-history",
+        "appUrl": "https://wadestewart.github.io/art-history/"
+    },
+    {
         "image": bank,
         "stack": ["Node/Express", "Handlebars", "MongoDb"],
         "githubUrl": "https://github.com/wadestewart/BankingQA"
     },
     {
-        "name": "Art Education",
-        "image": art,
-        "stack": ["Node/Express", "React/Js", "Cooper Hewitt API"],
-        "githubUrl": "https://github.com/wadestewart/art-history"
-    },
-    {
-        "name": "Spades",
         "image": placeHolder,
         "stack": ["React/Js"],
         "githubUrl": "https://github.com/wadestewart/spades"

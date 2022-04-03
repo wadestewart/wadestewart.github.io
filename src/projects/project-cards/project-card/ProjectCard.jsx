@@ -3,19 +3,42 @@ import './ProjectCard.css';
 import gh from '../../../img/gh-logo.png';
 
 const ProjectCard = props => {
-    const parsedStack = props.stack.map((technology, i) => {
-        return (
-            <p key={i} role="note">{technology}</p>
-        )
+    // concatenate string of the tech stacks
+    let techString = '';
+    props.stack.forEach(technology => {
+        techString += ` ${technology} `;
     })
+
+    // set the ref for the video play/pause on hover
+    let vidRef = React.createRef();
+    const playVideo = () => {
+        vidRef.current.play();
+    }
+    const pauseVideo = () => {
+        vidRef.current.pause();
+    }
+
+    // on click redirect to deployed application
+    const handleClick = url => {
+        const newWindow = window.open(url, '_blank', 'noopener noreferrer');
+        if (newWindow) newWindow.opener = null;
+    }
     return (
         <div className="project-card" role="listitem">
-            <h1>{props.name}</h1>
-            <img className="card-img" src={props.image} alt="Visual Card Description" />
-            <span>{parsedStack}</span>
+            <video
+                className="card-vid"
+                muted="muted"
+                onClick={() => handleClick(props.appUrl)}
+                onMouseOver={() => playVideo()}
+                onMouseOut={() => pauseVideo()}
+                ref={vidRef}
+                src={props.video}
+            >
+            </video>
+            <span>{techString}</span>
             <object data="" type="wut/lol">
                 <a href={props.githubUrl} target='_blank' rel='noreferrer'>
-                    <img src={gh} alt='Clickable link to GitHub' />
+                    <img className='gh-logo' src={gh} alt='Clickable link to GitHub' />
                 </a>
             </object>
         </div>
